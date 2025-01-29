@@ -5,14 +5,15 @@
 }
 body {
   min-height: 100vh;
-  background-color: rgb(10, 33, 97);
+  background-color: #0a0a2e;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 nav {
-  background-color: white;
+  
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav ul {
+  
   width: 100%;
   list-style: none;
   display: flex;
@@ -20,6 +21,7 @@ nav ul {
   align-items: center;
 }
 nav li {
+  
   height: 50px;
 }
 nav a {
@@ -28,12 +30,13 @@ nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: black;
+  color: white;
 }
 nav a:hover {
   background-color: #f0f0f0;
 }
 nav li:first-child {
+  
   margin-right: auto;
 }
 .sidebar {
@@ -184,5 +187,26 @@ nav li:first-child {
 
   to {
     opacity: 1;
+  }
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 1s infinite;
+}
+
+@keyframes twinkle {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
   }
 }
