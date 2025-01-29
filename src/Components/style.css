@@ -1,212 +1,251 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Sixtyfour+Convergence&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-  min-height: 100vh;
-  background-color: #0a0a2e;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background-color: #0a0a2e;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 nav {
-  
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
+
 nav ul {
-  
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-nav li {
-  
-  height: 50px;
-}
-nav a {
-  height: 100%;
-  padding: 0 30px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: white;
-}
-nav a:hover {
-  background-color: #f0f0f0;
-}
-nav li:first-child {
-  
-  margin-right: auto;
-}
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background-size: cover;
-  background-image: url("/astronaut.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  display: none; /* Initially hidden */
-}
-.sidebar.show {
-  display: flex; /* Show when the class is added */
-}
-.sidebar li {
-  width: 100%;
-}
-.sidebar a {
-  width: 100%;
-}
-.menu-button {
-  display: none;
-}
-@media (max-width: 800px) {
-  .hideOnMobile {
-    display: none;
-    font-family: "Anton", serif;
-  }
-  .menu-button {
-    display: block;
-  }
-}
-@media (max-width: 400px) {
-  .sidebar {
     width: 100%;
-  }
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-size: cover;
+    background-image: url("/astronaut.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+    /* Initially hidden */
+}
+
+.sidebar.show {
+    display: flex;
+    /* Show when the class is added */
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+        font-family: "Anton", serif;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
 .textcolor {
-  color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem aqua, -0.2rem 0.1rem 1rem aqua,
-    0.2rem 0.1rem 1rem aqua, 0 -0.5rem 2rem #ffe6ff, 0 0 0.5rem #ffe6ff;
-  animation: shine 2s forwards, blink 3s infinite;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem aqua, -0.2rem 0.1rem 1rem aqua, 0.2rem 0.1rem 1rem aqua, 0 -0.5rem 2rem #ffe6ff, 0 0 0.5rem #ffe6ff;
+    animation: shine 2s forwards, blink 3s infinite;
 }
+
 .ledFont {
-  font-family: "Anton";
+    font-family: "Anton";
 }
+
 @keyframes blink {
-  0%,
-  75% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem aqua, -0.2rem 0.1rem 1rem aqua,
-      0.2rem 0.1rem 1rem aqua, 0 -0.5rem 2rem #ffe6ff, 0 0 3rem #ffe6ff;
-  }
-  28%,
-  33% {
-    color: aqua;
-    text-shadow: none;
-  }
-  82%,
-  97% {
-    color: #ffe6ff;
-    text-shadow: none;
-  }
+    0%,
+    75% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem aqua, -0.2rem 0.1rem 1rem aqua, 0.2rem 0.1rem 1rem aqua, 0 -0.5rem 2rem #ffe6ff, 0 0 3rem #ffe6ff;
+    }
+    28%,
+    33% {
+        color: aqua;
+        text-shadow: none;
+    }
+    82%,
+    97% {
+        color: #ffe6ff;
+        text-shadow: none;
+    }
 }
 
 @keyframes shine {
-  0% {
-    color: #6b1839;
-    text-shadow: none;
-  }
-  100% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem aqua, -0.2rem 0.1rem 1rem aqua,
-      0.2rem 0.1rem 1rem aqua, 0 -0.5rem 2rem #ffe6ff, 0 0 3rem #ffe6ff;
-  }
+    0% {
+        color: #6b1839;
+        text-shadow: none;
+    }
+    100% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem aqua, -0.2rem 0.1rem 1rem aqua, 0.2rem 0.1rem 1rem aqua, 0 -0.5rem 2rem #ffe6ff, 0 0 3rem #ffe6ff;
+    }
 }
 
 @keyframes flicker {
-  from {
-    opacity: 1;
-  }
-
-  4% {
-    opacity: 0.9;
-  }
-
-  6% {
-    opacity: 0.85;
-  }
-
-  8% {
-    opacity: 0.95;
-  }
-
-  10% {
-    opacity: 0.9;
-  }
-
-  14% {
-    opacity: 0.95;
-  }
-
-  16% {
-    opacity: 0.98;
-  }
-
-  20% {
-    opacity: 0.99;
-  }
-
-  37% {
-    opacity: 0.93;
-  }
-
-  38% {
-    opacity: 0.1;
-  }
-
-  39% {
-    opacity: 0.1;
-  }
-
-  42% {
-    opacity: 1;
-  }
-
-  56% {
-    opacity: 0.9;
-  }
-
-  60% {
-    opacity: 0.99;
-  }
-
-  72% {
-    opacity: 0.95;
-  }
-
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 1;
+    }
+    4% {
+        opacity: 0.9;
+    }
+    6% {
+        opacity: 0.85;
+    }
+    8% {
+        opacity: 0.95;
+    }
+    10% {
+        opacity: 0.9;
+    }
+    14% {
+        opacity: 0.95;
+    }
+    16% {
+        opacity: 0.98;
+    }
+    20% {
+        opacity: 0.99;
+    }
+    37% {
+        opacity: 0.93;
+    }
+    38% {
+        opacity: 0.1;
+    }
+    39% {
+        opacity: 0.1;
+    }
+    42% {
+        opacity: 1;
+    }
+    56% {
+        opacity: 0.9;
+    }
+    60% {
+        opacity: 0.99;
+    }
+    72% {
+        opacity: 0.95;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .star {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: white;
-  border-radius: 50%;
-  animation: twinkle 1s infinite;
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 1s infinite;
 }
 
 @keyframes twinkle {
-  0% {
-      opacity: 0;
-  }
-  50% {
-      opacity: 1;
-  }
-  100% {
-      opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.marquee-container {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-text {
+    white-space: nowrap;
+    color: white;
+    animation: marquee 20s linear infinite;
+    font-size: 1.5rem;
+}
+
+.buy-now-button {
+    position: fixed;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    pointer-events: none;
+    /* Prevents the button from interfering with mouse clicks */
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    transition: transform 0.1s ease-out;
 }

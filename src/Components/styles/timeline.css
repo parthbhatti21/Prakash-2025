@@ -22,9 +22,7 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    /* Start at the center of the timeline */
     transform: translateX(-50%);
-    /* Center the image */
     width: 100px;
     z-index: 2;
     pointer-events: none;
@@ -41,18 +39,15 @@ body {
     position: absolute;
     width: 2px;
     background: #006E51;
-    /* Green line */
     top: 0;
     bottom: 0;
     left: 50%;
-    /* Center the green line */
     margin-left: -1px;
 }
 
 .container {
     padding: 15px 30px;
     position: relative;
-    background: inherit;
     width: 50%;
 }
 
@@ -167,6 +162,26 @@ body {
     color: #000000;
 }
 
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .container {
+        width: 50%;
+        padding-left: 80px;
+    }
+    .container.left .date,
+    .container.right .date {
+        left: 0;
+        right: 0;
+    }
+    .container.left .icon,
+    .container.right .icon {
+        left: 0;
+        right: 0;
+    }
+}
+
 @media (max-width: 767.98px) {
     .timeline::after {
         left: 90px;
@@ -195,6 +210,34 @@ body {
     }
     .container.left .icon,
     .container.right .icon {
-        /* Remove extra styles if necessary */
+        left: 10px;
     }
+}
+
+@media (max-width: 480px) {
+    .timeline {
+        padding: 15px 5px;
+    }
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 20px;
+    }
+    .container.left .date,
+    .container.right .date {
+        left: 0;
+        right: 0;
+    }
+    .container.left .icon,
+    .container.right .icon {
+        left: 5px;
+    }
+    .timeline-image {
+        width: 80px;
+    }
+}
+
+.ship {
+    display: grid;
+    justify-content: center;
 }

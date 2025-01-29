@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./style.css"; // Import your CSS file
+import MarqueeComponent from "./MarqueeComponent";
 
 export default function Navbar() {
   const [isSidebarVisible, setSidebarVisible] = useState(false);
@@ -7,6 +8,7 @@ export default function Navbar() {
   return (
     <nav>
       {/* Sidebar */}
+      <MarqueeComponent />
       <ul className={`sidebar ${isSidebarVisible ? "show" : "hide"}`}>
         <li onClick={() => setSidebarVisible(false)}>
           <a href="#">
