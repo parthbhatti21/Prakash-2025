@@ -1,3 +1,4 @@
+// import AboutUs from "./Aboutus";
 import Navbar from "./Navbar";
 import Star from "./Star";
 import Timer from "./Timer";
@@ -8,6 +9,7 @@ export default function Homepage(){
         <Star/>
         <Navbar/>
         <Timer/>
+        {/* <AboutUs/> */}
         </>
     )
 }
