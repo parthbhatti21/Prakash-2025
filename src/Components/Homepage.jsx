@@ -5,18 +5,29 @@ import Timeline from "./Timeline";
 import Timer from "./Timer";
 import './styles/timeline.css'
 import ship from "../assets/ship1.png"
-export default function Homepage(){
-    return(
+import system from '../assets/system.mp4';
+import SolarSystem from "./SolarSystem";
+export default function Homepage() {
+    return (
         <>
-        <Star/>
-        <Navbar/>
-        <Timer/>
-        <div className="ship">
-            <img src={ship} alt="" height={"180px"} width={"200px"} />
-        </div>
-        <Timeline />
-        
-        {/* <AboutUs/> */}
+            <div className="homepage-container">
+                <div className="video-background">
+                    <video className="video" autoPlay loop muted>
+                        <source src={system} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <Star />
+                <Navbar />
+                <Timer />
+
+                {/* Video Section */}
+
+                {/* <div className="ship">
+                    <img src={ship} alt="" height={"180px"} width={"200px"} />
+                </div> */}
+                <Timeline />
+            </div>
         </>
-    )
+    );
 }

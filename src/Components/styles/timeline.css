@@ -10,12 +10,50 @@ body {
     cursor: url('../../assets/rocketCursor1.png'), auto;
 }
 
+
+/* timeline.css */
+
+
+/* Full-screen video background */
+
+.video-background video {
+    position: fixed;
+    /* Fixed so it stays in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Full viewport width */
+    height: 100vh;
+    /* Full viewport height */
+    object-fit: cover;
+    /* Ensures the video covers the screen */
+    z-index: -1;
+    /* Place behind all other content */
+}
+
+.homepage-container {
+    position: relative;
+    /* Ensures the content is above the video */
+    z-index: 1;
+}
+
 .timeline {
     position: relative;
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
     padding: 15px 0;
+    opacity: 0.8;
+    /* Slight transparency to blend well */
+}
+
+.timeline .green-line {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 3px;
+    height: 100%;
+    z-index: 1;
 }
 
 .timeline-image {
@@ -45,6 +83,24 @@ body {
     margin-left: -1px;
 }
 
+.timeline-entry-image {
+    width: 100%;
+    max-width: 150px;
+    /* Adjust size */
+    margin: 0 auto 10px;
+    /* Center it and add space below */
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-entry-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Soft rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .container {
     padding: 15px 30px;
     position: relative;
@@ -66,7 +122,7 @@ body {
     height: 16px;
     top: calc(50% - 8px);
     right: -8px;
-    background: #ffffff;
+    background: #01a7f4;
     border: 2px solid #006E51;
     border-radius: 16px;
     z-index: 1;
@@ -138,17 +194,34 @@ body {
 
 .container .content {
     padding: 30px 90px 30px 30px;
-    background: #F5F5F5;
+    background: rgba(3, 211, 238, 0.2);
+    /* Transparent Cyan */
+    border: 2px solid rgba(3, 211, 238, 0.6);
+    /* Subtle border */
+    opacity: 1;
     position: relative;
     border-radius: 0 500px 500px 0;
+    box-shadow: 0 0 10px rgba(3, 211, 238, 0.3);
+    /* Soft glow */
+    transition: all 0.3s ease-in-out;
+}
+
+.container .content:hover {
+    background: rgba(3, 211, 238, 0.35);
+    /* Slightly stronger cyan */
+    box-shadow: 0 0 20px rgba(3, 211, 238, 0.8);
+    /* Intense glow */
+    border-color: rgba(3, 211, 238, 1);
 }
 
 .container.right .content {
-    padding: 30px 30px 30px 90px;
+    padding: 30px 30px 30px 80px;
+    /* Increased left padding to move text away from the circle */
     border-radius: 500px 0 0 500px;
 }
 
-.container .content h2 {
+
+/* .container .content h2 {
     margin: 0 0 10px 0;
     font-size: 18px;
     font-weight: normal;
@@ -160,6 +233,12 @@ body {
     font-size: 16px;
     line-height: 22px;
     color: #000000;
+} */
+
+.container .content h2,
+.container .content p {
+    color: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
 
@@ -240,4 +319,112 @@ body {
 .ship {
     display: grid;
     justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+    /* Position the astronaut image to follow the green line on the left */
+    .timeline-image {
+        position: fixed;
+        top: 700px;
+        /* Place astronaut at the start of the green line */
+        left: 30px;
+        /* Align the astronaut with the green line */
+        transform: translateX(-50%);
+        z-index: 3;
+        pointer-events: none;
+        width: 80px;
+        /* Adjust astronaut size */
+        border-radius: 50%;
+        /* Circular astronaut */
+    }
+    .ship {
+        display: grid;
+        justify-content: center;
+        margin-right: 250px;
+    }
+    /* The green vertical line on the left side */
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 3px;
+        /* Thin green line */
+        background: #006E51;
+        /* Green color */
+        top: 0;
+        bottom: 0;
+        left: 30px;
+        /* Place the green line to the left */
+        transform: translateX(-50%);
+        /* Center the line */
+    }
+    /* Adjust the container's date and content to ensure they do not overlap with the astronaut */
+    .container .date {
+        position: absolute;
+        display: inline-block;
+        top: calc(50% - 8px);
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: #006E51;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        z-index: 2;
+        left: 60px;
+        /* Ensure the date is visible */
+    }
+    .container.left .date,
+    .container.right .date {
+        left: 60px;
+        /* Adjust for visibility */
+    }
+    /* Adjust icon position to avoid overlap with astronaut */
+    .container .icon {
+        position: absolute;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        padding: 9px 0;
+        top: calc(50% - 20px);
+        background: #0a0a2e;
+        border: 2px solid #006E51;
+        border-radius: 40px;
+        text-align: center;
+        font-size: 18px;
+        color: #006E51;
+        z-index: 2;
+        left: 30px;
+        /* Adjust so it's not overlapping the astronaut */
+    }
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+/* Adjust for mobile screens */
+
+@media (max-width: 768px) {
+    .video-background {
+        width: 100%;
+        height: auto;
+    }
+    .video {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        /* Adjust the height as needed */
+    }
 }
