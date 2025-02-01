@@ -11,8 +11,8 @@ body {
 
 /* 🌠 Center Content Properly */
 .container1 {
-  max-width: 1200px;
-  margin: 0 auto; /* Centers content */
+  
+  margin-top:100px; /* Centers content */
   padding: 20px;
   text-align: center;
 }
