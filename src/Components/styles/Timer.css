@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+/* General Styles */
+
 .timer-container {
     position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 160px;
-    /* Slightly increased width */
-    height: 90px;
-    /* Slightly increased height */
+    top: 100px;
+    left: 20px;
+    width: 410px;
+    /* Slightly wider to accommodate floating effects */
+    height: 120px;
+    /* Slightly taller to accommodate floating effects */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,49 +19,157 @@
     /* Semi-transparent background */
     font-family: "Orbitron", sans-serif;
     border: 2px solid #00eaff;
-    box-shadow: 0px 0px 10px #00eaff;
-    border-radius: 10px;
-    padding: 5px;
+    /* Cool teal border */
+    box-shadow: 0px 0px 20px rgba(0, 234, 255, 0.8);
+    /* Stronger glow effect */
+    border-radius: 15px;
+    padding: 15px;
     z-index: 1000;
     /* Keep it above other elements */
     overflow: hidden;
     /* Ensures text doesn't overflow */
-    white-space: nowrap;
-    /* Prevents text from wrapping */
+    animation: float 4s infinite ease-in-out;
+    /* Floating animation */
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+        /* Moves the container up and down */
+    }
 }
 
 .timer-heading {
-    font-size: 0.9rem;
-    /* Reduced size */
+    font-size: 1.1rem;
+    /* Slightly larger */
     color: #00eaff;
-    text-shadow: 0 0 5px #00eaff;
-    letter-spacing: 1px;
-    margin-bottom: 3px;
+    /* Cool teal color */
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    /* Stronger glow effect */
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    animation: glow 2s infinite alternate;
+    /* Glow animation */
 }
 
-.timer-countdown {
-    font-size: 1rem;
-    /* Adjusted to fit */
-    color: red;
-    text-shadow: 0 0 5px red;
-    font-weight: bold;
-    letter-spacing: 1px;
-    animation: blink 1s infinite alternate;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    /* Ensure it fits within the box */
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-@keyframes blink {
+@keyframes glow {
     0% {
-        opacity: 1;
+        text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
     }
     100% {
-        opacity: 0.8;
+        text-shadow: 0 0 20px #00eaff, 0 0 30px #00eaff;
+    }
+}
+
+
+/* Timer Grid Layout */
+
+.timer-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    /* More space between items */
+    width: 100%;
+}
+
+.timer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: float 3s infinite ease-in-out;
+    /* Floating animation for each item */
+}
+
+.timer-value {
+    font-size: 1.4rem;
+    /* Larger size */
+    color: #00ffcc;
+    /* Cool cyan color for the numbers */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    /* Stronger glow effect */
+    font-weight: bold;
+    animation: glow 2s infinite alternate;
+    /* Glow animation */
+}
+
+.timer-label {
+    font-size: 0.9rem;
+    /* Slightly larger */
+    color: #00eaff;
+    /* Cool teal color for the labels */
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    /* Stronger glow effect */
+    text-transform: uppercase;
+    animation: glow 2s infinite alternate;
+    /* Glow animation */
+}
+
+
+/* Floating Stars Background */
+
+.timer-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10.01%);
+    background-size: 20px 20px;
+    animation: stars 10s infinite linear;
+    /* Floating stars animation */
+    z-index: -1;
+}
+
+@keyframes stars {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+/* Mobile Responsiveness */
+
+@media (max-width: 768px) {
+    .timer-container {
+        width: 100%;
+        /* Full width on mobile */
+        max-width: 300px;
+        /* Limit maximum width */
+        height: auto;
+        /* Auto height to fit content */
+        padding: 15px;
+        /* Smaller padding */
+        top: 100px;
+        /* Adjust position */
+        left: 12%;
+        /* Center horizontally */
+        transform: translateX(-50%);
+        /* Center horizontally */
+    }
+    .timer-heading {
+        font-size: 1rem;
+        /* Smaller font size */
+        margin-bottom: 5px;
+        /* Smaller margin */
+    }
+    .timer-grid {
+        gap: 5px;
+        /* Smaller gap */
+    }
+    .timer-value {
+        font-size: 1.2rem;
+        /* Smaller font size */
+    }
+    .timer-label {
+        font-size: 0.8rem;
+        /* Smaller font size */
     }
 }

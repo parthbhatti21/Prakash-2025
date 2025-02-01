@@ -21,7 +21,7 @@ export default function Homepage() {
                 </div>
                 <Star />
                 <Navbar />
-                {/* <Timer /> */}
+                <Timer />
 
                 {/* Video Section */}
 
