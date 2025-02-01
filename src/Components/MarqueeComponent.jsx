@@ -19,21 +19,22 @@ const MarqueeComponent = () => {
   };
 
   return (
-    <div className="marquee-container" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-      <div className="marquee-text">
-        ⚡💥 Hurry! Flash Sale - 70% OFF for 24 Hours! 💥
-      </div>
-      {showButton && (
-        <button
-          className="buy-now-button"
-          style={{
-            transform: `translate(${buttonPosition.x}px, ${buttonPosition.y}px)`,
-          }}
-        >
-          Buy Now
-        </button>
-      )}
-    </div>
+    <></>
+    // <div className="marquee-container" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+    //   <div className="marquee-text">
+    //     ⚡💥 Hurry! Flash Sale - 70% OFF for 24 Hours! 💥
+    //   </div>
+    //   {showButton && (
+    //     <button
+    //       className="buy-now-button"
+    //       style={{
+    //         transform: `translate(${buttonPosition.x}px, ${buttonPosition.y}px)`,
+    //       }}
+    //     >
+    //       Buy Now
+    //     </button>
+    //   )}
+    // </div>
   );
 };
 

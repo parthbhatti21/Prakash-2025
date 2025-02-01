@@ -1,0 +1,180 @@
+/* 🌌 Full-Page Styling */
+
+
+/* 🎯 Centering the Component */
+
+.space-team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* 📌 Main Container */
+
+.container-spaceteam {
+    width: 90%;
+    max-width: 1100px;
+    padding: 30px;
+}
+
+
+/* 🚀 Buttons */
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* Fix Green Line Overlapping Issue */
+
+.timeline .green-line {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 3px;
+    height: 100%;
+    z-index: 1;
+}
+
+
+/* Strictly Hide Green Line in TeamSection */
+
+.team-section .green-line,
+.carousel .green-line {
+    display: none !important;
+}
+
+
+/* Increase Profile Image Size in Carousel */
+
+.profile-img {
+    width: 150px;
+    /* Increased size */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* Ensure Text in Carousel is White */
+
+.card h3,
+.card .role,
+.card p {
+    color: white !important;
+}
+
+.team-button {
+    padding: 14px 28px;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-button.active {
+    background-color: cyan;
+    color: black;
+}
+
+
+/* 👨‍🚀 Profile Card */
+
+.card {
+    background: #141414;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+/* .profile-img {
+    object-fit: cover;
+} */
+
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: white;
+}
+
+.role {
+    font-size: 16px;
+    color: cyan;
+    margin-bottom: 15px;
+}
+
+
+/* 🎠 Slick Carousel Customization */
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots li button:before {
+    color: white;
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 10;
+}
+
+
+/* Remove navigation buttons on mobile */
+
+
+/* Add spacing between cards */
+
+.slick-slide {
+    margin-top: 20px;
+}
+
+
+/* Remove navigation arrows on mobile */
+
+@media (max-width: 600px) {
+    .slick-arrow {
+        display: none !important;
+    }
+}
