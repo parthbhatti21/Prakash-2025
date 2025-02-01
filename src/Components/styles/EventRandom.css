@@ -194,7 +194,7 @@ body::before {
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5);
     margin: 0;
     letter-spacing: 3px;
-    background: linear-gradient(45deg, #33e7e7, #100050);
+    background: linear-gradient(45deg, #33e7e7);
     padding: 10px 20px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.6);
