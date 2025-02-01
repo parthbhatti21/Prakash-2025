@@ -129,33 +129,45 @@
 
 import styled from 'styled-components';
 import Sidd from '../assets/Sidd.jpeg';
+import { useState } from 'react';
 
 const Card = () => {
-  const people = [
-    {
-      name: "Siddharth Panchal",
-      image: Sidd,
-      github: "https://github.com/siddharth-09",
-      catogeory : "Developer"
+  const [activeTeam, setActiveTeam] = useState('core'); // State to track active team
 
-    },
-    {
-      name: "Dhaval Patel",
-      image: "",
-      github: "https://github.com/janesmith"
-    },
-    {
-      name: "Malak",
-      image: "",
-      github: "https://github.com/janesmith",
-      catogeory : "error 420 ......"
-
-    },
-    // Add more profiles here
+  // Core Team Data
+  const coreTeam = [
+    { name: "Siddharth Panchal", image: Sidd, category: "Core Team" },
+    { name: "Dhaval Patel", image: "https://via.placeholder.com/150", category: "Core Team" },
+    { name: "Malak", image: "https://via.placeholder.com/150", category: "Core Team" },
   ];
+
+  // Developer Team Data
+  const developerTeam = [
+    { name: "Alex Cipher", image: "https://via.placeholder.com/150", category: "Developer" },
+    { name: "Maya Binary", image: "https://via.placeholder.com/150", category: "Developer" },
+    { name: "Zack Matrix", image: "https://via.placeholder.com/150", category: "Developer" },
+  ];
+
+  // Determine which team to display
+  const people = activeTeam === 'core' ? coreTeam : developerTeam;
 
   return (
     <StyledWrapper>
+      {/* Buttons */}
+      <div className="button-group">
+        <button
+          className={`team-button ${activeTeam === 'core' ? 'active' : ''}`}
+          onClick={() => setActiveTeam('core')}
+        >
+          Core Team
+        </button>
+        <button
+          className={`team-button ${activeTeam === 'developer' ? 'active' : ''}`}
+          onClick={() => setActiveTeam('developer')}
+        >
+          Developer Team
+        </button>
+      </div>
       {people.map((person, index) => (
         <div className="container noselect" key={index}>
           <div className="canvas">
@@ -206,6 +218,50 @@ const Card = () => {
 
 
 const StyledWrapper = styled.div`
+ .button-group {
+  width:100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .team-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #555;
+    }
+
+    &.active {
+      background-color: #00ffaa;
+      color: #000;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 50%;
+  }
  display: flex;
   flex-wrap: wrap; /* Allow cards to wrap to the next line */
   justify-content: center; /* Center cards horizontally */
