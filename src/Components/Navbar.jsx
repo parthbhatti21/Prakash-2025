@@ -70,7 +70,7 @@
 
 // export default Navbar;
 
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import "./styles/navbar.css";
 import logoImage from "../assets/logo1.png"; // Adjust the path to your image
 

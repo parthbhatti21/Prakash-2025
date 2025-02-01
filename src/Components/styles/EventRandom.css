@@ -4,22 +4,9 @@ h1, h2, h3, p {
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
-/* 🌌 Header Styling - Cosmic Theme */
-.events-header {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5);
-    margin-top: 40px;
-    margin-bottom: 30px;
-    letter-spacing: 5px;
-    background: linear-gradient(45deg, #ff00ff, #007bff);
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 0, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.6);
-  }
+
+
+  
 /* 🌌 Button Styles - Cosmic Glow */
 .button-wrapper {
     display: flex;
@@ -180,4 +167,91 @@ body::before {
     background: url("https://www.transparenttextures.com/patterns/stardust.png");
     opacity: 0.2;
     animation: stars 8s infinite linear;
+}
+/* ------------------------------------------------------------- */
+/* EventBar home page */
+/* ------------------------------------------------------------- */
+.homeEventBar {
+    position: relative;
+    border: 4px solid rgba(255, 255, 0, 0.5); /* Yellow border with transparency */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.5); /* Glowing border effect */
+    margin: 20px 0;
+}
+
+/* 🌌 Header Styling - Cosmic Theme */
+.events-header {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5);
+    margin: 0;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg, #33e7e7, #100050);
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.6);
+    flex: 1; /* Takes up remaining space */
+    margin-right: 20px; /* Adds spacing between header and button */
+}
+
+/* 🌟 View More Button - Cosmic Glow */
+.view-more {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+    background: linear-gradient(45deg, #ff00ff, #007bff);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.6);
+}
+
+.view-more:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.9), 0 0 50px rgba(0, 255, 255, 0.8);
+}
+
+/* 📱 Responsive Design (Mobile-Friendly) */
+@media (max-width: 768px) {
+    .homeEventBar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .events-header {
+        font-size: 1.8rem;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .view-more {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .events-header {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+    }
+
+    .view-more {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
 }

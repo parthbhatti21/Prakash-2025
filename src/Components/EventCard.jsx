@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "../Components/styles/EventcardStyle.css"
 import CrossImg from "../assets/Cross.png";
+import Navbar from "./Navbar";
+
 
 // Event data
 const events = [
@@ -45,6 +47,8 @@ export default function EventCard() {
   const filteredEvents = filter === "All" ? events : events.filter(event => event.category === filter);
 
   return (
+    <>
+    <Navbar/>
     <div className="container1">
       {/* Filter Buttons */}
       <div className="button-wrapper1">
@@ -57,11 +61,11 @@ export default function EventCard() {
       {/* Event Cards */}
       <div className="card-container">
         {filteredEvents.map(event => (
-          <div
+            <div
             key={event.id}
             className={`card c${event.id} ${event.category}`}
             onClick={() => showCardDetails(event.id)}
-          >
+            >
             <h2>{event.title}</h2>
           </div>
         ))}
@@ -69,7 +73,7 @@ export default function EventCard() {
 
       {/* Event Details Modal */}
       {selectedEvent && (
-        <div className="cardDetails">
+          <div className="cardDetails">
           <div className="animated-border-box-glow"></div>
           <div className="animated-border-box">
             <img
@@ -77,11 +81,12 @@ export default function EventCard() {
               className="cross"
               alt="Close"
               onClick={hideCardDetails}
-            />
+              />
             <h3>{events.find(event => event.id === selectedEvent).details}</h3>
           </div>
         </div>
       )}
     </div>
+      </>
   );
 }

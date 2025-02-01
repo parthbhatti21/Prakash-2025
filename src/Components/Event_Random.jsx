@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router";
 import "../Components/styles/EventRandom.css"
 const shuffleArray = (array) => {
     let shuffled = [...array];
@@ -31,18 +32,25 @@ const events = [
     { id: 20, category: "NonTech", title: "BGMI Conquest", details: "Land. Fight. Dominate. The Battleground is Yours! The battle begins at BGMI, where warriors collide in an intense fight for survival!" },
     { id: 21, category: "NonTech", title: "Midnight Mystery", details: "“Face the dark, Escape the maze, Conquer the Mystery.” Step into a world of mystery and darkness with Challenges! This non-tech event is designed to test your instincts, teamwork, and problem-solving skills." },
   ];
-
+const viewMore =  { id: 22, category: "ViewMe", title: "View All...", details: "Jovo mane" }; 
   export default function Event_Random(){
     const randomEvents = shuffleArray(events).slice(0,3);
+    randomEvents.push(viewMore);
+    console.log(randomEvents)
+    const navigate = useNavigate();
     return(
         <>
-        
+        <div className="homeEventBar">
         <h1 className="events-header">Events</h1>
+        </div>
         <div className="card-container">
         {randomEvents.map(event => (
           <div
             key={event.id}
             className={`card c${event.id} ${event.category}`}
+            onClick={()=>{
+              navigate('/events')
+            }}
           >
             <h2>{event.title}</h2>
           </div>
