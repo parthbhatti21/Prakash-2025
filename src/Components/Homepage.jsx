@@ -29,7 +29,7 @@ export default function Homepage() {
                     <img src={ship} alt="" height={"180px"} width={"200px"} />
                 </div> */}
                 <Timeline />
-                <SpaceTeam />
+                <TeamSection />
             </div>
         </>
     );
