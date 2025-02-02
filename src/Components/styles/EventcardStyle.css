@@ -1,330 +1,764 @@
 /* 🌌 Galaxy Background */
+
 body {
-  /* background: radial-gradient(circle at top, #1a002b, #0a001a); */
-  color: #ffffff;
-  font-family: "Orbitron", sans-serif;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+    /* background: radial-gradient(circle at top, #1a002b, #0a001a); */
+    color: #ffffff;
+    font-family: "Orbitron", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling */
 }
+
 
 /* 🌠 Center Content Properly */
+
 .container1 {
-  margin-top: 100px; /* Centers content */
-  padding: 20px;
-  text-align: center;
+    margin-top: 100px;
+    /* Centers content */
+    padding: 20px;
+    text-align: center;
 }
 
+
 /* 🚀 Filter Buttons */
+
 .button-wrapper1 {
-  display: flex;
-  flex-wrap: wrap; /* Allows buttons to wrap on small screens */
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows buttons to wrap on small screens */
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
 }
 
 .button-wrapper1 button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(45deg, #ff00ff, #007bff);
-  color: white;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
-  position: relative;
-  z-index: 100;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff00ff, #007bff);
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+    position: relative;
+    z-index: 100;
 }
 
 .button-wrapper1 button:hover {
-  box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.8);
-  transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.8);
+    transform: scale(1.05);
 }
 
+
 /* 🎇 Event Cards */
+
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(220px, 1fr)
-  ); /* Adjust grid for responsiveness */
-  gap: 20px;
-  padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(220px, 1fr));
+    /* Adjust grid for responsiveness */
+    gap: 20px;
+    padding: 0 20px;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 15px;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8),
-    0px 0px 40px rgba(0, 255, 255, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8), 0px 0px 40px rgba(0, 255, 255, 0.5);
 }
+
 
 /* 🌟 Enlarged Full-Screen Event Details */
+
 .cardDetails {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(10, 10, 30, 0.95); /* Darker background for readability */
-  backdrop-filter: blur(12px);
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-  color: #ffffff;
-  max-width: 90vw; /* Covers most of the screen width */
-  max-height: 90vh; /* Covers most of the screen height */
-  width: 90%;
-  height: 90%;
-  overflow-y: auto; /* Allows scrolling if content is too long */
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(10, 10, 30, 0.95);
+    /* Darker background for readability */
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    max-width: 90vw;
+    /* Covers most of the screen width */
+    max-height: 90vh;
+    /* Covers most of the screen height */
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    /* Allows scrolling if content is too long */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+
 /* 🚀 Close Button - Adjusted for Larger Modal */
+
 .cross {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 60px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .cross:hover {
-  transform: rotate(90deg) scale(1.2);
+    transform: rotate(90deg) scale(1.2);
 }
 
+
 /* 🛠️ Responsive Adjustments */
+
 @media (max-width: 768px) {
-  .button-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .button-wrapper button {
-    width: 80%;
-    text-align: center;
-  }
-
-  .card-container {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(150px, 1fr)
-    ); /* Smaller cards for small screens */
-  }
-
-  .cardDetails {
-    overflow: hidden;
-    width: 95%;
-    height: 95%;
-    max-width: 95vw;
-    max-height: 95vh;
-    padding: 20px;
-  }
+    .button-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-wrapper button {
+        width: 80%;
+        text-align: center;
+    }
+    .card-container {
+        grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
+        /* Smaller cards for small screens */
+    }
+    .cardDetails {
+        overflow: hidden;
+        width: 95%;
+        height: 95%;
+        max-width: 95vw;
+        max-height: 95vh;
+        padding: 20px;
+    }
 }
 
 @media (max-width: 480px) {
-  .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-
-  .button-wrapper button {
-    width: 100%;
-  }
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .button-wrapper button {
+        width: 100%;
+    }
 }
 
+
 /* 🌟 Twinkling Stars Effect */
+
 @keyframes stars {
-  0% {
-    opacity: 0.6;
-    transform: translateY(0px);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(-2px);
-  }
-  100% {
-    opacity: 0.6;
-    transform: translateY(0px);
-  }
+    0% {
+        opacity: 0.6;
+        transform: translateY(0px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-2px);
+    }
+    100% {
+        opacity: 0.6;
+        transform: translateY(0px);
+    }
 }
 
 body::before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: url("https://www.transparenttextures.com/patterns/stardust.png");
-  opacity: 0.2;
-  animation: stars 8s infinite linear;
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.2;
+    animation: stars 8s infinite linear;
 }
+
+
 /* ------------------------------------------------------- */
+
+
 /* Event card image styling */
+
+
 /* ------------------------------------------------------- */
+
 
 /* Vr card */
+
 .event-12 {
-  opacity: 40%;
-  z-index: -1;
-  position: absolute;
-  left: -30%;
-  width: 150%;
-  aspect-ratio: 1/1;
-  bottom: 0%;
-}
-@media (min-width: 770px) {
-  .event-12 {
-    width: 50%;
-    left: 25%;
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -30%;
+    width: 150%;
     aspect-ratio: 1/1;
     bottom: 0%;
-  }
-}
-/* Robo Race */
-.event-3 {
-  overflow: hidden;
-  opacity: 40%;
-  z-index: -1;
-  position: absolute;
-  /* left: -20%;
-  width: 130%;
-  aspect-ratio: 1/1; */
-  /* bottom: 0%; */
-}
-@media (max-width: 720px) {
-  .event-3 {
-    width: 100%;
-    left: 0%;
-    aspect-ratio: 1/1;
-    bottom: 20%;
-  }
-}
-@media (min-width: 770px) and (max-width: 1000px) {
-  .event-3 {
-    width: 90%;
-    left: 5%;
-    aspect-ratio: 1/1;
-    bottom: 0%;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1500px) {
-  .event-3 {
-    width: 90%;
-    left: 5%;
-    aspect-ratio: 1/1;
-    bottom: -10%;
-  }
-}
-@media (min-width: 1500px) {
-  .event-3 {
-    width: 80%;
-    left: 10%;
-    aspect-ratio: 1/1;
-    bottom: -30%;
-  }
-}
-/* Bits and Bytes */
-.event-4{
-  opacity: 40%;
-  z-index: -1;
-  position: absolute;
-  left: -15%;
-  width: 130%;
-  aspect-ratio: 1/1;
-  bottom: 0%;
-}
-@media (min-width: 700px) and (max-width: 1000px) {
-  .event-4 {
-    width: 90%;
-    left: 5%;
-    aspect-ratio: 1/1;
-    bottom: -10%;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1500px) {
-  .event-4 {
-    width: 90%;
-    left: 5%;
-    aspect-ratio: 1/1;
-    bottom: -15%;
-  }
-}
-@media (min-width: 1500px) {
-  .event-4 {
-    width: 80%;
-    left: 10%;
-    aspect-ratio: 1/1;
-    bottom: -30%;
-  }
 }
 
-/* Aeroplane Modelling */
-.event-2{
-  opacity: 40%;
-  z-index: -1;
-  position: absolute;
-  left: -13%;
-  width: 120%;
-  aspect-ratio: 1/1;
-  bottom: 0%;
+@media (min-width: 770px) {
+    .event-12 {
+        width: 50%;
+        left: 25%;
+        aspect-ratio: 1/1;
+        bottom: 0%;
+    }
 }
+
+
+/* Robo Race */
+
+.event-3 {
+    overflow: hidden;
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    /* left: -20%;
+  width: 130%;
+  aspect-ratio: 1/1; */
+    /* bottom: 0%; */
+}
+
+@media (max-width: 720px) {
+    .event-3 {
+        width: 100%;
+        left: 0%;
+        aspect-ratio: 1/1;
+        bottom: 20%;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1000px) {
+    .event-3 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: 0%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+    .event-3 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .event-3 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -30%;
+    }
+}
+
+
+/* Bits and Bytes */
+
+.event-4 {
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -15%;
+    width: 130%;
+    aspect-ratio: 1/1;
+    bottom: 0%;
+}
+
 @media (min-width: 700px) and (max-width: 1000px) {
-  .event-2 {
-    width: 90%;
-    left: 5%;
-    aspect-ratio: 1/1;
-    bottom: -10%;
-  }
+    .event-4 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
 }
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+    .event-4 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -15%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .event-4 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -30%;
+    }
+}
+
+
+/* Aeroplane Modelling */
+
+.event-2 {
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
+    aspect-ratio: 1/1;
+    bottom: 0%;
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .event-2 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
+}
+
 @media (min-width: 1000px) and (max-width: 1300px) {
-  .event-2 {
-    width: 90%;
-    left: 5%;
-    aspect-ratio: 1/1;
-    bottom: -20%;
-  }
+    .event-2 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 1300px) and (max-width: 1500px) {
-  .event-2 {
-    width: 80%;
-    left: 10%;
-    aspect-ratio: 1/1;
-    bottom: -20%;
-  }
+    .event-2 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 1500px) and (max-width: 2450px) {
-  .event-2 {
-    width: 65%;
-    left: 20%;
-    aspect-ratio: 1/1;
-    bottom: -20%;
-  }
+    .event-2 {
+        width: 65%;
+        left: 20%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 2450px) {
-  .event-2 {
-    width: 80%;
-    left: 10%;
+    .event-2 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
+}
+
+
+/* TreasureHunt */
+
+.event-9 {
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
     aspect-ratio: 1/1;
-    bottom: -10%;
-  }
+    bottom: 0%;
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .event-9 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+    .event-9 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 2450px) {
+    .event-9 {
+        width: 65%;
+        left: 20%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 2450px) {
+    .event-9 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
+}
+
+
+/* PopQuizz */
+
+.event-17 {
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
+    aspect-ratio: 1/1;
+    bottom: 0%;
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .event-17 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+    .event-17 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 2450px) {
+    .event-17 {
+        width: 65%;
+        left: 20%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 2450px) {
+    .event-17 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
+}
+
+
+/* PopQuizz */
+
+.event-5 {
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
+    aspect-ratio: 1/1;
+    bottom: 0%;
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .event-5 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+    .event-5 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 2450px) {
+    .event-5 {
+        width: 65%;
+        left: 20%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 2450px) {
+    .event-5 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
+}
+
+
+/* Cricket */
+
+.event-14 {
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
+    aspect-ratio: 1/1;
+    bottom: 0%;
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .event-14 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+    .event-14 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 2450px) {
+    .event-14 {
+        width: 65%;
+        left: 20%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 2450px) {
+    .event-14 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
+}
+
+
+/* Infinity Quest */
+
+.event-19 {
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
+    aspect-ratio: 1/1;
+    bottom: 0%;
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .event-19 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+    .event-19 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 2450px) {
+    .event-19 {
+        width: 65%;
+        left: 20%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 2450px) {
+    .event-19 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
+}
+
+
+/* IOT */
+
+.event-1 {
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
+    aspect-ratio: 1/1;
+    bottom: 0%;
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .event-1 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+    .event-1 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 2450px) {
+    .event-1 {
+        width: 65%;
+        left: 20%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 2450px) {
+    .event-1 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
+}
+
+
+/* Maze */
+
+.event-21 {
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
+    aspect-ratio: 1/1;
+    bottom: 0%;
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .event-21 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+    .event-21 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 2450px) {
+    .event-21 {
+        width: 65%;
+        left: 20%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 2450px) {
+    .event-21 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
+}
+
+
+/* Cadathon */
+
+.event-8 {
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
+    aspect-ratio: 1/1;
+    bottom: 0%;
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .event-8 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+    .event-8 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 2450px) {
+    .event-8 {
+        width: 65%;
+        left: 20%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 2450px) {
+    .event-8 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
 }

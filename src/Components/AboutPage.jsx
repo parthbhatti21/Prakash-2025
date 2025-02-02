@@ -1,10 +1,13 @@
 
 
 import "../Components/styles/AboutPage.css";
+import Navbar from "./Navbar";
 import { Card } from "./ui/Card";
 
 const AboutPage = () => {
   return (
+    <>
+    <Navbar />
     <div className="cyberpunk-bg">
       <div className="container">
         <div className="main-grid">
@@ -32,6 +35,7 @@ const AboutPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

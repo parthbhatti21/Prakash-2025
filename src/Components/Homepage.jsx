@@ -9,6 +9,7 @@ import TeamSection from "./TeamSection";
 import Event_Random from "./Event_Random";
 import Footer from "./Footer";
 import Sponsor from "./Sponsor";
+import AboutPage from "./AboutPage";
 export default function Homepage() {
     return (
         <>
@@ -21,6 +22,9 @@ export default function Homepage() {
                 </div>
                 <Star />
                 <Navbar />
+
+
+
                 <Timer />
 
                 {/* Video Section */}
@@ -29,8 +33,12 @@ export default function Homepage() {
                     <img src={ship} alt="" height={"180px"} width={"200px"} />
                 </div> */}
                 <Timeline />
-                <Event_Random/>
-                <TeamSection />
+                <div id="events-section">
+                    <Event_Random />
+                </div>
+                <div id="team-section">
+                    <TeamSection />
+                </div>
                 <Sponsor />
                 <Footer />
             </div>
