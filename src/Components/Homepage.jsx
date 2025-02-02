@@ -9,6 +9,7 @@ import TeamSection from "./TeamSection";
 import Event_Random from "./Event_Random";
 import Footer from "./Footer";
 import Sponsor from "./Sponsor";
+import AboutPage from "./AboutPage";
 export default function Homepage() {
     return (
         <>

@@ -7,13 +7,25 @@ import RoboRace from "../assets/EventCardSvg/Robo-Race.png";
 import Bits_Bytes from "../assets/EventCardSvg/Bits&Bytes.png";
 import Viman from "../assets/EventCardSvg/ArtAeroPlaneModeling.png";
 import TreasureHunt from "../assets/EventCardSvg/TreasureHunt.png";
-
+import PopCorn from "../assets/EventCardSvg/PopQuiz.png";
+import AiDesign from "../assets/EventCardSvg/AiDesign.png";
+import Cricket from "../assets/EventCardSvg/Cricket.png";
+import Pirate2 from "../assets/EventCardSvg/Pirate2.png";
+import IOTCircuit from "../assets/EventCardSvg/IOT.png";
+import Maze from "../assets/EventCardSvg/Maze.png";
+import RocketBlueprint from "../assets/EventCardSvg/RocketBlueprint.png";
+import PUBG from "../assets/EventCardSvg/PUBG.png";
+import Auction from "../assets/EventCardSvg/Auction.png";
+import Stonk from "../assets/EventCardSvg/MemeForTrade.png";
+import ShareMarket from "../assets/EventCardSvg/MemeShareMarke.png";
 // Event data
 const events = [
   {
     id: 1,
     category: "Workshop",
     title: "IOT Workshop",
+    img: IOTCircuit,
+
     details:
       "Dive into the world of IoT at Prakarsh25 with an engaging hands-on workshop! Master sensors like distance sensors and bring your ideas to life with real-time applications.",
   },
@@ -22,6 +34,7 @@ const events = [
     category: "Workshop",
     title: "The Art Of Aero Modelling",
     img: Viman,
+
     details:
       "Dive into the world of aerodynamics and innovation! Join our hands-on workshop where you’ll learn to design and build an RC plane from scratch.",
   },
@@ -45,6 +58,7 @@ const events = [
     id: 5,
     category: "Tech",
     title: "Designverse with AI",
+    img: AiDesign,
     details:
       "Step into an exciting three-round creative showdown! Design a stunning logo, generate mesmerizing AI visuals based on prompts, and craft a striking advertisement banner while delivering a persuasive pitch.",
   },
@@ -52,6 +66,7 @@ const events = [
     id: 6,
     category: "Tech",
     title: "Trade X- Tech and more",
+    img: Stonk,
     details:
       "Experience the thrill of trading in our unique technology-driven event! Compete in teams, answer tech-centric questions to strategically boost your share prices, and emerge as the ultimate market leader with the highest shares.",
   },
@@ -66,6 +81,7 @@ const events = [
     id: 8,
     category: "Tech",
     title: "CADATHON",
+    img: RocketBlueprint,
     details:
       "Gear up for CADATHON 2025! Begin with an expert lecture to gain insights and sharpen your skills in AutoCAD (2D) and Fusion 360 (3D). Then, dive into an exciting competition where your creativity and innovation will take center stage.",
   },
@@ -81,6 +97,7 @@ const events = [
     id: 10,
     category: "Tech",
     title: "¢rypto $howdown",
+    img: ShareMarket,
     details:
       "Join CryptoShowdown 2025, the ultimate event for crypto enthusiasts, traders, and innovators. Explore bold strategies, cutting-edge ideas, and the future of digital finance. Trade dummy currencies to make real money.",
   },
@@ -109,6 +126,7 @@ const events = [
     id: 14,
     category: "NonTech",
     title: "Box Cricket",
+    img: Cricket,
     details:
       "Step into the adrenaline-filled event of Box Cricket at PRAKARSH 2025! Experience the thrill of fast-paced cricket in a compact arena where strategy meets action.",
   },
@@ -130,12 +148,14 @@ const events = [
     id: 17,
     category: "NonTech",
     title: "POPCORN QUIZZY",
+    img: PopCorn,
     details:
       "FUN, BRAIN, SMILE ACTION!! GET READY TO BRING YOUR A-GAME TO POPCORN QUIZZY, WHERE EVERY QUESTION IS A BLOCKBUSTER AND EVERY BUZZ IS A HIT!",
   },
   {
     id: 18,
     category: "NonTech",
+    img: Auction,
     title: "IPL Auction",
     details:
       "“Think, Bid, Win: Step into the Excitement of IPL Auction Strategy!” Experience the thrill of cricket strategy and team-building at our IPL Auction Challenge!",
@@ -144,6 +164,7 @@ const events = [
     id: 19,
     category: "NonTech",
     title: "Infinity Quest",
+    img: Pirate2,
     details:
       "“A treasure hunt to the universe.” Get ready for “Infinity Quest,” an electrifying Marvel-themed treasure hunt with an engineering twist!",
   },
@@ -151,6 +172,7 @@ const events = [
     id: 20,
     category: "NonTech",
     title: "BGMI Conquest",
+    img: PUBG,
     details:
       "Land. Fight. Dominate. The Battleground is Yours! The battle begins at BGMI, where warriors collide in an intense fight for survival!",
   },
@@ -158,6 +180,7 @@ const events = [
     id: 21,
     category: "NonTech",
     title: "Midnight Mystery",
+    img: Maze,
     details:
       "“Face the dark, Escape the maze, Conquer the Mystery.” Step into a world of mystery and darkness with Challenges! This non-tech event is designed to test your instincts, teamwork, and problem-solving skills.",
   },
@@ -206,9 +229,12 @@ export default function EventCard() {
               onClick={() => showCardDetails(event.id)}
             >
               <h2>{event.title}</h2>
+              
             </div>
           ))}
         </div>
+{/* Floating Register Button */}
+<button className="floating-register-button">Register</button>
 
         {/* Event Details Modal */}
         {selectedEvent && (
