@@ -18,11 +18,17 @@
     box-shadow: 0px 0px 20px rgba(0, 234, 255, 0.8);
     border-radius: 15px;
     padding: 15px;
-    z-index: 1000; /* Lower than the navbar and sidebar */
+    z-index: 1000;
     overflow: hidden;
     animation: float 4s infinite ease-in-out;
 }
 
+.orbitron-font {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+}
+
+/* Floating animation */
 @keyframes float {
     0%,
     100% {
@@ -42,6 +48,7 @@
     animation: glow 2s infinite alternate;
 }
 
+/* Glowing effect */
 @keyframes glow {
     0% {
         text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
@@ -115,7 +122,7 @@
         top: 100px;
         left: 12%;
         transform: translateX(-50%);
-        z-index: 1000; /* Ensure it stays below the navbar and sidebar */
+        z-index: 1000;
     }
     .timer-heading {
         font-size: 1rem;
@@ -130,4 +137,21 @@
     .timer-label {
         font-size: 0.8rem;
     }
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #00eaff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.close-btn:hover {
+    color: #ff0000;
+    transform: scale(1.2);
 }
