@@ -125,7 +125,7 @@ const Navbar = () => {
             navigate("/");
             window.scrollTo(0, 0);
           }}>HOME</li>
-          <li className="nav-item">ABOUT</li>
+          <li className="nav-item" onClick={()=>{navigate('/aboutus')}}>ABOUT</li>
           <li className="nav-item" onClick={() => scrollToSection('events-section')}>
           EVENTS
         </li>

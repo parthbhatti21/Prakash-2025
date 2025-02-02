@@ -229,9 +229,12 @@ export default function EventCard() {
               onClick={() => showCardDetails(event.id)}
             >
               <h2>{event.title}</h2>
+              
             </div>
           ))}
         </div>
+{/* Floating Register Button */}
+<button className="floating-register-button">Register</button>
 
         {/* Event Details Modal */}
         {selectedEvent && (

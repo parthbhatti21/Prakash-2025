@@ -36,7 +36,7 @@ const viewMore =  { id: 22, category: "ViewMe", title: "View All...", details: "
   export default function Event_Random(){
     const randomEvents = shuffleArray(events).slice(0,3);
     randomEvents.push(viewMore);
-    console.log(randomEvents)
+    // console.log(randomEvents)
     const navigate = useNavigate();
     return(
         <>
@@ -53,6 +53,9 @@ const viewMore =  { id: 22, category: "ViewMe", title: "View All...", details: "
             }}
           >
             <h2>{event.title}</h2>
+            {/* Floating Register Button */}
+<button className="floating-register-button">Register</button>
+
           </div>
         ))}
       </div>
