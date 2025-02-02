@@ -70,7 +70,7 @@
 
 // export default Navbar;
 
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import "./styles/navbar.css";
 import logoImage from "../assets/logo1.png"; // Adjust the path to your image
 
@@ -109,7 +109,6 @@ const Navbar = () => {
           <li className="nav-item">ABOUT</li>
           <li className="nav-item">EVENTS</li>
           <li className="nav-item">HISTORY</li>
-          <li className="nav-item">OPEN R</li>
           <li className="nav-item">TEAM</li>
         </ul>
       </nav>
@@ -132,7 +131,6 @@ const Navbar = () => {
             <li className="nav-item" onClick={toggleMenu}>ABOUT</li>
             <li className="nav-item" onClick={toggleMenu}>EVENTS</li>
             <li className="nav-item" onClick={toggleMenu}>HISTORY</li>
-            <li className="nav-item" onClick={toggleMenu}>OPEN R</li>
             <li className="nav-item" onClick={toggleMenu}>TEAM</li>
           </ul>
         </div>

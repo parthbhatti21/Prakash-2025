@@ -6,6 +6,7 @@ import Timer from "./Timer";
 import './styles/timeline.css'
 import system from '../assets/system.mp4';
 import TeamSection from "./TeamSection";
+import Event_Random from "./Event_Random";
 export default function Homepage() {
     return (
         <>
@@ -26,6 +27,7 @@ export default function Homepage() {
                     <img src={ship} alt="" height={"180px"} width={"200px"} />
                 </div> */}
                 <Timeline />
+                <Event_Random/>
                 <TeamSection />
             </div>
         </>

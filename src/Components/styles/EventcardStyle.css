@@ -1,0 +1,180 @@
+/* 🌌 Galaxy Background */
+body {
+  /* background: radial-gradient(circle at top, #1a002b, #0a001a); */
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* 🌠 Center Content Properly */
+.container1 {
+  
+  margin-top:100px; /* Centers content */
+  padding: 20px;
+  text-align: center;
+}
+
+/* 🚀 Filter Buttons */
+.button-wrapper1 {
+  display: flex;
+  flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.button-wrapper1 button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff00ff, #007bff);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+  position: relative;
+  z-index: 100;
+}
+
+.button-wrapper1 button:hover {
+  box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.8);
+  transform: scale(1.05);
+}
+
+/* 🎇 Event Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  ); /* Adjust grid for responsiveness */
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8),
+    0px 0px 40px rgba(0, 255, 255, 0.5);
+}
+
+/* 🌟 Enlarged Full-Screen Event Details */
+.cardDetails {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(10, 10, 30, 0.95); /* Darker background for readability */
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  max-width: 90vw; /* Covers most of the screen width */
+  max-height: 90vh; /* Covers most of the screen height */
+  width: 90%;
+  height: 90%;
+  overflow-y: auto; /* Allows scrolling if content is too long */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 🚀 Close Button - Adjusted for Larger Modal */
+.cross {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cross:hover {
+  transform: rotate(90deg) scale(1.2);
+}
+
+/* 🛠️ Responsive Adjustments */
+@media (max-width: 768px) {
+  .button-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-wrapper button {
+    width: 80%;
+    text-align: center;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(150px, 1fr)
+    ); /* Smaller cards for small screens */
+  }
+
+  .cardDetails {
+    width: 95%;
+    height: 95%;
+    max-width: 95vw;
+    max-height: 95vh;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .button-wrapper button {
+    width: 100%;
+  }
+}
+
+/* 🌟 Twinkling Stars Effect */
+@keyframes stars {
+  0% {
+    opacity: 0.6;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+  100% {
+    opacity: 0.6;
+    transform: translateY(0px);
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
+  opacity: 0.2;
+  animation: stars 8s infinite linear;
+}
