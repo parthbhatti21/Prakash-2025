@@ -17,7 +17,7 @@ import RocketBlueprint from "../assets/EventCardSvg/RocketBlueprint.png";
 import PUBG from "../assets/EventCardSvg/PUBG.png";
 import Auction from "../assets/EventCardSvg/Auction.png";
 import Stonk from "../assets/EventCardSvg/MemeForTrade.png";
-import ShareMarket from "../assets/EventCardSvg/MemeSharemarke.png";
+import ShareMarket from "../assets/EventCardSvg/MemeShareMarke.png";
 // Event data
 const events = [
   {
