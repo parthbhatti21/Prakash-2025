@@ -92,7 +92,7 @@ body {
   max-height: 90vh; /* Covers most of the screen height */
   width: 90%;
   height: 90%;
-  overflow:hidden; /* Allows scrolling if content is too long */
+  overflow: hidden; /* Allows scrolling if content is too long */
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -364,6 +364,303 @@ body::before {
 }
 @media (min-width: 2450px) {
   .event-9 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -10%;
+  }
+}
+/* PopQuizz */
+.event-17 {
+  opacity: 40%;
+  z-index: -1;
+  position: absolute;
+  left: -13%;
+  width: 120%;
+  aspect-ratio: 1/1;
+  bottom: 0%;
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .event-17 {
+    width: 90%;
+    left: 5%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .event-17 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 2450px) {
+  .event-17 {
+    width: 65%;
+    left: 20%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 2450px) {
+  .event-17 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -10%;
+  }
+}
+
+/* PopQuizz */
+.event-5 {
+  opacity: 40%;
+  z-index: -1;
+  position: absolute;
+  left: -13%;
+  width: 120%;
+  aspect-ratio: 1/1;
+  bottom: 0%;
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .event-5 {
+    width: 90%;
+    left: 5%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .event-5 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 2450px) {
+  .event-5 {
+    width: 65%;
+    left: 20%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 2450px) {
+  .event-5 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -10%;
+  }
+}
+
+/* Cricket */
+.event-14 {
+  opacity: 40%;
+  z-index: -1;
+  position: absolute;
+  left: -13%;
+  width: 120%;
+  aspect-ratio: 1/1;
+  bottom: 0%;
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .event-14 {
+    width: 90%;
+    left: 5%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .event-14 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 2450px) {
+  .event-14 {
+    width: 65%;
+    left: 20%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 2450px) {
+  .event-14 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -10%;
+  }
+}
+/* Infinity Quest */
+.event-19 {
+  opacity: 40%;
+  z-index: -1;
+  position: absolute;
+  left: -13%;
+  width: 120%;
+  aspect-ratio: 1/1;
+  bottom: 0%;
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .event-19 {
+    width: 90%;
+    left: 5%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .event-19 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 2450px) {
+  .event-19 {
+    width: 65%;
+    left: 20%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 2450px) {
+  .event-19 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -10%;
+  }
+}
+
+/* IOT */
+.event-1 {
+  opacity: 40%;
+  z-index: -1;
+  position: absolute;
+  left: -13%;
+  width: 120%;
+  aspect-ratio: 1/1;
+  bottom: 0%;
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .event-1 {
+    width: 90%;
+    left: 5%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .event-1 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 2450px) {
+  .event-1 {
+    width: 65%;
+    left: 20%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 2450px) {
+  .event-1 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -10%;
+  }
+}
+/* Maze */
+.event-21 {
+  opacity: 40%;
+  z-index: -1;
+  position: absolute;
+  left: -13%;
+  width: 120%;
+  aspect-ratio: 1/1;
+  bottom: 0%;
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .event-21 {
+    width: 90%;
+    left: 5%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .event-21 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 2450px) {
+  .event-21 {
+    width: 65%;
+    left: 20%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 2450px) {
+  .event-21 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -10%;
+  }
+}
+/* Cadathon */
+.event-8 {
+  opacity: 40%;
+  z-index: -1;
+  position: absolute;
+  left: -13%;
+  width: 120%;
+  aspect-ratio: 1/1;
+  bottom: 0%;
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .event-8 {
+    width: 90%;
+    left: 5%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .event-8 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 2450px) {
+  .event-8 {
+    width: 65%;
+    left: 20%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 2450px) {
+  .event-8 {
     width: 80%;
     left: 10%;
     aspect-ratio: 1/1;
