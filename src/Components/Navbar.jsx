@@ -73,8 +73,10 @@
 import  { useState, useEffect } from "react";
 import "./styles/navbar.css";
 import logoImage from "../assets/logo1.png"; // Adjust the path to your image
+import { useNavigate } from "react-router";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -105,7 +107,10 @@ const Navbar = () => {
       {/* Desktop Navbar */}
       <nav className="nav-links">
         <ul>
-          <li className="nav-item">HOME</li>
+          <li className="nav-item" onClick={()=>{
+            navigate('/')
+            window.scroll(0,0);
+          }}>HOME</li>
           <li className="nav-item">ABOUT</li>
           <li className="nav-item">EVENTS</li>
           <li className="nav-item">HISTORY</li>
@@ -127,7 +132,10 @@ const Navbar = () => {
         <div className={`sidebar ${isOpen ? "show" : ""}`}>
           <div className="close-btn" onClick={toggleMenu}>✖</div>
           <ul>
-            <li className="nav-item" onClick={toggleMenu}>HOME</li>
+            <li className="nav-item" onClick={()=>{toggleMenu;
+              navigate('/');
+              window.scroll(0,0);
+            }}>HOME</li>
             <li className="nav-item" onClick={toggleMenu}>ABOUT</li>
             <li className="nav-item" onClick={toggleMenu}>EVENTS</li>
             <li className="nav-item" onClick={toggleMenu}>HISTORY</li>
