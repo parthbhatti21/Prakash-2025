@@ -168,7 +168,7 @@ const Card = () => {
         </div>
       </div>  
       {people.map((person, index) => (
-        <div className="container noselect card-container" key={index}>
+        <div className="container2 noselect card-container2" key={index}>
           <div className="canvas">
             <div className="tracker tr-1" />
             <div className="tracker tr-2" />
@@ -243,7 +243,7 @@ const StyledWrapper = styled.div`
     }
   }
 
-  .card-container {
+  .card-container2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -299,7 +299,7 @@ const StyledWrapper = styled.div`
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   margin: 0; /* Remove default margin */
 }
-  .container {
+  .container2 {
       position: relative;
     width: 190px;
     height: 254px;
