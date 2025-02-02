@@ -11,18 +11,21 @@ import PopCorn from "../assets/EventCardSvg/PopQuiz.png";
 import AiDesign from "../assets/EventCardSvg/AiDesign.png";
 import Cricket from "../assets/EventCardSvg/Cricket.png";
 import Pirate2 from "../assets/EventCardSvg/Pirate2.png";
-import IOT from "../assets/EventCardSvg/IOT.png";
+import IOTCircuit from "../assets/EventCardSvg/IOT.png";
 import Maze from "../assets/EventCardSvg/Maze.png";
 import RocketBlueprint from "../assets/EventCardSvg/RocketBlueprint.png";
+import PUBG from "../assets/EventCardSvg/PUBG.png";
+import Auction from "../assets/EventCardSvg/Auction.png";
+import Stonk from "../assets/EventCardSvg/MemeForTrade.png";
+import ShareMarket from "../assets/EventCardSvg/MemeSharemarke.png";
 // Event data
 const events = [
   {
     id: 1,
     category: "Workshop",
     title: "IOT Workshop",
-    img: IOT,
-    
-    
+    img: IOTCircuit,
+
     details:
       "Dive into the world of IoT at Prakarsh25 with an engaging hands-on workshop! Master sensors like distance sensors and bring your ideas to life with real-time applications.",
   },
@@ -63,6 +66,7 @@ const events = [
     id: 6,
     category: "Tech",
     title: "Trade X- Tech and more",
+    img: Stonk,
     details:
       "Experience the thrill of trading in our unique technology-driven event! Compete in teams, answer tech-centric questions to strategically boost your share prices, and emerge as the ultimate market leader with the highest shares.",
   },
@@ -93,6 +97,7 @@ const events = [
     id: 10,
     category: "Tech",
     title: "¢rypto $howdown",
+    img: ShareMarket,
     details:
       "Join CryptoShowdown 2025, the ultimate event for crypto enthusiasts, traders, and innovators. Explore bold strategies, cutting-edge ideas, and the future of digital finance. Trade dummy currencies to make real money.",
   },
@@ -150,6 +155,7 @@ const events = [
   {
     id: 18,
     category: "NonTech",
+    img: Auction,
     title: "IPL Auction",
     details:
       "“Think, Bid, Win: Step into the Excitement of IPL Auction Strategy!” Experience the thrill of cricket strategy and team-building at our IPL Auction Challenge!",
@@ -166,6 +172,7 @@ const events = [
     id: 20,
     category: "NonTech",
     title: "BGMI Conquest",
+    img: PUBG,
     details:
       "Land. Fight. Dominate. The Battleground is Yours! The battle begins at BGMI, where warriors collide in an intense fight for survival!",
   },
