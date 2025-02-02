@@ -176,7 +176,7 @@ body {
     height: 40px;
     padding: 9px 0;
     top: calc(50% - 20px);
-    background: #0a0a2e;
+    background: black;
     border: 2px solid #006E51;
     border-radius: 40px;
     text-align: center;
@@ -393,7 +393,7 @@ body {
         font-size: 18px;
         color: #006E51;
         z-index: 2;
-        left: 30px;
+        right: 300px;
         /* Adjust so it's not overlapping the astronaut */
     }
 }
