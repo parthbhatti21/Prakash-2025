@@ -53,6 +53,9 @@ const viewMore =  { id: 22, category: "ViewMe", title: "View All...", details: "
             }}
           >
             <h2>{event.title}</h2>
+            {/* Floating Register Button */}
+<button className="floating-register-button">Register</button>
+
           </div>
         ))}
       </div>
