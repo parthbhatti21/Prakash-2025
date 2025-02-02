@@ -39,7 +39,7 @@ h1, h2, h3, p {
 }
 
 /* 🎇 Event Cards - Cosmic Styling */
-.card-container {
+.card2-container2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Adjust grid for responsiveness */
     gap: 25px;
@@ -47,7 +47,7 @@ h1, h2, h3, p {
     margin-top: 40px;
 }
 
-.card {
+.card2 {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     padding: 20px;
@@ -62,12 +62,12 @@ h1, h2, h3, p {
     background-position: center;
 }
 
-.card:hover {
+.card2:hover {
     transform: translateY(-8px);
     box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.8), 0px 0px 60px rgba(0, 255, 255, 0.6);
 }
 
-.card h2 {
+.card2 h2 {
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
@@ -111,7 +111,7 @@ h1, h2, h3, p {
         text-align: center;
     }
 
-    .card-container {
+    .card2-container2 {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Smaller cards for small screens */
     }
 
@@ -123,7 +123,7 @@ h1, h2, h3, p {
 }
 
 @media (max-width: 480px) {
-    .card-container {
+    .card2-container2 {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
 

@@ -1,9 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router"
 import Homepage from "./Components/Homepage"
 import EventCard from "./Components/EventCard"
-//testing comment
-//1
-//test 2
+import AboutPage from "./Components/AboutPage"
 function App() {
 
 
@@ -13,6 +11,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Homepage/>}/>
       <Route path='/events' element={<EventCard/>}/>
+      <Route path='/aboutus' element={<AboutPage/>}/>
 
     </Routes>
     

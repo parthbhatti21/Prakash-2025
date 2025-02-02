@@ -7,7 +7,7 @@ import img1 from '../assets/IMG_1254.JPG'
 import img2 from '../assets/IMG_1256.JPG'
 import img3 from '../assets/IMG_1731.JPG'
 import img4 from '../assets/IMG_4725.JPG'
-import img5 from '../assets/IMG_1031.heic'
+import img5 from '../assets/IMG_1031.jpg'
 import img6 from '../assets/IMG_0279.jpg'
 
 // import img6 from '../assets/timeline/IMG_1031.heic'
@@ -118,7 +118,7 @@ const Timeline = () => {
 
             const astronautElement = document.querySelector('.timeline-image.astronaut');
             const greenLine = document.querySelector('.green-line');
-            const lastEntry = document.querySelector('.container:last-child');
+            const lastEntry = document.querySelector('.container2:last-child');
 
             if (!astronautElement || !greenLine || !lastEntry) return;
 
@@ -176,7 +176,7 @@ const Timeline = () => {
             </div>
 
             {timelineData.map((item, index) => (
-                <div key={index} className={`container ${item.position}`}>
+                <div key={index} className={`container2 ${item.position}`}>
                     <div className="date">{item.date}</div>
                     <i className={`icon fa ${item.icon}`}></i>
                     <div className="content">
