@@ -69,8 +69,7 @@
 // };
 
 // export default Navbar;
-
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./styles/navbar.css";
 import logoImage from "../assets/logo1.png"; // Adjust the path to your image
 import { useNavigate } from "react-router";
@@ -107,15 +106,24 @@ const Navbar = () => {
 
   return (
     <header className="navbar">
-      {/* Replace the text logo with an image */}
-      <img src={logoImage} alt="PRAKARSH Logo" className="logo" />
+      {/* 🔥 Made the logo clickable to navigate to home */}
+      <img 
+        src={logoImage} 
+        alt="PRAKARSH Logo" 
+        className="logo" 
+        onClick={() => {
+          navigate("/");
+          window.scrollTo(0, 0);
+        }} 
+        style={{ cursor: "pointer" }} // 🔥 Added pointer cursor for better UX
+      />
 
       {/* Desktop Navbar */}
       <nav className="nav-links">
         <ul>
-          <li className="nav-item" onClick={()=>{
-            navigate('/')
-            window.scroll(0,0);
+          <li className="nav-item" onClick={() => {
+            navigate("/");
+            window.scrollTo(0, 0);
           }}>HOME</li>
           <li className="nav-item">ABOUT</li>
           <li className="nav-item" onClick={() => scrollToSection('events-section')}>
@@ -142,9 +150,10 @@ const Navbar = () => {
         <div className={`sidebar ${isOpen ? "show" : ""}`}>
           <div className="close-btn" onClick={toggleMenu}>✖</div>
           <ul>
-            <li className="nav-item" onClick={()=>{toggleMenu;
-              navigate('/');
-              window.scroll(0,0);
+            <li className="nav-item" onClick={() => {
+              toggleMenu(); // 🔥 Fixed function call
+              navigate("/");
+              window.scrollTo(0, 0);
             }}>HOME</li>
             <li className="nav-item" onClick={toggleMenu}>ABOUT</li>
             <li className="nav-item" onClick={toggleMenu}>EVENTS</li>

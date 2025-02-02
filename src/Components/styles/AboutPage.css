@@ -1,0 +1,203 @@
+/* Existing CSS */
+.cyberpunk-bg {
+  background: linear-gradient(45deg, #000428, #004e92);
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  color: var(--cyan-400);
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%; /* Adjusted for mobile */
+  padding: 2rem 1rem; /* Adjusted for mobile */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Adjusted for mobile */
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.title {
+  font-size: 1.5rem; /* Adjusted for mobile */
+  font-family: 'Share Tech Mono', monospace;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+.paragraph {
+  font-size: 1rem; /* Adjusted for mobile */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--cyan-400);
+  width: 0;
+  animation: typing 4s steps(50, end) forwards, blink 0.75s step-end infinite;
+  margin-top: 1rem;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.card {
+  font-size: 1rem; /* Adjusted for mobile */
+  line-height: 1.5; /* Adjusted for mobile */
+  background-color: transparent;
+  border: none;
+  animation: glitch 5s linear infinite;
+}
+
+.card > * + * {
+  margin-top: 1rem;
+}
+
+.left-border {
+  border-left: 4px solid var(--cyan-400);
+  padding-left: 1rem;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.list-none > * + * {
+  margin-top: 0.5rem;
+}
+
+.device {
+  position: relative;
+  width: 150px; /* Adjusted for mobile */
+  height: 150px; /* Adjusted for mobile */
+}
+
+.device::before {
+  content: '';
+  position: absolute;
+  top: -50px; /* Adjusted for mobile */
+  right: 0;
+  width: 2px;
+  height: 50px; /* Adjusted for mobile */
+  background: linear-gradient(to bottom, transparent, #0ff);
+  animation: scanline 2s linear infinite;
+}
+
+@keyframes scanline {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100px); } /* Adjusted for mobile */
+}
+
+.circle {
+  width: 10rem; /* Adjusted for mobile */
+  height: 10rem; /* Adjusted for mobile */
+  background-color: rgba(34, 211, 238, 0.1);
+  border-radius: 50%;
+  filter: blur(4px);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+}
+
+@keyframes hologramEffect {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes glitch {
+  2%, 64% { transform: translate(2px, 0) skew(0deg); }
+  4%, 60% { transform: translate(-2px, 0) skew(0deg); }
+  62% { transform: translate(0, 0) skew(2deg); }
+}
+
+/* Hologram Beam Effect */
+.hologram-beam {
+  position: fixed;
+  bottom: -5%;
+  width: 80vw; /* Adjusted for mobile */
+  height: 50vh; /* Adjusted for mobile */
+  background: linear-gradient(to top, rgba(34, 211, 238, 0.5), transparent);
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%); /* Adjusted to form a V shape */
+  z-index: 5;
+  animation: hologramEffect 1s infinite;
+}
+
+@media (min-width: 768px) {
+  .hologram-beam {
+    width: 50vw;
+    height: 75vh;
+  }
+}
+
+.fixed-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 15;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+}
+
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.border-right {
+  display: none; /* Removes vertical lines */
+}

@@ -1,524 +1,468 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-}
-    
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    /* cursor: url('../../assets/rocketCursor1.png'), auto; */
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  /* cursor: url('../../assets/rocketCursor1.png'), auto; */
+}
 
 /* timeline.css */
-
 
 /* Full-screen video background */
 
 .video-background video {
-    position: fixed;
-    /* Fixed so it stays in place while scrolling */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    /* Full viewport width */
-    height: 100vh;
-    /* Full viewport height */
-    object-fit: cover;
-    /* Ensures the video covers the screen */
-    z-index: -1;
-    /* Place behind all other content */
+  position: fixed;
+  /* Fixed so it stays in place while scrolling */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* Full viewport width */
+  height: 100vh;
+  /* Full viewport height */
+  object-fit: cover;
+  /* Ensures the video covers the screen */
+  z-index: -1;
+  /* Place behind all other content */
 }
 
-.homepage-container {
-    position: relative;
-    /* Ensures the content is above the video */
-    z-index: 1;
+.homepage-container2 {
+  position: relative;
+  /* Ensures the content is above the video */
+  z-index: 1;
 }
 
 .timeline {
-    position: relative;
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 15px 0;
-    opacity: 0.8;
-    margin-top: 100px;
-    /* Slight transparency to blend well */
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+  opacity: 0.8;
+  margin-top: 100px;
+  /* Slight transparency to blend well */
 }
 
 .timeline .green-line {
-    position: absolute;
-    top: 0;
-    left: 30px;
-    width: 3px;
-    height: 100%;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 3px;
+  height: 100%;
+  z-index: 1;
 }
 
 .timeline-image {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    z-index: 2;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .timeline-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
 .timeline::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background: #006E51;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -1px;
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: #006e51;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
 }
 
 .timeline-entry-image {
-    width: 100%;
-    max-width: 200px; /* Increased size for better visibility */
-    margin: 0 auto 20px; /* Center the image and add space below */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  max-width: 150px;
+  /* Adjust size */
+  margin: 0 auto 10px;
+  /* Center it and add space below */
+  display: flex;
+  justify-content: center;
 }
 
 .timeline-entry-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px; /* Soft rounded corners */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* Soft rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Hover Effect */
-.timeline-entry-image img:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+.container2 {
+  padding: 15px 30px;
+  position: relative;
+  width: 50%;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .timeline-entry-image {
-        max-width: 120px; /* Make the image smaller on mobile */
-        margin-bottom: 15px; /* Less space below on mobile */
-    }
-    .timeline-entry-image img {
-        border-radius: 8px; /* Smaller rounded corners */
-    }
+.container2.left {
+  left: 0;
 }
 
-.container {
-    padding: 15px 30px;
-    position: relative;
-    width: 50%;
+.container2.right {
+  left: 50%;
 }
 
-.container.left {
-    left: 0;
+.container2::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #01a7f4;
+  border: 2px solid #006e51;
+  border-radius: 16px;
+  z-index: 1;
 }
 
-.container.right {
-    left: 50%;
+.container2.right::after {
+  left: -8px;
 }
 
-.container::after {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: calc(50% - 8px);
-    right: -8px;
-    background: #01a7f4;
-    border: 2px solid #006E51;
-    border-radius: 16px;
-    z-index: 1;
+.container2::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #006e51;
+  z-index: 1;
 }
 
-.container.right::after {
-    left: -8px;
+.container2.right::before {
+  left: 8px;
 }
 
-.container::before {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 2px;
-    top: calc(50% - 1px);
-    right: 8px;
-    background: #006E51;
-    z-index: 1;
+.container2 .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #006e51;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
 }
 
-.container.right::before {
-    left: 8px;
+.container2.left .date {
+  right: -75px;
 }
 
-.container .date {
-    position: absolute;
-    display: inline-block;
-    top: calc(50% - 8px);
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    color: #006E51;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    z-index: 1;
+.container2.right .date {
+  left: -75px;
 }
 
-.container.left .date {
-    right: -75px;
+.container2 .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #0a0a2e;
+  border: 2px solid #006e51;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #006e51;
+  z-index: 1;
 }
 
-.container.right .date {
-    left: -75px;
+.container2.left .icon {
+  right: 56px;
 }
 
-.container .icon {
-    position: absolute;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    padding: 9px 0;
-    top: calc(50% - 20px);
-    background: black;
-    border: 2px solid #006E51;
-    border-radius: 40px;
-    text-align: center;
-    font-size: 18px;
-    color: #006E51;
-    z-index: 1;
+.container2.right .icon {
+  left: 56px;
 }
 
-.container.left .icon {
-    right: 56px;
+.container2 .content {
+  padding: 30px 90px 30px 30px;
+  background: rgba(3, 211, 238, 0.2);
+  /* Transparent Cyan */
+  border: 2px solid rgba(3, 211, 238, 0.6);
+  /* Subtle border */
+  opacity: 1;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+  box-shadow: 0 0 10px rgba(3, 211, 238, 0.3);
+  /* Soft glow */
+  transition: all 0.3s ease-in-out;
 }
 
-.container.right .icon {
-    left: 56px;
+.container2 .content:hover {
+  background: rgba(3, 211, 238, 0.35);
+  /* Slightly stronger cyan */
+  box-shadow: 0 0 20px rgba(3, 211, 238, 0.8);
+  /* Intense glow */
+  border-color: rgba(3, 211, 238, 1);
 }
 
-.container .content {
-    padding: 30px 90px 30px 30px;
-    background: rgba(3, 211, 238, 0.2);
-    /* Transparent Cyan */
-    border: 2px solid rgba(3, 211, 238, 0.6);
-    /* Subtle border */
-    opacity: 1;
-    position: relative;
-    border-radius: 0 500px 500px 0;
-    box-shadow: 0 0 10px rgba(3, 211, 238, 0.3);
-    /* Soft glow */
-    transition: all 0.3s ease-in-out;
+.container2.right .content {
+  padding: 30px 30px 30px 80px;
+  /* Increased left padding to move text away from the circle */
+  border-radius: 500px 0 0 500px;
 }
 
-.container .content:hover {
-    background: rgba(3, 211, 238, 0.35);
-    /* Slightly stronger cyan */
-    box-shadow: 0 0 20px rgba(3, 211, 238, 0.8);
-    /* Intense glow */
-    border-color: rgba(3, 211, 238, 1);
-}
-
-.container.right .content {
-    padding: 30px 30px 30px 80px;
-    /* Increased left padding to move text away from the circle */
-    border-radius: 500px 0 0 500px;
-}
-
-
-/* .container .content h2 {
+/* .container2 .content h2 {
     margin: 0 0 10px 0;
     font-size: 18px;
     font-weight: normal;
     color: #006E51;
 }
 
-.container .content p {
+.container2 .content p {
     margin: 0;
     font-size: 16px;
     line-height: 22px;
     color: #000000;
 } */
 
-.container .content h2,
-.container .content p {
-    color: white;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+.container2 .content h2,
+.container2 .content p {
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
-
 
 /* Responsive Styles */
 
 @media (max-width: 1024px) {
-    .container {
-        width: 50%;
-        padding-left: 80px;
-    }
-    .container.left .date,
-    .container.right .date {
-        left: 0;
-        right: 0;
-    }
-    .container.left .icon,
-    .container.right .icon {
-        left: 0;
-        right: 0;
-    }
+  .container2 {
+    width: 50%;
+    padding-left: 80px;
+  }
+  .container2.left .date,
+  .container2.right .date {
+    left: 0;
+    right: 0;
+  }
+  .container2.left .icon,
+  .container2.right .icon {
+    left: 0;
+    right: 0;
+  }
 }
 
 @media (max-width: 767.98px) {
-    .timeline::after {
-        left: 90px;
+  .timeline::after {
+    left: 90px;
+  }
+  .container2 {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+  .container2.right {
+    left: 0%;
+  }
+  .container2.left::after,
+  .container2.right::after {
+    left: 82px;
+  }
+  @media(max-width:770px){
+    .container2.left::after,
+    .container2.right::after {
+        z-index:2;
+      left: 17px;
     }
-    .container {
-        width: 100%;
-        padding-left: 120px;
-        padding-right: 30px;
-    }
-    .container.right {
-        left: 0%;
-    }
-    .container.left::after,
-    .container.right::after {
-        left: 82px;
-    }
-    .container.left::before,
-    .container.right::before {
-        left: 100px;
-        border-color: transparent #006E51 transparent transparent;
-    }
-    .container.left .date,
-    .container.right .date {
-        right: auto;
-        left: 15px;
-    }
-    .container.left .icon,
-    .container.right .icon {
-        left: 10px;
-    }
+  }
+  .container2.left::before,
+  .container2.right::before {
+    z-index:1;
+    left: 30px;
+    border-color: transparent #006e51 transparent transparent;
+  }
+  .container2.left .date,
+  .container2.right .date {
+    right: auto;
+    left: 15px;
+  }
+  .container2.left .icon,
+  .container2.right .icon {
+    left: 10px;
+  }
 }
 
 @media (max-width: 480px) {
-    .timeline {
-        padding: 15px 5px;
-    }
-    .container {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 20px;
-    }
-    .container.left .date,
-    .container.right .date {
-        left: 0;
-        right: 0;
-    }
-    .container.left .icon,
-    .container.right .icon {
-        left: 5px;
-    }
-    .timeline-image {
-        width: 80px;
-    }
+  .timeline {
+    padding: 15px 5px;
+  }
+  .container2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 20px;
+  }
+  .container2.left .date,
+  .container2.right .date {
+    left: 0;
+    right: 0;
+  }
+  .container2.left .icon,
+  .container2.right .icon {
+    left: 5px;
+  }
+  .timeline-image {
+    width: 80px;
+  }
 }
 
 .ship {
-    display: grid;
-    justify-content: center;
+  display: grid;
+  justify-content: center;
 }
 
 @media (max-width: 767.98px) {
-    /* Position the astronaut image to follow the green line on the left */
-    .timeline-image {
-        position: fixed;
-        top: 700px;
-        /* Place astronaut at the start of the green line */
-        left: 30px;
-        /* Align the astronaut with the green line */
-        transform: translateX(-50%);
-        z-index: 3;
-        pointer-events: none;
-        width: 80px;
-        /* Adjust astronaut size */
-        border-radius: 50%;
-        /* Circular astronaut */
-    }
-    .ship {
-        display: grid;
-        justify-content: center;
-        margin-right: 250px;
-    }
-    /* The green vertical line on the left side */
-    .timeline::after {
-        content: '';
-        position: absolute;
-        width: 3px;
-        /* Thin green line */
-        background: #006E51;
-        /* Green color */
-        top: 0;
-        bottom: 0;
-        left: 30px;
-        /* Place the green line to the left */
-        transform: translateX(-50%);
-        /* Center the line */
-    }
-    /* Adjust the container's date and content to ensure they do not overlap with the astronaut */
-    .container .date {
-        position: absolute;
-        display: inline-block;
-        top: calc(50% - 8px);
-        text-align: center;
-        font-size: 14px;
-        font-weight: bold;
-        color: #006E51;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        z-index: 2;
-        left: 60px;
-        /* Ensure the date is visible */
-    }
-    .container.left .date,
-    .container.right .date {
-        left: 60px;
-        /* Adjust for visibility */
-    }
-    /* Adjust icon position to avoid overlap with astronaut */
-    .container .icon {
-        position: absolute;
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        padding: 9px 0;
-        top: calc(50% - 20px);
-        background: #0a0a2e;
-        border: 2px solid #006E51;
-        border-radius: 40px;
-        text-align: center;
-        font-size: 18px;
-        color: #006E51;
-        z-index: 2;
-        right: 300px;
-        /* Adjust so it's not overlapping the astronaut */
-    }
+  /* Position the astronaut image to follow the green line on the left */
+  .timeline-image {
+    position: fixed;
+    top: 700px;
+    /* Place astronaut at the start of the green line */
+    left: 30px;
+    /* Align the astronaut with the green line */
+    transform: translateX(-50%);
+    z-index: 3;
+    pointer-events: none;
+    width: 80px;
+    /* Adjust astronaut size */
+    border-radius: 50%;
+    /* Circular astronaut */
+  }
+  .ship {
+    display: grid;
+    justify-content: center;
+    margin-right: 250px;
+  }
+  /* The green vertical line on the left side */
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    /* Thin green line */
+    background: #006e51;
+    /* Green color */
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    /* Place the green line to the left */
+    transform: translateX(-50%);
+    /* Center the line */
+  }
+  /* Adjust the container2's date and content to ensure they do not overlap with the astronaut */
+  .container2 .date {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 8px);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #006e51;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 2;
+    left: 60px;
+    /* Ensure the date is visible */
+  }
+  .container2.left .date,
+  .container2.right .date {
+    left: 60px;
+    /* Adjust for visibility */
+  }
+  /* Adjust icon position to avoid overlap with astronaut */
+  .container2 .icon {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 9px 0;
+    top: calc(50% - 20px);
+    background: #0a0a2e;
+    border: 2px solid #006e51;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #006e51;
+    z-index: 2;
+    left: 30px;
+    /* Adjust so it's not overlapping the astronaut */
+  }
 }
 
 .video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
-
 
 /* Adjust for mobile screens */
 
 @media (max-width: 768px) {
-    .video-background {
-        width: 100%;
-        height: auto;
-    }
-    .video {
-        width: 100%;
-        height: auto;
-        max-height: 500px;
-        /* Adjust the height as needed */
-    }
+  .video-background {
+    width: 100%;
+    height: auto;
+  }
+  .video {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    /* Adjust the height as needed */
+  }
 }
 
 @keyframes moveAstronaut {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(300px);
-        opacity: 0;
-    }
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(300px);
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .timeline {
-        overflow-x: hidden;
-        overflow-y: scroll;
-        scroll-behavior: smooth;
-        position: relative;
-    }
-    .timeline-image {
-        margin-left: 20px;
-    }
-    .timeline .astronaut {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        opacity: 1;
-        transition: opacity 1s ease-in-out;
-    }
-    .timeline.scrolled .astronaut {
-        animation: moveAstronaut 3s ease-in-out forwards;
-    }
-}
-
-/* Adjust text alignment for mobile screens */
-@media (max-width: 768px) {
-    .container .content {
-        padding: 20px 30px; /* Adjust padding for mobile */
-        text-align: center; /* Center align text */
-    }
-
-    .container .content h2,
-    .container .content p {
-        text-align: center; /* Center the text */
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-
-    .container.left .date,
-    .container.right .date {
-        left: 0; /* Reset the position */
-        right: 0; /* Reset the position */
-        text-align: center; /* Center the date text */
-        font-size: 12px; /* Smaller date size for mobile */
-    }
-
-    .container .icon {
-        left: 50%; /* Center the icon */
-        transform: translateX(-50%); /* Adjust to center */
-    }
-
-    .timeline-image {
-        width: 60px; /* Adjust image size for mobile */
-    }
-
-    .timeline {
-        padding: 15px 5px; /* Adjust timeline padding */
-    }
-}
-
-/* If you want to adjust specific text within the timeline */
-@media (max-width: 480px) {
-    .container .content h2,
-    .container .content p {
-        font-size: 14px; /* Further adjust text size for very small screens */
-    }
+  .timeline {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    position: relative;
+  }
+  .timeline-image {
+    margin-left: 20px;
+  }
+  .timeline .astronaut {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  .timeline.scrolled .astronaut {
+    animation: moveAstronaut 3s ease-in-out forwards;
+  }
 }

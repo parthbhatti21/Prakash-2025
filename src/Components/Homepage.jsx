@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Star from "./Star";
 import Timeline from "./Timeline";
 import Timer from "./Timer";
-import './styles/timeline.css'
+// import '../Components/styles/timeline.css'
 import system from '../assets/system.mp4';
 import TeamSection from "./TeamSection";
 import Event_Random from "./Event_Random";
