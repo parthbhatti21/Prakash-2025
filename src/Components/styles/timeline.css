@@ -87,20 +87,36 @@ body {
 
 .timeline-entry-image {
     width: 100%;
-    max-width: 150px;
-    /* Adjust size */
-    margin: 0 auto 10px;
-    /* Center it and add space below */
+    max-width: 200px; /* Increased size for better visibility */
+    margin: 0 auto 20px; /* Center the image and add space below */
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .timeline-entry-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    /* Soft rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px; /* Soft rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.timeline-entry-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .timeline-entry-image {
+        max-width: 120px; /* Make the image smaller on mobile */
+        margin-bottom: 15px; /* Less space below on mobile */
+    }
+    .timeline-entry-image img {
+        border-radius: 8px; /* Smaller rounded corners */
+    }
 }
 
 .container {
@@ -461,5 +477,48 @@ body {
     }
     .timeline.scrolled .astronaut {
         animation: moveAstronaut 3s ease-in-out forwards;
+    }
+}
+
+/* Adjust text alignment for mobile screens */
+@media (max-width: 768px) {
+    .container .content {
+        padding: 20px 30px; /* Adjust padding for mobile */
+        text-align: center; /* Center align text */
+    }
+
+    .container .content h2,
+    .container .content p {
+        text-align: center; /* Center the text */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .container.left .date,
+    .container.right .date {
+        left: 0; /* Reset the position */
+        right: 0; /* Reset the position */
+        text-align: center; /* Center the date text */
+        font-size: 12px; /* Smaller date size for mobile */
+    }
+
+    .container .icon {
+        left: 50%; /* Center the icon */
+        transform: translateX(-50%); /* Adjust to center */
+    }
+
+    .timeline-image {
+        width: 60px; /* Adjust image size for mobile */
+    }
+
+    .timeline {
+        padding: 15px 5px; /* Adjust timeline padding */
+    }
+}
+
+/* If you want to adjust specific text within the timeline */
+@media (max-width: 480px) {
+    .container .content h2,
+    .container .content p {
+        font-size: 14px; /* Further adjust text size for very small screens */
     }
 }

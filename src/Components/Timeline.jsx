@@ -1,252 +1,60 @@
 
-// import React, { useState, useEffect } from 'react';
-// import { gsap } from 'gsap';
-// import './styles/timeline.css';
-// import astra from '../assets/astro.png';
-
-// const Timeline = () => {
-//     const [scrollPosition, setScrollPosition] = useState(0);
-
-//     const timelineData = [
-//         {
-//             date: '15 Dec',
-//             icon: 'fa-home',
-//             position: 'left',
-//             title: 'Lorem ipsum dolor sit amet',
-//             description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-//         },
-//         {
-//             date: '15 Dec',
-//             icon: 'fa-home',
-//             position: 'right',
-//             title: 'Lorem ipsum dolor sit amet',
-//             description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-//         },
-//         {
-//             date: '15 Dec',
-//             icon: 'fa-home',
-//             position: 'left',
-//             title: 'Lorem ipsum dolor sit amet',
-//             description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-//         },
-//         {
-//             date: '15 Dec',
-//             icon: 'fa-home',
-//             position: 'right',
-//             title: 'Lorem ipsum dolor sit amet',
-//             description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-//         },
-//         {
-//             date: '15 Dec',
-//             icon: 'fa-home',
-//             position: 'left',
-//             title: 'Lorem ipsum dolor sit amet',
-//             description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-//         },
-//         {
-//             date: '15 Dec',
-//             icon: 'fa-home',
-//             position: 'right',
-//             title: 'Lorem ipsum dolor sit amet',
-//             description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-//         },
-//         {
-//             date: '15 Dec',
-//             icon: 'fa-home',
-//             position: 'left',
-//             title: 'Lorem ipsum dolor sit amet',
-//             description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-//         },
-//         {
-//             date: '15 Dec',
-//             icon: 'fa-home',
-//             position: 'right',
-//             title: 'Lorem ipsum dolor sit amet',
-//             description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-//         },
-//         {
-//             date: '15 Dec',
-//             icon: 'fa-home',
-//             position: 'left',
-//             title: 'Lorem ipsum dolor sit amet',
-//             description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-//         },
-//         {
-//             date: '15 Dec',
-//             icon: 'fa-home',
-//             position: 'right',
-//             title: 'Lorem ipsum dolor sit amet',
-//             description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-//         },
-//         // Add more timeline entries...
-//     ];
-//     useEffect(() => {
-//         const handleScroll = () => {
-//             const scrollY = window.scrollY;
-//             setScrollPosition(scrollY);
-
-//             // Adjust animation for different screen sizes
-//             const screenWidth = window.innerWidth;
-//             const movementFactor = screenWidth < 768 ? 0.5 : 1;
-
-//             gsap.to('.timeline-image', {
-//                 y: scrollY * movementFactor,
-//                 rotationY: scrollY * 0.25,
-//                 ease: 'power1.out',
-//             });
-
-//             // Update astronaut's position on mobile screens
-//             if (screenWidth < 768) {
-//                 const astronautElement = document.querySelector('.timeline-image');
-//                 const greenLine = document.querySelector('.green-line');
-//                 const greenLineTop = greenLine.getBoundingClientRect().top + window.scrollY;
-
-//                 gsap.to(astronautElement, {
-//                     y: scrollY - movementFactor, // Move the astronaut along the green line
-//                     ease: 'power1.out',
-//                 });
-//             }
-//         };
-
-//         window.addEventListener('scroll', handleScroll);
-//         return () => {
-//             window.removeEventListener('scroll', handleScroll);
-//         };
-//     }, []);
-
-
-//     // useEffect(() => {
-//     //     const handleScroll = () => {
-//     //         const scrollY = window.scrollY;
-//     //         setScrollPosition(scrollY);
-
-//     //         // Adjust animation for different screen sizes
-//     //         const screenWidth = window.innerWidth;
-//     //         const movementFactor = screenWidth < 768 ? 0.5 : 1;
-
-//     //         gsap.to('.timeline-image', {
-//     //             y: scrollY * movementFactor,
-//     //             rotationY: scrollY * 0.25,
-//     //             ease: 'power1.out',
-//     //         });
-//     //     };
-
-//     //     window.addEventListener('scroll', handleScroll);
-//     //     return () => {
-//     //         window.removeEventListener('scroll', handleScroll);
-//     //     };
-//     // }, []);
-
-//     return (
-//         <div className="timeline">
-//             {/* Green Line Element */}
-//             <div className="green-line"></div>
-
-//             <div className="timeline-image">
-//                 <img src={astra} alt="Astronaut" />
-//             </div>
-
-//             {timelineData.map((item, index) => (
-//                 <div key={index} className={`container ${item.position}`}>
-//                     <div className="date">{item.date}</div>
-//                     <i className={`icon fa ${item.icon}`}></i>
-//                     <div className="content">
-//                         <div className="timeline-entry-image">
-//                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4HhUizr7okcMv4PptCiU8wBzFNpHAgURuNQ&s" alt="Event" />
-//                         </div>
-//                         <h2>{item.title}</h2>
-//                         <p>{item.description}</p>
-//                     </div>
-//                 </div>
-//             ))}
-//         </div>
-//     );
-
-// };
-
-// export default Timeline;
-
-
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from 'gsap';
 import './styles/timeline.css';
 import astra from '../assets/astro.png';
+import img1 from '../assets/IMG_1254.JPG'
+import img2 from '../assets/IMG_1256.JPG'
+import img3 from '../assets/IMG_1731.JPG'
+import img4 from '../assets/IMG_4725.JPG'
+import img5 from '../assets/IMG_1031.heic'
+import img6 from '../assets/IMG_0279.jpg'
+
+// import img6 from '../assets/timeline/IMG_1031.heic'
+// import img7 from '../assets/timeline/IMG_0269.heic'
 const Timeline = () => {
     const astronautRef = useRef(null);
     const [scrollPosition, setScrollPosition] = useState(0);
-    const stopAstroAt = 3500; // Define the scroll position (in pixels) where the astronaut should stop
+    const stopAstroAt = 1700; // Define the scroll position (in pixels) where the astronaut should stop
 
     const timelineData = [
         {
-            date: '15 Dec',
             icon: 'fa-home',
             position: 'left',
-            title: 'Lorem ipsum dolor sit amet',
-            description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
+            title: 'Scaling New Heights: Where Ideas Soar and Talent Shines!',
+            img : img2
         },
         {
-            date: '15 Dec',
             icon: 'fa-home',
             position: 'right',
-            title: 'Lorem ipsum dolor sit amet',
-            description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
+            title: 'Celebrating Hard Work, Team Spirit, and Well-Deserved Success!',
+            img : img3
         },
         {
-            date: '15 Dec',
             icon: 'fa-home',
             position: 'left',
-            title: 'Lorem ipsum dolor sit amet',
-            description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
+            title: 'A Night Where Music Became Magic!',
+            img : img5
         },
         {
-            date: '15 Dec',
             icon: 'fa-home',
             position: 'right',
-            title: 'Lorem ipsum dolor sit amet',
-            description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
+            title: 'Where innovation meets inspiration – the journey begins here! 🚀🎓',
+            img : img1
         },
         {
-            date: '15 Dec',
             icon: 'fa-home',
             position: 'left',
-            title: 'Lorem ipsum dolor sit amet',
-            description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
+            title: 'Leaders of today, shaping the innovators of tomorrow! 🎓✨',
+            img : img6
         },
         {
-            date: '15 Dec',
             icon: 'fa-home',
             position: 'right',
-            title: 'Lorem ipsum dolor sit amet',
-            description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
+            title: '"A grand stage for the brightest minds! 🌟✨',
+            img : img4
         },
-        {
-            date: '15 Dec',
-            icon: 'fa-home',
-            position: 'left',
-            title: 'Lorem ipsum dolor sit amet',
-            description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-        },
-        {
-            date: '15 Dec',
-            icon: 'fa-home',
-            position: 'right',
-            title: 'Lorem ipsum dolor sit amet',
-            description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-        },
-        {
-            date: '15 Dec',
-            icon: 'fa-home',
-            position: 'left',
-            title: 'Lorem ipsum dolor sit amet',
-            description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-        },
-        {
-            date: '15 Dec',
-            icon: 'fa-home',
-            position: 'right',
-            title: 'Lorem ipsum dolor sit amet',
-            description: 'Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non.',
-        },
+        
         // Add more timeline entries...
     ];
 
@@ -263,14 +71,14 @@ const Timeline = () => {
             if (scrollY < stopAstroAt) {
                 gsap.to('.timeline-image', {
                     y: scrollY * movementFactor,
-                    rotationY: scrollY * 0.25,
+                    // rotationY: scrollY * 0.25,
                     ease: 'power1.out',
                 });
             } else {
                 // Optionally, you can set a final position for the astronaut
                 gsap.to('.timeline-image', {
                     y: stopAstroAt * movementFactor,
-                    rotationY: stopAstroAt * 0.25,
+                    // rotationY: stopAstroAt * 0.25,
                     ease: 'power1.out',
                 });
             }
@@ -373,7 +181,7 @@ const Timeline = () => {
                     <i className={`icon fa ${item.icon}`}></i>
                     <div className="content">
                         <div className="timeline-entry-image">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4HhUizr7okcMv4PptCiU8wBzFNpHAgURuNQ&s" alt="Event" />
+                            <img src={item.img} alt="Event" />
                         </div>
                         <h2>{item.title}</h2>
                         <p>{item.description}</p>
