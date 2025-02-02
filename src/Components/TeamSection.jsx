@@ -128,7 +128,7 @@
 import styled from 'styled-components';
 import Sidd from '../assets/Sidd.jpeg';
 import { useState } from 'react';
-
+import './styles/spaceteam.css'
 const Card = () => {
   const [activeTeam, setActiveTeam] = useState('core'); // State to track active team
 
@@ -152,9 +152,10 @@ const Card = () => {
   return (
     <StyledWrapper>
       {/* Buttons */}
-      <div className="button-group">
+      <div className="button-group btn-grp">
+        <div className='btn-grp'>  
         <button
-          className={`team-button ${activeTeam === 'core' ? 'active' : ''}`}
+          className={`coreteam team-button ${activeTeam === 'core' ? 'active' : ''}`}
           onClick={() => setActiveTeam('core')}
         >
           Core Team
@@ -165,9 +166,10 @@ const Card = () => {
         >
           Developer Team
         </button>
-      </div>
+        </div>
+      </div>  
       {people.map((person, index) => (
-        <div className="container noselect" key={index}>
+        <div className="container noselect card-container" key={index}>
           <div className="canvas">
             <div className="tracker tr-1" />
             <div className="tracker tr-2" />
@@ -185,9 +187,9 @@ const Card = () => {
                   <span /><span /><span /><span />
                 </div>
                 <div className='PersonDetail'>
-  <img src={person.image} alt={person.name} width={80} /> {/* Adjust width and height as needed */}
-  <p id="prompt">{person.name}</p>
-</div>
+                  <img src={person.image} alt={person.name} width={80} /> {/* Adjust width and height as needed */}
+                  <p id="prompt">{person.name}</p>
+                </div>
                 <div className="title">{person.catogeory}</div>
                 <div className="glowing-elements">
                   <div className="glow-1" />
@@ -266,7 +268,7 @@ const StyledWrapper = styled.div`
   align-items: center; /* Center cards vertically */
   gap: 20px; /* Space between cards */
   padding: 20px; /* Padding around the container */
-  min-height: 100vh; /* Ensure the wrapper takes up the full height of the page */
+  min-height: 10vh; /* Ensure the wrapper takes up the full height of the page */
 /* Optional: Add a background color */
 .PersonDetail {
   position: absolute;

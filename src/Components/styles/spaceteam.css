@@ -1,213 +1,24 @@
-/* 🎯 Centering the Component */
-
-.space-team-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    margin-top: 70px;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    /* Dark background */
-    color: white;
-    text-align: center;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* 📌 Main Container */
-
-.container-team {
-    width: 90%;
-    max-width: 1100px;
-    padding: 30px;
-}
-
-
-/* 🚀 Buttons */
-
 .button-group {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
-.team-button {
-    padding: 14px 28px;
-    font-size: 18px;
-    border-radius: 20px;
-    font-weight: bold;
-    color: white;
-    background: rgba(255, 255, 255, 0.2);
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.team-button.active {
-    background-color: cyan;
-    color: black;
-}
-
-
-/* 👨‍🚀 Profile Card */
-
-.card {
-    background: transparent;
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    width: 300px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    /* Centers horizontally */
+    align-items: center;
+    /* Aligns vertically */
+    gap: 20px;
+    /* Adjust spacing between buttons */
     margin: 0 auto;
+    /* Ensures the container itself is centered */
+    padding: 10px 0;
+    margin-top: 90px;
+    /* Reduce extra spacing */
+    width: fit-content;
+    /* Make sure it wraps the buttons */
 }
 
-.card:hover {
-    transform: translateY(-8px);
+.coreteam {
+    margin-right: 10px;
 }
 
-.card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.avatar {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.name {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 15px;
-    color: white;
-}
-
-.role {
-    font-size: 16px;
-    color: cyan;
-    margin-bottom: 15px;
-}
-
-
-/* 🎠 Slick Carousel Customization */
-
-.slick-slide {
-    display: flex;
-    justify-content: center;
-}
-
-.slick-dots li button:before {
-    color: white;
-}
-
-.slick-prev,
-.slick-next {
-    z-index: 10;
-}
-
-
-/* Remove navigation buttons on mobile */
-
-
-/* Add spacing between cards */
-
-.slick-slide {
-    margin-top: 20px;
-}
-
-.slick-prev,
-.slick-next {
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-
-.slick-prev {
-    left: -40px;
-    cursor: pointer;
-}
-
-.slick-next {
-    right: -40px;
-    cursor: pointer;
-}
-
-.slick-prev:hover,
-.slick-next:hover {
-    color: cyan;
-}
-
-
-/* Remove navigation arrows on mobile */
-
-@media (max-width: 600px) {
-    .slick-arrow {
-        display: none !important;
-    }
-}
-
-
-/* new carousal */
-
-
-/* Additional Carousel Styles */
-
-.slick-prev,
-.slick-next {
-    z-index: 1;
-}
-
-.slick-prev {
-    left: 0;
-}
-
-.slick-next {
-    right: 0;
-}
-
-.slick-prev,
-.slick-next {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    font-size: 24px;
-    line-height: 30px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slick-prev:hover,
-.slick-next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+.card-container {
+    margin-top: 0px;
 }
