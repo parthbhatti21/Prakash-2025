@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Star from "./Star";
 import Timeline from "./Timeline";
 import Timer from "./Timer";
-import './styles/timeline.css'
+// import '../Components/styles/timeline.css'
 import system from '../assets/system.mp4';
 import TeamSection from "./TeamSection";
 import Event_Random from "./Event_Random";
@@ -21,6 +21,9 @@ export default function Homepage() {
                 </div>
                 <Star />
                 <Navbar />
+
+
+
                 <Timer />
 
                 {/* Video Section */}
@@ -29,8 +32,12 @@ export default function Homepage() {
                     <img src={ship} alt="" height={"180px"} width={"200px"} />
                 </div> */}
                 <Timeline />
-                <Event_Random/>
-                <TeamSection />
+                <div id="events-section">
+                    <Event_Random />
+                </div>
+                <div id="team-section">
+                    <TeamSection />
+                </div>
                 <Sponsor />
                 <Footer />
             </div>

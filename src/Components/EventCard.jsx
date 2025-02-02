@@ -6,6 +6,7 @@ import Vr from "../assets/EventCardSvg/Vr.png";
 import RoboRace from "../assets/EventCardSvg/Robo-Race.png";
 import Bits_Bytes from "../assets/EventCardSvg/Bits&Bytes.png";
 import Viman from "../assets/EventCardSvg/ArtAeroPlaneModeling.png";
+import TreasureHunt from "../assets/EventCardSvg/TreasureHunt.png";
 
 // Event data
 const events = [
@@ -72,6 +73,7 @@ const events = [
     id: 9,
     category: "Tech",
     title: "Google Chase: The Ultimate Treasure Hunt",
+    img: TreasureHunt,
     details:
       "Embark on an adventurous campus-wide quest to collect the letters G-O-O-G-L-E by solving tech and non-tech challenges at each checkpoint. With immunity pins, lucky draws, and bonus cards adding twists, this high-energy treasure hunt ensures fun, teamwork, and excitement at every step!",
   },

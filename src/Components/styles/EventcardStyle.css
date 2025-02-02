@@ -92,7 +92,7 @@ body {
   max-height: 90vh; /* Covers most of the screen height */
   width: 90%;
   height: 90%;
-  overflow-y: auto; /* Allows scrolling if content is too long */
+  overflow:hidden; /* Allows scrolling if content is too long */
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -244,7 +244,7 @@ body::before {
   }
 }
 /* Bits and Bytes */
-.event-4{
+.event-4 {
   opacity: 40%;
   z-index: -1;
   position: absolute;
@@ -279,7 +279,7 @@ body::before {
 }
 
 /* Aeroplane Modelling */
-.event-2{
+.event-2 {
   opacity: 40%;
   z-index: -1;
   position: absolute;
@@ -322,6 +322,48 @@ body::before {
 }
 @media (min-width: 2450px) {
   .event-2 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -10%;
+  }
+}
+/* TreasureHunt */
+.event-9 {
+  opacity: 40%;
+  z-index: -1;
+  position: absolute;
+  left: -13%;
+  width: 120%;
+  aspect-ratio: 1/1;
+  bottom: 0%;
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .event-9 {
+    width: 90%;
+    left: 5%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .event-9 {
+    width: 80%;
+    left: 10%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 2450px) {
+  .event-9 {
+    width: 65%;
+    left: 20%;
+    aspect-ratio: 1/1;
+    bottom: -20%;
+  }
+}
+@media (min-width: 2450px) {
+  .event-9 {
     width: 80%;
     left: 10%;
     aspect-ratio: 1/1;

@@ -97,6 +97,12 @@ const Navbar = () => {
       setIsOpen(!isOpen);
     }
   };
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <header className="navbar">
@@ -120,9 +126,13 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}>HOME</li>
           <li className="nav-item">ABOUT</li>
-          <li className="nav-item">EVENTS</li>
+          <li className="nav-item" onClick={() => scrollToSection('events-section')}>
+          EVENTS
+        </li>
           <li className="nav-item">HISTORY</li>
-          <li className="nav-item">TEAM</li>
+          <li className="nav-item" onClick={() => scrollToSection('team-section')}>
+          TEAM
+        </li>
         </ul>
       </nav>
 
