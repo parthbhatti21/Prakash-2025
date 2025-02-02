@@ -3,6 +3,10 @@ import "./styles/footer.css";
 import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa6";
+import { LuMails } from "react-icons/lu";
+import { FaFacebook } from "react-icons/fa";
+import svitLogo from "../assets/svitlogo.png"; // Import the logo image
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -32,7 +36,9 @@ const Footer = () => {
             <div className="social-icons">
               <i className="bi bi-twitter"><FaInstagram/></i>
               <i className="bi bi-instagram"><BsTwitterX/></i>
-              <i className="bi bi-facebook"><FaYoutube /></i>
+              <i className="bi bi-facebook"><FaFacebook /></i>
+              <i className="bi bi-lumails"><LuMails /></i>
+              <i className="bi bi-youtube"><FaYoutube /></i>
             </div>
           </div>
 
@@ -63,7 +69,8 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="footer-bottom">
-          <p>© 2025 PRAKARSH. All rights reserved.</p>
+          <img src={svitLogo} alt="SVIT Logo" className="footer-logo" /> {/* Use the imported image */}
+          <p className="footer-text">Sardar Vallabhbhai Patel Institute of Technology</p>
         </div>
       </div>
     </footer>
