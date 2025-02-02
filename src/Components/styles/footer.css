@@ -1,0 +1,177 @@
+/* General Footer Styles */
+
+.footer {
+    margin-top: 4rem;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    padding-top: 1rem;
+}
+
+
+/* Marquee Styles */
+
+.space-marquee {
+    background: rgba(0, 255, 242, 0.1);
+    border-top: 1px solid rgba(0, 255, 242, 0.3);
+    border-bottom: 1px solid rgba(0, 255, 242, 0.3);
+    padding: 15px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.marquee-content {
+    animation: marquee 20s linear infinite;
+    color: #00fff2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00fff2;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Hover Box */
+
+.hover-box {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 255, 242, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(0, 255, 242, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    z-index: 10;
+    animation: pulseGlow 2s infinite;
+    transition: all 0.3s ease;
+}
+
+.hover-box-button {
+    color: #00fff2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(0, 255, 242, 0.5);
+}
+
+.hover-box-button:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px rgba(0, 255, 242, 0.8);
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 255, 242, 0.5), 0 0 10px rgba(0, 255, 242, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 255, 242, 0.8), 0 0 40px rgba(0, 255, 242, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 255, 242, 0.5), 0 0 10px rgba(0, 255, 242, 0.3);
+    }
+}
+
+
+/* Footer Grid */
+
+.footer-container {
+    padding: 2rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h3 {
+    color: #00fff2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.social-icons i {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #00fff2;
+}
+
+
+/* Map Styles */
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.map-overlay {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    transition: background 0.3s;
+}
+
+.map-overlay:hover {
+    background: rgba(0, 255, 242, 0.1);
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 255, 242, 0.3);
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}

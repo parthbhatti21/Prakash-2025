@@ -1,0 +1,75 @@
+/* Main container */
+
+.sponsor-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Common styling for all sponsors */
+
+.main-sponsor,
+.sponsor-box {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 0 8px cyan, 0 0 15px rgba(0, 255, 255, 0.6);
+    /* Reduced glow */
+    border: 3px solid cyan;
+    /* Cyan border */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Hover Effect: Slight Enlargement */
+
+.main-sponsor:hover,
+.sponsor-box:hover {
+    transform: scale(1.05);
+}
+
+
+/* Main sponsor */
+
+.main-sponsor {
+    width: 100%;
+    height: 150px;
+}
+
+
+/* Sub sponsors container */
+
+.sub-sponsors {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* Sub sponsor boxes */
+
+.sponsor-box {
+    height: 120px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* Responsive: Stack sub-sponsors in a single column on small screens */
+
+@media (max-width: 768px) {
+    .sub-sponsors {
+        grid-template-columns: 1fr;
+    }
+}
