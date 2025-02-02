@@ -15,7 +15,7 @@ import img6 from '../assets/IMG_0279.jpg'
 const Timeline = () => {
     const astronautRef = useRef(null);
     const [scrollPosition, setScrollPosition] = useState(0);
-    const stopAstroAt = 2150; // Define the scroll position (in pixels) where the astronaut should stop
+    const stopAstroAt = 1900; // Define the scroll position (in pixels) where the astronaut should stop
 
     const timelineData = [
         {
