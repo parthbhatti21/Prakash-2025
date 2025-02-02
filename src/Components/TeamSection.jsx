@@ -128,7 +128,6 @@
 import styled from 'styled-components';
 import Sidd from '../assets/Sidd.jpeg';
 import { useState } from 'react';
-import './styles/spaceteam.css'
 const Card = () => {
   const [activeTeam, setActiveTeam] = useState('core'); // State to track active team
 
