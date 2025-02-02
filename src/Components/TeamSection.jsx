@@ -125,8 +125,6 @@
 // function CustomPrevArrow({ onClick }) {
 //   return <div classNameName="slick-arrow slick-prev" onClick={onClick}>◀</div>;
 // }
-// 
-
 import styled from 'styled-components';
 import Sidd from '../assets/Sidd.jpeg';
 import { useState } from 'react';

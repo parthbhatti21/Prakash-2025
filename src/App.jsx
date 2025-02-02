@@ -5,7 +5,7 @@ import EventCard from "./Components/EventCard"
 //1
 //test 2
 function App() {
-  
+
 
   return (
     <>

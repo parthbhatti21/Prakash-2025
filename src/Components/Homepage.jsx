@@ -7,6 +7,8 @@ import './styles/timeline.css'
 import system from '../assets/system.mp4';
 import TeamSection from "./TeamSection";
 import Event_Random from "./Event_Random";
+import Footer from "./Footer";
+import Sponsor from "./Sponsor";
 export default function Homepage() {
     return (
         <>
@@ -29,6 +31,8 @@ export default function Homepage() {
                 <Timeline />
                 <Event_Random/>
                 <TeamSection />
+                <Sponsor />
+                <Footer />
             </div>
         </>
     );
