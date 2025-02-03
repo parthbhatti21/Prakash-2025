@@ -155,10 +155,19 @@ const Navbar = () => {
               navigate("/");
               window.scrollTo(0, 0);
             }}>HOME</li>
-            <li className="nav-item" onClick={toggleMenu}>ABOUT</li>
-            <li className="nav-item" onClick={toggleMenu}>EVENTS</li>
-            <li className="nav-item" onClick={toggleMenu}>HISTORY</li>
-            <li className="nav-item" onClick={toggleMenu}>TEAM</li>
+            <li className="nav-item" onClick={()=>{
+              toggleMenu;navigate('/aboutus')
+            }
+            }>ABOUT</li>
+            <li className="nav-item" onClick={()=>{
+              toggleMenu;scrollToSection('team-section')
+            }>EVENTS</li>
+            <li className="nav-item" onClick={()=>{
+              toggleMenu;scrollToSection('timeline')
+            }>HISTORY</li>
+            <li className="nav-item" onClick={()=>{
+              toggleMenu;scrollToSection('team-section')
+            }>TEAM</li>
           </ul>
         </div>
       )}

@@ -32,7 +32,10 @@ export default function Homepage() {
                 {/* <div className="ship">
                     <img src={ship} alt="" height={"180px"} width={"200px"} />
                 </div> */}
+                <div className="timeline"> 
+
                 <Timeline />
+                </div>
                 <div id="events-section">
                     <Event_Random />
                 </div>
