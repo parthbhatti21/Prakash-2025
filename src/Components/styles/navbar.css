@@ -23,6 +23,15 @@ body {
     backdrop-filter: blur(10px);
     z-index: 1001; /* Higher than the timer */
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0);
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hiding */
+}
+
+.navbar.hide {
+    transform: translateY(-100%); /* Moves the navbar out of view when hidden */
+}
+
+.navbar.show {
+    transform: translateY(0); /* Resets the position when shown */
 }
 
 .logo {

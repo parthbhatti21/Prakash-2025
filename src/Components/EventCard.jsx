@@ -18,6 +18,7 @@ import PUBG from "../assets/EventCardSvg/PUBG.png";
 import Auction from "../assets/EventCardSvg/Auction.png";
 import Stonk from "../assets/EventCardSvg/MemeForTrade.png";
 import ShareMarket from "../assets/EventCardSvg/MemeShareMarke.png";
+
 // Event data
 const events = [
   {
@@ -25,7 +26,6 @@ const events = [
     category: "Workshop",
     title: "IOT Workshop",
     img: IOTCircuit,
-
     details:
       "Dive into the world of IoT at Prakarsh25 with an engaging hands-on workshop! Master sensors like distance sensors and bring your ideas to life with real-time applications.",
   },
@@ -34,7 +34,6 @@ const events = [
     category: "Workshop",
     title: "The Art Of Aero Modelling",
     img: Viman,
-
     details:
       "Dive into the world of aerodynamics and innovation! Join our hands-on workshop where you’ll learn to design and build an RC plane from scratch.",
   },
@@ -215,9 +214,8 @@ export default function EventCard() {
           <button onClick={() => setFilter("All")}>All</button>
           <button onClick={() => setFilter("Tech")}>Tech Events</button>
           <button onClick={() => setFilter("NonTech")}>Non-Tech Events</button>
-          <button onClick={() => setFilter("Workshop")}>
-            Workshop/Hands-On
-          </button>
+          <button onClick={() => setFilter("ESports")}>E-Sports</button>
+          <button onClick={() => setFilter("Workshop")}>Workshop/Hands-On</button>
         </div>
 
         {/* Event Cards */}
@@ -229,12 +227,12 @@ export default function EventCard() {
               onClick={() => showCardDetails(event.id)}
             >
               <h2>{event.title}</h2>
-              
             </div>
           ))}
         </div>
-{/* Floating Register Button */}
-<button className="floating-register-button">Register</button>
+
+        {/* Floating Register Button */}
+        <button className="floating-register-button">Register</button>
 
         {/* Event Details Modal */}
         {selectedEvent && (

@@ -7,27 +7,22 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
-    /* Prevents horizontal scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
-
 
 /* 🌠 Center Content Properly */
 
 .container1 {
-    margin-top: 100px;
-    /* Centers content */
+    margin-top: 100px; /* Centers content */
     padding: 20px;
     text-align: center;
 }
-
 
 /* 🚀 Filter Buttons */
 
 .button-wrapper1 {
     display: flex;
-    flex-wrap: wrap;
-    /* Allows buttons to wrap on small screens */
+    flex-wrap: wrap; /* Allows buttons to wrap on small screens */
     gap: 10px;
     justify-content: center;
     margin-bottom: 20px;
@@ -55,27 +50,147 @@ body {
     transform: scale(1.05);
 }
 
-
 /* 🎇 Event Cards */
-
 .card-container {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(220px, 1fr));
-    /* Adjust grid for responsiveness */
-    gap: 20px;
-    padding: 0 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto-fit the grid layout */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect layout */
+    margin: 0;
 }
 
+/* Card Styling */
 .card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
+    background: rgba(50, 50, 50, 0.8); /* Darker background for contrast */
+    border-radius: 10px; /* Round the corners */
     padding: 15px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    position: relative;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Light glowing effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px; /* Moderate height for each card */
+    box-sizing: border-box; /* Ensures padding is inside */
+}
+
+/* Hover effect on cards */
+.card:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+}
+
+/* Large Card Styling */
+.card.large-card {
+    height: 300px; /* Adjust height for larger cards */
+    background: rgba(50, 50, 50, 0.9); /* Darker background */
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7); /* Stronger box-shadow for large cards */
+}
+
+/* NEW: Gradient border effect on hover for large cards */
+.card.large-card::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #ff6347, #00bfff, #ff1493);
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card.large-card:hover::before {
+    opacity: 1;
+}
+
+/* Full-Screen Event Details */
+.cardDetails {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(10, 10, 30, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    width: 80%;
+    max-width: 90vw;
+    height: 80%;
+    max-height: 90vh;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screen sizes */
+        gap: 15px; /* Slightly reduced gap for better fit */
+        padding: 10px;
+    }
+
+    .card {
+        height: 180px; /* Shorter height for mobile */
+        padding: 10px;
+    }
+
+    .card.large-card {
+        height: 220px; /* Adjust large cards for mobile */
+    }
+
+    .cardDetails {
+        padding: 20px; /* Less padding in event details */
+        max-width: 90vw;
+        max-height: 80vh;
+        font-size: 14px; /* Smaller text size */
+    }
+}
+
+/* 📱 Extra Small Mobile Responsiveness */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Single column layout for very small screens */
+        gap: 10px; /* Small gap for tight screen space */
+    }
+
+    .card {
+        height: 150px; /* Even smaller card height */
+        padding: 8px;
+    }
+
+    .card.large-card {
+        height: 200px; /* Shorten large card height */
+    }
+
+    .cardDetails {
+        padding: 15px;
+        max-width: 90vw;
+        max-height: 80vh;
+    }
+}
+
+/* NEW: Gradient border effect on hover for plain boxes */
+.card::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff00ff, #007bff, #00ffff);
+    border-radius: 14px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .card:hover {
@@ -83,6 +198,9 @@ body {
     box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8), 0px 0px 40px rgba(0, 255, 255, 0.5);
 }
 
+.card:hover::before {
+    opacity: 1;
+}
 
 /* 🌟 Enlarged Full-Screen Event Details */
 
@@ -91,28 +209,23 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(10, 10, 30, 0.95);
-    /* Darker background for readability */
+    background: rgba(10, 10, 30, 0.95); /* Darker background for readability */
     backdrop-filter: blur(12px);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     color: #ffffff;
-    max-width: 90vw;
-    /* Covers most of the screen width */
-    max-height: 90vh;
-    /* Covers most of the screen height */
+    max-width: 90vw; /* Covers most of the screen width */
+    max-height: 90vh; /* Covers most of the screen height */
     width: 90%;
     height: 90%;
-    overflow: hidden;
-    /* Allows scrolling if content is too long */
+    overflow: hidden; /* Allows scrolling if content is too long */
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-
 
 /* 🚀 Close Button - Adjusted for Larger Modal */
 
@@ -129,7 +242,6 @@ body {
     transform: rotate(90deg) scale(1.2);
 }
 
-
 /* 🛠️ Responsive Adjustments */
 
 @media (max-width: 768px) {
@@ -142,8 +254,7 @@ body {
         text-align: center;
     }
     .card-container {
-        grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
-        /* Smaller cards for small screens */
+        grid-template-columns: repeat( auto-fit, minmax(150px, 1fr)); /* Smaller cards for small screens */
     }
     .cardDetails {
         overflow: hidden;
@@ -163,7 +274,6 @@ body {
         width: 100%;
     }
 }
-
 
 /* 🌟 Twinkling Stars Effect */
 
@@ -192,15 +302,9 @@ body::before {
     animation: stars 8s infinite linear;
 }
 
-
 /* ------------------------------------------------------- */
-
-
 /* Event card image styling */
-
-
 /* ------------------------------------------------------- */
-
 
 /* Vr card */
 
@@ -223,7 +327,6 @@ body::before {
     }
 }
 
-
 /* Robo Race */
 
 .event-3 {
@@ -232,8 +335,8 @@ body::before {
     z-index: -1;
     position: absolute;
     /* left: -20%;
-  width: 130%;
-  aspect-ratio: 1/1; */
+       width: 130%;
+       aspect-ratio: 1/1; */
     /* bottom: 0%; */
 }
 
@@ -273,7 +376,6 @@ body::before {
     }
 }
 
-
 /* Bits and Bytes */
 
 .event-4 {
@@ -312,7 +414,6 @@ body::before {
         bottom: -30%;
     }
 }
-
 
 /* Aeroplane Modelling */
 
@@ -371,7 +472,6 @@ body::before {
     }
 }
 
-
 /* TreasureHunt */
 
 .event-9 {
@@ -419,7 +519,6 @@ body::before {
         bottom: -10%;
     }
 }
-
 
 /* PopQuizz */
 
@@ -469,7 +568,6 @@ body::before {
     }
 }
 
-
 /* PopQuizz */
 
 .event-5 {
@@ -517,7 +615,6 @@ body::before {
         bottom: -10%;
     }
 }
-
 
 /* Cricket */
 
@@ -567,7 +664,6 @@ body::before {
     }
 }
 
-
 /* Infinity Quest */
 
 .event-19 {
@@ -615,7 +711,6 @@ body::before {
         bottom: -10%;
     }
 }
-
 
 /* IOT */
 
@@ -665,7 +760,6 @@ body::before {
     }
 }
 
-
 /* Maze */
 
 .event-21 {
@@ -714,7 +808,6 @@ body::before {
     }
 }
 
-
 /* Cadathon */
 
 .event-8 {
@@ -762,6 +855,7 @@ body::before {
         bottom: -10%;
     }
 }
+
 /* pubg */
 .event-20 {
   opacity: 40%;
