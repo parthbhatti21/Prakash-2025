@@ -25,22 +25,22 @@ const TeamSection = () => {
   return (
     <StyledWrapper>
       {/* Buttons */}
-      <div className="button-group btn-grp">
-        <div className='btn-grp'>  
-        <button
-          className={`coreteam team-button ${activeTeam === 'core' ? 'active' : ''}`}
-          onClick={() => setActiveTeam('core')}
-        >
-          Core Team
-        </button>
-        <button
-          className={`team-button ${activeTeam === 'developer' ? 'active' : ''}`}
-          onClick={() => setActiveTeam('developer')}
-        >
-          Developer Team
-        </button>
+      <div className="button-group ">
+        <div className='btn-grp'>
+          <button
+            className={`coreteam team-button ${activeTeam === 'core' ? 'active' : ''}`}
+            onClick={() => setActiveTeam('core')}
+          >
+            Core Team
+          </button>
+          <button
+            className={`team-button ${activeTeam === 'developer' ? 'active' : ''}`}
+            onClick={() => setActiveTeam('developer')}
+          >
+            Developer Team
+          </button>
         </div>
-      </div>  
+      </div>
       {people.map((person, index) => (
         <div className="container2 noselect card-container2" key={index}>
           <div className="canvas">
@@ -92,8 +92,13 @@ const TeamSection = () => {
 
 const StyledWrapper = styled.div`
  .button-group {
+ margin-top: 20px;
+ position: relative;
+ z-index: 100;
+ 
   width:100%;
     display: flex;
+    justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
   }
