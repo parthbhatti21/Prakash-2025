@@ -1,10 +1,7 @@
 import React from "react";
 import "./styles/footer.css";
 import { FaInstagram } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa6";
-import { LuMails } from "react-icons/lu";
-import { FaFacebook } from "react-icons/fa";
 import svitLogo from "../assets/svitlogo.png"; // Import the logo image
 
 const Footer = () => {
@@ -35,9 +32,6 @@ const Footer = () => {
             <h3>Follow Us</h3>
             <div className="social-icons">
               <i className="bi bi-twitter"><FaInstagram/></i>
-              <i className="bi bi-instagram"><BsTwitterX/></i>
-              <i className="bi bi-facebook"><FaFacebook /></i>
-              <i className="bi bi-lumails"><LuMails /></i>
               <i className="bi bi-youtube"><FaYoutube /></i>
             </div>
           </div>
@@ -47,7 +41,7 @@ const Footer = () => {
             <h3>Event Location</h3>
             <div className="map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.478001580213!2d72.48618287621378!3d23.010695116944795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9bb90c5bb399%3A0x6c04c63b8891ecbb!2sJOSHI-KOTAK%20Institute%20of%20Management%20Studies%20and%20Research%20(JKIMSR)!5e0!3m2!1sen!2sin!4v1706633708794!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.9332687608494!2d73.07379517501302!3d22.469141836754744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fb55277d1e457%3A0xaf7e43a3d29561b!2sSardar%20Vallabhbhai%20Patel%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1738574532572!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

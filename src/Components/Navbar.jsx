@@ -107,14 +107,14 @@ const Navbar = () => {
   return (
     <header className="navbar">
       {/* 🔥 Made the logo clickable to navigate to home */}
-      <img 
-        src={logoImage} 
-        alt="PRAKARSH Logo" 
-        className="logo" 
+      <img
+        src={logoImage}
+        alt="PRAKARSH Logo"
+        className="logo"
         onClick={() => {
           navigate("/");
           window.scrollTo(0, 0);
-        }} 
+        }}
         style={{ cursor: "pointer" }} // 🔥 Added pointer cursor for better UX
       />
 
@@ -125,14 +125,14 @@ const Navbar = () => {
             navigate("/");
             window.scrollTo(0, 0);
           }}>HOME</li>
-          <li className="nav-item" onClick={()=>{navigate('/aboutus')}}>ABOUT</li>
+          <li className="nav-item" onClick={() => { navigate('/aboutus') }}>ABOUT</li>
           <li className="nav-item" onClick={() => scrollToSection('events-section')}>
-          EVENTS
-        </li>
+            EVENTS
+          </li>
           <li className="nav-item">HISTORY</li>
           <li className="nav-item" onClick={() => scrollToSection('team-section')}>
-          TEAM
-        </li>
+            TEAM
+          </li>
         </ul>
       </nav>
 
@@ -155,10 +155,19 @@ const Navbar = () => {
               navigate("/");
               window.scrollTo(0, 0);
             }}>HOME</li>
-            <li className="nav-item" onClick={toggleMenu}>ABOUT</li>
-            <li className="nav-item" onClick={toggleMenu}>EVENTS</li>
-            <li className="nav-item" onClick={toggleMenu}>HISTORY</li>
-            <li className="nav-item" onClick={toggleMenu}>TEAM</li>
+            <li className="nav-item" onClick={() => {
+              toggleMenu(); navigate('/aboutus')
+            }
+            }>ABOUT</li>
+            <li className="nav-item" onClick={() => {
+              toggleMenu(); scrollToSection('events-section')
+            }}>EVENTS</li>
+            <li className="nav-item" onClick={() => {
+              toggleMenu(); scrollToSection('')
+            }}>HISTORY</li>
+            <li className="nav-item" onClick={() => {
+              toggleMenu(); scrollToSection('team-section')
+            }}>TEAM</li>
           </ul>
         </div>
       )}
