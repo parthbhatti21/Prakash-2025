@@ -160,10 +160,10 @@ const Navbar = () => {
             }
             }>ABOUT</li>
             <li className="nav-item" onClick={() => {
-              toggleMenu(); scrollToSection('team-section')
+              toggleMenu(); scrollToSection('events-section')
             }}>EVENTS</li>
             <li className="nav-item" onClick={() => {
-              toggleMenu(); scrollToSection('timeline')
+              toggleMenu(); scrollToSection('')
             }}>HISTORY</li>
             <li className="nav-item" onClick={() => {
               toggleMenu(); scrollToSection('team-section')

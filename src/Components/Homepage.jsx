@@ -32,7 +32,7 @@ export default function Homepage() {
                 {/* <div className="ship">
                     <img src={ship} alt="" height={"180px"} width={"200px"} />
                 </div> */}
-                <div className="timeline"> 
+                <div id="timeline"> 
 
                 <Timeline />
                 </div>
