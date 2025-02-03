@@ -881,15 +881,15 @@ const TeamSection = () => {
   ];
 
   const developerTeam = [
-    { name: "Tarang Motiyani", image: "https://via.placeholder.com/150", designation: "ISTE Website Coordinator", github: "https://github.com" },
-    { name: "Arya Panchal", image: "https://via.placeholder.com/150", designation: "Joint ISTE Website Coordinator", github: "https://github.com" },
-    { name: "Nisarg Patel", image: "https://via.placeholder.com/150", designation: "Joint ISTE Website Coordinator", github: "https://github.com" },
-    { name: "Siddharth Panchal", image: "https://via.placeholder.com/150", designation: "Fullstack Developer", github: "https://github.com" },
-    { name: "Dhaval Patel", image: "https://via.placeholder.com/150", designation: "Frontend Developer", github: "https://github.com" },
-    { name: "Nidhi Agrawal", image: "https://via.placeholder.com/150", designation: "UI/UX Designerr", github: "https://github.com" },
-    { name: "Malak Bhadgaonkar", image: "https://via.placeholder.com/150", designation: "Frontend Developer", github: "https://github.com" },
-    { name: "Parth Bhatti", image: "https://via.placeholder.com/150", designation: "Backend Developer", github: "https://github.com" },
-    { name: "Yash Mehta", image: "https://via.placeholder.com/150", designation: "Backend Developer", github: "https://github.com" }
+    { name: "Tarang Motiyani", image: "https://via.placeholder.com/150", designation: "ISTE Website Coordinator", github: "https://github.com/Tarang52" },
+    { name: "Arya Panchal", image: "https://via.placeholder.com/150", designation: "Joint ISTE Website Coordinator", github: "https://github.com/Arya664" },
+    { name: "Nisarg Patel", image: "https://via.placeholder.com/150", designation: "Joint ISTE Website Coordinator", github: "https://github.com/nisargpatel7042lva" },
+    { name: "Siddharth Panchal", image: "https://via.placeholder.com/150", designation: "Fullstack Developer", github: "https://github.com/siddharth-09" },
+    { name: "Dhaval Patel", image: "https://via.placeholder.com/150", designation: "Frontend Developer", github: "https://github.com/DhavalPhooski" },
+    { name: "Nidhi Agrawal", image: "https://via.placeholder.com/150", designation: "UI/UX Designerr", github: "https://github.com/NidhiAgrawal7574" },
+    { name: "Malak Bhadgaonkar", image: "https://via.placeholder.com/150", designation: "Frontend Developer", github: "https://github.com/mal4k3009" },
+    { name: "Parth Bhatti", image: "https://via.placeholder.com/150", designation: "Backend Developer", github: "https://github.com/parthbhatti21" },
+    { name: "Yash Mehta", image: "https://via.placeholder.com/150", designation: "Backend Developer", github: "https://github.com/yashm13114" }
   ];
 
   const handleSocialClick = (url) => {
