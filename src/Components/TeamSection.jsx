@@ -84,7 +84,7 @@ const TeamSection = () => {
     { name: "Siddharth Panchal", image: sid, designation: "Web Astronaut", github: "https://github.com/siddharth-09" },
     { name: "Dhaval Patel", image: dhaval, designation: "Web Astronaut", github: "https://github.com/DhavalPhooski" },
     { name: "Nidhi Agrawal", image: "https://via.placeholder.com/150", designation: "Web Astronaut", github: "https://github.com/NidhiAgrawal7574" },
-    { name: "Malak Bhadgaonkar", image: malak, designation: "Web Astronaut", github: "https://github.commal4k3009" },
+    { name: "Malak Bhadgaonkar", image: malak, designation: "Web Astronaut", github: "https://github.com/mal4k3009" },
     { name: "Parth Bhatti", image: parth, designation: "Web Astronaut", github: "https://github.com/parthbhatti21" },
     { name: "Yash Mehta", image: yash, designation: "Web Astronaut", github: "https://github.com/yashm13114" }
   ];
