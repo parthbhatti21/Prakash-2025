@@ -7,22 +7,23 @@ import TeamSection from "./TeamSection";
 import Event_Random from "./Event_Random";
 import Footer from "./Footer";
 import Sponsor from "./Sponsor";
-import AboutPage from "./AboutPage";
+import HeroSection from "./HeroSection";
 
 export default function Homepage() {
     return (
         <>
+                <Navbar />
+        <HeroSection/>
             <div className="homepage-container">
                 {/* Video Background */}
-                <div className="video-background">
+                {/* <div className="video-background">
                     <video className="video" autoPlay loop muted>
                         <source src={system} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                </div>
+                </div> */}
 
                 <Star />
-                <Navbar />
                 <Timer />
 
                 {/* Content Sections */}

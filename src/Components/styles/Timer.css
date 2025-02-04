@@ -2,7 +2,7 @@
 
 /* General Styles */
 .timer-container {
-    position: fixed;
+    position: sticky;
     top: 100px;
     left: 20px;
     width: 410px;
