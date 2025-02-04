@@ -269,6 +269,7 @@ body::before {
 /* ============================================================= */
 /* NEW: Floating Register Button - Cosmic Glow */
 /* ============================================================= */
+/* Updated Floating Register Button */
 .floating-register-button {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.2rem;
@@ -281,14 +282,23 @@ body::before {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 15px rgba(255, 0, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.6);
-    position: absolute;
-    bottom: 20px; /* Moved down for more space */
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.floating-register-button:hover {
-    transform: translateX(-50%) scale(1.1);
-    box-shadow: 0 0 25px rgba(255, 0, 255, 0.9), 0 0 50px rgba(0, 255, 255, 0.8);
-}
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.9), 0 0 40px rgba(0, 255, 255, 0.8);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transform: translateX(0);
+    z-index: 10000;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .floating-register-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 0, 255, 1), 0 0 60px rgba(0, 255, 255, 1);
+  }
+  
+  @keyframes pulse {
+    0% { box-shadow: 0 0 15px rgba(255, 0, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.6); }
+    50% { box-shadow: 0 0 25px rgba(255, 0, 255, 0.9), 0 0 50px rgba(0, 255, 255, 0.8); }
+    100% { box-shadow: 0 0 15px rgba(255, 0, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.6); }
+  }
+  
