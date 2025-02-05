@@ -54,7 +54,7 @@ const Timeline = () => {
         <div className="timeline" ref={timelineRef}>
             {/* Title */}
             {/* Green Line */}
-            <div class="timeline_container">
+            <div className="timeline_container">
                 <div className="green-line"></div>
                 {/* Astronaut Image */}
                 <div ref={astronautRef} className="timeline-image astronaut">

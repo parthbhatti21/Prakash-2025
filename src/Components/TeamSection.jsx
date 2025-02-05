@@ -1,6 +1,6 @@
 
 // export default TeamSection;
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import parth from '../assets/teamimages/parth.jpg';
