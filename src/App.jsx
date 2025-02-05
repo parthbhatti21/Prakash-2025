@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router"
 import Homepage from "./Components/Homepage"
 import EventCard from "./Components/EventCard"
 import AboutUs from "./Components/Aboutus"
-import { Monitoring } from "react-scan/monitoring"
 function App() {
 
 
@@ -15,7 +14,6 @@ function App() {
       <Route path='/events' element={<EventCard />}/>
       {/* <Route path='/aboutus' element={<AboutPage/>}/> */}
       <Route path='/aboutus' element={<AboutUs/>}/>
-
     </Routes>
     
     </BrowserRouter>
