@@ -118,7 +118,9 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    
     .timer-container {
+        position:sticky;
         width: 100%;
         max-width: 300px;
         height: auto;
