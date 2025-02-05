@@ -1,203 +1,116 @@
-/* Existing CSS */
-.cyberpunk-bg {
-  background: linear-gradient(45deg, #000428, #004e92);
-  position: relative;
-  overflow: hidden;
-  min-height: 100vh;
-  color: var(--cyan-400);
-  font-family: 'Share Tech Mono', monospace;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .container {
-  width: 100%; /* Adjusted for mobile */
-  padding: 2rem 1rem; /* Adjusted for mobile */
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-
-.main-grid {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem; /* Adjusted for mobile */
-  width: 100%;
+  justify-content: flex-start;
+  padding: 4rem;
+  background-color: #0a0a0a;
+  color: #00ffcc;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  border: 2px solid #00ffcc;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ffcc, inset 0 0 10px #00ffcc;
+  margin: 2rem;
+  min-height: 400px;
 }
 
-@media (min-width: 768px) {
-  .main-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.z-10 {
-  z-index: 10;
+.main {
+  position: relative;
 }
 
 .title {
-  font-size: 1.5rem; /* Adjusted for mobile */
-  font-family: 'Share Tech Mono', monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
 }
 
-@media (min-width: 768px) {
-  .title {
-    font-size: 4rem;
-  }
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-shadow: 0 0 5px #00ffcc;
 }
 
-.paragraph {
-  font-size: 1rem; /* Adjusted for mobile */
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid var(--cyan-400);
-  width: 0;
-  animation: typing 4s steps(50, end) forwards, blink 0.75s step-end infinite;
-  margin-top: 1rem;
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  color: #cccccc;
+  text-shadow: 0 0 5px #00ffcc;
 }
 
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-
-.card {
-  font-size: 1rem; /* Adjusted for mobile */
-  line-height: 1.5; /* Adjusted for mobile */
-  background-color: transparent;
-  border: none;
-  animation: glitch 5s linear infinite;
-}
-
-.card > * + * {
-  margin-top: 1rem;
-}
-
-.left-border {
-  border-left: 4px solid var(--cyan-400);
-  padding-left: 1rem;
-}
-
-.list-none {
-  list-style: none;
-}
-
-.list-none > * + * {
-  margin-top: 0.5rem;
-}
-
-.device {
-  position: relative;
-  width: 150px; /* Adjusted for mobile */
-  height: 150px; /* Adjusted for mobile */
-}
-
-.device::before {
-  content: '';
+.glowEffect {
   position: absolute;
-  top: -50px; /* Adjusted for mobile */
-  right: 0;
-  width: 2px;
-  height: 50px; /* Adjusted for mobile */
-  background: linear-gradient(to bottom, transparent, #0ff);
-  animation: scanline 2s linear infinite;
-}
-
-@keyframes scanline {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(100px); } /* Adjusted for mobile */
-}
-
-.circle {
-  width: 10rem; /* Adjusted for mobile */
-  height: 10rem; /* Adjusted for mobile */
-  background-color: rgba(34, 211, 238, 0.1);
-  border-radius: 50%;
-  filter: blur(4px);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  text-align: center;
-}
-
-@keyframes hologramEffect {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.7; }
-}
-
-@keyframes glitch {
-  2%, 64% { transform: translate(2px, 0) skew(0deg); }
-  4%, 60% { transform: translate(-2px, 0) skew(0deg); }
-  62% { transform: translate(0, 0) skew(2deg); }
-}
-
-/* Hologram Beam Effect */
-.hologram-beam {
-  position: fixed;
-  bottom: -5%;
-  width: 80vw; /* Adjusted for mobile */
-  height: 50vh; /* Adjusted for mobile */
-  background: linear-gradient(to top, rgba(34, 211, 238, 0.5), transparent);
-  clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%); /* Adjusted to form a V shape */
-  z-index: 5;
-  animation: hologramEffect 1s infinite;
-}
-
-@media (min-width: 768px) {
-  .hologram-beam {
-    width: 50vw;
-    height: 75vh;
-  }
-}
-
-.fixed-overlay {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 50px #00ffcc, inset 0 0 20px #00ffcc;
   pointer-events: none;
-  z-index: 15;
+  z-index: -1;
 }
 
-.gradient-overlay {
+.astronaut {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+  width: 100px;
+  transition: left 2s ease-in-out, top 2s ease-in-out;
 }
 
-.grid-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
+.hello {
+  position: relative;
   justify-content: space-between;
 }
 
-.border-right {
-  display: none; /* Removes vertical lines */
+.AstroSaheeb-parent {
+  position: relative;
+  width: 100%;
+  height: 500px;  /* Adjust the height to fit your image size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.robotImage {
+  position: absolute;
+  width: 100%;  /* Adjust the size of the robot image */
+  z-index: 1;
+  object-fit: contain;
+  top:-10%;
+}
+
+.aboutText {
+  position: absolute;
+  z-index: -1;  /* Make sure the text is on top of the robot */
+  top: 100%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+  border-radius: 10px;
+  width : 40%;
+}
+
+.aboutText .title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.aboutText .subtitle {
+  font-size: 1.2rem;
+}
+
+.aboutText .description {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ffffff;
 }
