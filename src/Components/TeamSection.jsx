@@ -642,21 +642,7 @@ const StyledWrapper = styled.div`
 
   #card::before {
     content: "";
-    background: radial-gradient(
-      circle at center,
-      rgba(0, 255, 170, 0.1) 0%,
-      rgba(0, 162, 255, 0.05) 50%,
-      transparent 100%
-    );
-    filter: blur(20px);
-    opacity: 0;
-    width: 150%;
-    height: 150%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease;
+
   }
 
   .tracker:hover ~ #card::before {
