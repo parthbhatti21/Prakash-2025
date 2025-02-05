@@ -38,14 +38,14 @@ export default function Homepage() {
                 <Timer />
 
                 {/* Content Sections */}
+                <div id="events-section">
+                    <Event_Random />
+                </div>
                 <div id="timeline">
             <div class="co1">  
             <div className="name">TIME LINE</div>
             </div>
                     <Timeline />
-                </div>
-                <div id="events-section">
-                    <Event_Random />
                 </div>
                 <div id="team-section">
                     <TeamSection />
