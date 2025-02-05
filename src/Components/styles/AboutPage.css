@@ -1,116 +1,104 @@
-.container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 4rem;
-  background-color: #0a0a0a;
-  color: #00ffcc;
-  font-family: "Orbitron", sans-serif;
-  text-align: center;
-  border: 2px solid #00ffcc;
-  border-radius: 15px;
-  box-shadow: 0 0 20px #00ffcc, inset 0 0 10px #00ffcc;
-  margin: 2rem;
-  min-height: 400px;
-}
-
-.main {
-  position: relative;
-}
-
-.title {
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
-}
-
-.subtitle {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  color: #ffffff;
-  text-shadow: 0 0 5px #00ffcc;
-}
-
-.description {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  max-width: 800px;
-  color: #cccccc;
-  text-shadow: 0 0 5px #00ffcc;
-}
-
-.glowEffect {
-  position: absolute;
-  top: 0;
-  left: 0;
+.AboutUsContainer {
   width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  box-shadow: 0 0 50px #00ffcc, inset 0 0 20px #00ffcc;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(20, 5%);
+  overflow: hidden;
+}
+
+/* Details Box */
+.Details {
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: white;
+  border: 30px solid green;
+  border-radius: 10%;
+  background-color: black;
+  grid-column: 2/-5;
+  grid-row: 2/-5;
+  overflow-y: auto;
+}
+
+/* Image */
+.AstroSaheeb {
   pointer-events: none;
-  z-index: -1;
+  z-index: 3;
+  width: 1700%;
+  height: auto;
+  grid-column: -15;
+  grid-row: 13;
 }
 
-.astronaut {
-  position: absolute;
-  width: 100px;
-  transition: left 2s ease-in-out, top 2s ease-in-out;
+/* Responsive Styling */
+@media (min-width: 1160px) {
+  .Details {
+    margin-top: 5%;
+    border: 50px solid green;
+    border-radius: 10%;
+  }
+  .AstroSaheeb {
+    z-index: 3;
+    width: 1300%;
+    height: auto;
+    grid-column: -10;
+    grid-row: 5;
+  }
 }
 
-.hello {
-  position: relative;
-  justify-content: space-between;
+@media (min-width: 770px) and (max-width: 1160px) {
+  .Details {
+    margin-top: 5%;
+    border: 50px solid green;
+    border-radius: 10%;
+  }
+  .AstroSaheeb {
+    z-index: 3;
+    width: 1300%;
+    height: auto;
+    grid-column: -10;
+    grid-row: 9;
+  }
 }
 
-.AstroSaheeb-parent {
-  position: relative;
-  width: 100%;
-  height: 500px;  /* Adjust the height to fit your image size */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.robotImage {
-  position: absolute;
-  width: 100%;  /* Adjust the size of the robot image */
-  z-index: 1;
-  object-fit: contain;
-  top:-10%;
-}
-
-.aboutText {
-  position: absolute;
-  z-index: -1;  /* Make sure the text is on top of the robot */
-  top: 100%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  color: #00ffcc;
-  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
-  font-family: "Orbitron", sans-serif;
-  text-align: center;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
-  border-radius: 10px;
-  width : 40%;
-}
-
-.aboutText .title {
-  font-size: 2rem;
+/* About Us Title */
+.AboutusTitle {
+  font-size: clamp(2rem, 5vw, 4rem);
+  text-transform: uppercase;
   font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
 }
 
-.aboutText .subtitle {
-  font-size: 1.2rem;
+/* Subtitle in Yellow */
+.h2-AboutUs {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 600;
+  color: yellow;
+  text-shadow: 0 0 8px rgba(255, 255, 0, 0.8);
+  margin-bottom: 1rem;
 }
 
-.aboutText .description {
-  font-size: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
-  color: #ffffff;
+/* Paragraph */
+.p-AboutUs {
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  max-width: 90%;
+  margin: 20px auto;
+  line-height: 1.8;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Highlighted Text */
+strong {
+  color: #00ffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+}
+
+/* Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
