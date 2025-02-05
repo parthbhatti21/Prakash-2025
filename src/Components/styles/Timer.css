@@ -6,7 +6,7 @@
 }
 /* General Styles */
 .timer-container {
-    position: sticky;
+    position: fixed;
     top: 100px;
     left: 20px;
     width: 410px;
