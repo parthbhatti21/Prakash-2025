@@ -31,16 +31,6 @@ body {
     /* Smooth transition for hiding */
 }
 
-.navbar.hide {
-    transform: translateY(-100%);
-    /* Moves the navbar out of view when hidden */
-}
-
-.navbar.show {
-    transform: translateY(0);
-    /* Resets the position when shown */
-}
-
 .logo {
     height: 50px;
     width: auto;

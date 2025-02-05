@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../Components/styles/EventcardStyle.css";
 import CrossImg from "../assets/Cross.png";
-import Navbar from "./Navbar";
 import Vr from "../assets/EventCardSvg/Vr.png";
 import RoboRace from "../assets/EventCardSvg/Robo-Race.png";
 import Bits_Bytes from "../assets/EventCardSvg/Bits&Bytes.png";
@@ -214,7 +213,6 @@ export default function EventCard() {
 
   return (
     <>
-      <Navbar />
       <div className="container1">
         {/* Filter Buttons */}
         <div className="button-wrapper1">

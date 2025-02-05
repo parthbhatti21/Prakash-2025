@@ -247,6 +247,7 @@ const StyledWrapper = styled.div`
   .button-group {
     width: 100%;
     display: flex;
+    justify-content: center;
     gap: 10px;
     position:relative;
     z-index:10;
