@@ -6,8 +6,6 @@ function App() {
 
 
   return (
-    <Monitoring apiKey="s63lfJ_VgzKxHiJhUJAVgcQI4SnJGDP-" // Safe to expose publically
-    url="https://monitoring.react-scan.com/api/v1/ingest">
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Homepage/>}/>
@@ -17,7 +15,6 @@ function App() {
     </Routes>
     
     </BrowserRouter>
-    </Monitoring>
   )
 }
 
