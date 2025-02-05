@@ -7,7 +7,7 @@ import parth from '../assets/teamimages/parth.jpg';
 import malak from '../assets/teamimages/malak.jpg';  
 import sid from '../assets/teamimages/siddharth.jpg';
 import dhaval from '../assets/teamimages/dhaval.jpg';
-import tarang from '../assets/teamimages/malak.jpg';
+import tarang from '../assets/teamimages/tarang.jpg';
 import nisarg from '../assets/teamimages/nisarg.jpg';
 import nidhi from '../assets/teamimages/nidhi.jpg';
 import arya from '../assets/teamimages/malak.jpg';
@@ -50,7 +50,7 @@ const TeamSection = () => {
     { name: "Piyush Sharma", image: "https://via.placeholder.com/150", designation: "ISTE Finance Coordinator", linkedin: "https://linkedin.com" },
     { name: "Yash Shah", image: "https://via.placeholder.com/150", designation: "Joint ISTE Finance Coordinator", linkedin: "https://www.linkedin.com/in/yash-shah-195a88283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
     { name: "Vinit Shah", image: "https://via.placeholder.com/150", designation: "Joint ISTE Finance Coordinator", linkedin: "https://www.linkedin.com/in/vinit-shah-aab33321b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-    { name: "Tarang Motiyani", image: "https://via.placeholder.com/150", designation: "ISTE Website Coordinator", linkedin: "https://www.linkedin.com/in/tarang-motiyani-a05756255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+    { name: "Tarang Motiyani", image: tarang, designation: "ISTE Website Coordinator", linkedin: "https://www.linkedin.com/in/tarang-motiyani-a05756255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
     { name: "Arya Panchal", image: "https://via.placeholder.com/150", designation: "Joint ISTE Website Coordinator", linkedin: "https://www.linkedin.com/in/arya-panchal-ab8212268/" },
     { name: "Nisarg Patel", image: nisarg, designation: "Joint ISTE Website Coordinator", linkedin: "https://www.linkedin.com/in/nisarg-patel-7b799a277/" },
     { name: "Manan Shah", image: "https://via.placeholder.com/150", designation: "ISTE Social Media Marketing", linkedin: "https://www.linkedin.com/in/manan-shah-bb481b24b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
@@ -78,7 +78,7 @@ const TeamSection = () => {
   ];
 
   const developerTeam = [
-    { name: "Tarang Motiyani", image: "https://via.placeholder.com/150", designation: "Web Astronaut", github: "https://github.com/Tarang52" },
+    { name: "Tarang Motiyani", image: tarang, designation: "Web Astronaut", github: "https://github.com/Tarang52" },
     { name: "Arya Panchal", image: "https://via.placeholder.com/150", designation: "Web Astronaut", github: "https://github.com/Arya664" },
     { name: "Nisarg Patel", image: nisarg, designation: "Web Astronaut", github: "https://github.com/nisargpatel7042lva" },
     { name: "Siddharth Panchal", image: sid, designation: "Web Astronaut", github: "https://github.com/siddharth-09" },
