@@ -2,27 +2,38 @@ import Navbar from "./Navbar";
 import Star from "./Star";
 import Timeline from "./Timeline";
 import Timer from "./Timer";
-import system from "../assets/system.mp4";
 import TeamSection from "./TeamSection";
 import Event_Random from "./Event_Random";
 import Footer from "./Footer";
 import Sponsor from "./Sponsor";
 import HeroSection from "./HeroSection";
+import { useEffect, useRef } from "react";
+import { Rive } from "@rive-app/canvas";
+import "./styles/Homepage.css"
 
 export default function Homepage() {
+    const solarref = useRef(null);
+    useEffect(() => {
+
+        const s = new Rive({
+            src :'/SolarSystem.riv',
+            canvas: document.getElementById("canvasSolarSystemAlignment"),
+      autoplay: true,
+      stateMachines: "State Machine 1",
+      onLoad: function () {
+        s.resizeDrawingSurfaceToCanvas();
+      },
+        })
+
+
+    }, []);
     return (
         <>
             <Navbar />
             <HeroSection />
             <div className="homepage-container">
-                {/* Video Background */}
-                {/* <div className="video-background">
-                    <video className="video" autoPlay loop muted>
-                        <source src={system} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div> */}
-
+                <div className="SolarSystemBackground"><canvas id="canvasSolarSystemAlignment" ref={solarref}></canvas></div>
+                
                 <Star />
                 <Timer />
 
@@ -36,10 +47,9 @@ export default function Homepage() {
                 <div id="team-section">
                     <TeamSection />
                 </div>
-
                 <Sponsor />
+</div>
                 <Footer />
-            </div>
         </>
     );
 }

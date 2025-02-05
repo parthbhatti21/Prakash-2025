@@ -42,11 +42,13 @@ const events = [
   { id: 21, category: "NonTech", title: "Midnight Mystery", details: "“Face the dark, Escape the maze, Conquer the Mystery.” Step into a world of mystery and darkness with Challenges! This non-tech event is designed to test your instincts, teamwork, and problem-solving skills." },
 ];
 const viewMore = { id: 22, category: "ViewMe", title: "View All...", details: "Jovo mane" };
+
 export default function Event_Random() {
   const [filter, setFilter] = useState("All"); // Track current filter
   // randomEvents.push(viewMore);
   // console.log(randomEvents)
   const navigate = useNavigate();
+
   return (
     <>
       <div className="homeEventBar">
@@ -75,7 +77,6 @@ export default function Event_Random() {
           
         ))}
       </div>
-
     </>
-  )
+  );
 }

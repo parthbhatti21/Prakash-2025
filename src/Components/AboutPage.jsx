@@ -1,5 +1,3 @@
-
-
 import "../Components/styles/AboutPage.css";
 import Navbar from "./Navbar";
 import { Card } from "./ui/Card";
@@ -15,9 +13,17 @@ const AboutPage = () => {
             <Card className="card">
               <h1 className="title">Welcome to Prakarsh 2025</h1>
               <p>
-                For 26 illustrious years, Sardar Vallabhbhai Patel Institute of Technology in Gujarat has been a beacon of innovation and tech education, and now it invites you to step into the electrifying realm of Prakarsh— the flagship tech fest of Sardar Vallabhbhai Patel Institute of Technology, a dynamic celebration where technology, innovation, and creativity converge under one roof. At this renowned event, students immerse themselves in a plethora of technical challenges, cutting-edge workshops, and stimulating competitions, while also engaging in non-technical events that showcase leadership, teamwork, and creative problem-solving. event shrouded in anticipation and mystery. Imagine a fest where every corner pulsates with energy, creativity, and the promise of groundbreaking discoveries; a space where technical ingenuity meets social flair, and where non-technical prowess is celebrated with as much fervor. Prakarsh is not merely an event—it is a dynamic arena that challenges you to push the boundaries of your imagination, showcase your latent talents, and engage in competitions that blend skill with daring innovation. As you navigate through its multifaceted challenges and interactive sessions, prepare to unlock secrets, unravel hidden potentials, and join a community that thrives on curiosity and excellence. Are you ready to embark on this journey of suspense and revelation, to be part of a fest that transcends the ordinary?
+              For 26 years, Sardar Vallabhbhai Patel Institute of Technology has been a hub of innovation, and now, it’s time for the most electrifying tech fest—Prakarsh! ⚡
+
+Dive into cutting-edge workshops, mind-bending competitions, and thrilling tech challenges that will test your skills like never before. But wait—it’s not just about tech! 🎭 From leadership battles to creative problem-solving, non-tech events add an extra spark of excitement!
+
+✨ Unravel mysteries. ✨ Push your limits. ✨ Be part of a fest that redefines innovation!
+
+Are you ready for the ultimate experience? 🚀💡
+
+
               </p>
-              <p>Join us for an immersive experience featuring:</p>
+              {/* <p>Join us for an immersive experience featuring:</p> */}
             </Card>
           </div>
         </div>

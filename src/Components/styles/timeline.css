@@ -17,26 +17,7 @@ body {
 
 /* Full-screen video background */
 
-.video-background video {
-  position: fixed;
-  /* Fixed so it stays in place while scrolling */
-  top: 0;
-  left: 0;
-  width: 100vw;
-  /* Full viewport width */
-  height: 100vh;
-  /* Full viewport height */
-  object-fit: cover;
-  /* Ensures the video covers the screen */
-  z-index: -1;
-  /* Place behind all other content */
-}
 
-.homepage-container2 {
-  position: relative;
-  /* Ensures the content is above the video */
-  z-index: 1;
-}
 
 .timeline {
   position: relative;
