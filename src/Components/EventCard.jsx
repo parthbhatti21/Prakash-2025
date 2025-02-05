@@ -256,6 +256,8 @@ export default function EventCard() {
             </div>
           </div>
         )}
+
+        <button className="floating-register-button">Register</button>
       </div>
     </>
   );

@@ -33,6 +33,7 @@ const events = [
   { id: 20, category: "ESports", title: "BGMI Conquest", details: "Land. Fight. Dominate. The Battleground is Yours! The battle begins at BGMI, where warriors collide in an intense fight for survival!" },
   { id: 21, category: "NonTech", title: "Midnight Mystery", details: "“Face the dark, Escape the maze, Conquer the Mystery.” Step into a world of mystery and darkness with Challenges! This non-tech event is designed to test your instincts, teamwork, and problem-solving skills." },
 ];
+<<<<<<< HEAD
 
 const viewMore = { id: 22, category: "ViewMe", title: "View All...", details: "Jovo mane" };
 
@@ -42,6 +43,14 @@ export default function Event_Random() {
   
   const navigate = useNavigate();
   
+=======
+const viewMore = { id: 22, category: "ViewMe", title: "View All...", details: "Jovo mane" };
+export default function Event_Random() {
+  const randomEvents = shuffleArray(events).slice(0, 3);
+  randomEvents.push(viewMore);
+  // console.log(randomEvents)
+  const navigate = useNavigate();
+>>>>>>> 9f9e004b584ecce2dfcbad31cba9ebf1625fcbe7
   return (
     <>
       <div className="homeEventBar">
@@ -53,6 +62,7 @@ export default function Event_Random() {
             key={event.id}
             className={`card c${event.id} ${event.category}`}
             onClick={() => {
+<<<<<<< HEAD
               if (event.title === "View All...") {
                 navigate('/events'); // You can modify this to any action you want for "View All"
               }
@@ -73,3 +83,19 @@ export default function Event_Random() {
     </>
   );
 }
+=======
+              navigate('/events')
+            }}
+          >
+            <h2>{event.title}</h2>
+            {/* Floating Register Button */}
+            {/* <button className="floating-register-button">Register</button> */}
+
+          </div>
+        ))}
+      </div>
+
+    </>
+  )
+}
+>>>>>>> 9f9e004b584ecce2dfcbad31cba9ebf1625fcbe7

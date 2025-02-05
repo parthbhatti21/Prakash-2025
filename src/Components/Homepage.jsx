@@ -12,8 +12,8 @@ import HeroSection from "./HeroSection";
 export default function Homepage() {
     return (
         <>
-                <Navbar />
-        <HeroSection/>
+            <Navbar />
+            <HeroSection />
             <div className="homepage-container">
                 {/* Video Background */}
                 {/* <div className="video-background">
@@ -36,7 +36,7 @@ export default function Homepage() {
                 <div id="team-section">
                     <TeamSection />
                 </div>
-                
+
                 <Sponsor />
                 <Footer />
             </div>
