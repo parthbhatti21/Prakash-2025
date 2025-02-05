@@ -39,6 +39,9 @@ export default function Homepage() {
 
                 {/* Content Sections */}
                 <div id="timeline">
+            <div class="co1">  
+            <div className="name">TIME LINE</div>
+            </div>
                     <Timeline />
                 </div>
                 <div id="events-section">
