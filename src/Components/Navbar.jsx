@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./styles/navbar.css";
 import logoImage from "../assets/logo1.png"; // Adjust the path to your image
 import { useNavigate } from "react-router";
+import "@fontsource/orbitron"; // Import Orbitron font
 
 const Navbar = () => {
   const navigate = useNavigate();

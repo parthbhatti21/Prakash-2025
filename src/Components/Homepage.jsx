@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Star from "./Star";
 import Timeline from "./Timeline";
 import Timer from "./Timer";
@@ -29,7 +29,7 @@ export default function Homepage() {
     }, []);
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <HeroSection />
             <div className="homepage-container">
                 <div className="SolarSystemBackground"><canvas id="canvasSolarSystemAlignment" ref={solarref}></canvas></div>
@@ -38,11 +38,14 @@ export default function Homepage() {
                 <Timer />
 
                 {/* Content Sections */}
-                <div id="timeline">
-                    <Timeline />
-                </div>
                 <div id="events-section">
                     <Event_Random />
+                </div>
+                <div id="timeline">
+            <div class="co1">  
+            <div className="name">TIME LINE</div>
+            </div>
+                    <Timeline />
                 </div>
                 <div id="team-section">
                     <TeamSection />

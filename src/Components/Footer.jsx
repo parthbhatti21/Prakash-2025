@@ -3,6 +3,7 @@ import "./styles/footer.css";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import svitLogo from "../assets/svitlogo.png"; // Import the logo image
+import { NavLink } from "react-router-dom"; // Import NavLink
 
 const Footer = () => {
   return (
@@ -22,17 +23,27 @@ const Footer = () => {
         <div className="footer-grid">
           {/* Contact Us */}
           <div className="footer-section">
-            <h3>Contact Us</h3>
-            <p>contact@spaceteam.com</p>
-            <p>+1 (123) 456-7890</p>
+            
+          <h3>Contact Us</h3>
+          <br/>
+            <a href="mailto:contact@svitvasad.ac.in">contact@svitvasad.ac.in</a>
+            <br/><br/>
+            <a href="tel:+918160695465">+91 8160695465</a>
+            
           </div>
 
           {/* Follow Us */}
           <div className="footer-section">
             <h3>Follow Us</h3>
             <div className="social-icons">
-              <i className="bi bi-twitter"><FaInstagram/></i>
-              <i className="bi bi-youtube"><FaYoutube /></i>
+           
+              <NavLink className="bi bi-twitter" to="https://www.instagram.com/svitprakarsh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                <FaInstagram/>
+              </NavLink>
+             
+              <NavLink to="https://www.youtube.com/@COAIDSVITVASAD" className="bi bi-youtube" target="_blank" rel="noopener noreferrer">
+                <FaYoutube />
+              </NavLink>
             </div>
           </div>
 

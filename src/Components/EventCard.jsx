@@ -1,7 +1,6 @@
-import { useState } from "react";
+import { useState,useEffect  } from "react";
 import "../Components/styles/EventcardStyle.css";
 import CrossImg from "../assets/Cross.png";
-import Navbar from "./Navbar";
 import Vr from "../assets/EventCardSvg/Vr.png";
 import RoboRace from "../assets/EventCardSvg/Robo-Race.png";
 import Bits_Bytes from "../assets/EventCardSvg/Bits&Bytes.png";
@@ -22,7 +21,8 @@ const eventsTypes=[
   {id:1,name:"Tech"},
   {id:2,name:"Non-Tech"},
   {id:3,name:"Workshop"},
-  {id:4,name:"View More..."},
+  {id:4,name:"Open R"},
+  {id:5,name:"View More..."},
 
 ];
 // Event data
@@ -137,14 +137,14 @@ const events = [
   },
   {
     id: 15,
-    category: "NonTech",
+    category: "ESports",
     title: "Valorant Showdown 3.0",
     details:
       "“Take the Stage, Claim the Title.” Gear up for the ultimate showdown in our Valorant Tournament, where strategy meets skill in Riot Games’ fast-paced tactical shooter.",
   },
   {
     id: 16,
-    category: "NonTech",
+    category: "ESports",
     title: "FFS [FREE FIRE Clash of Champions]",
     details:
       "“Where Gamers Rise and Champions Rule!” An Event where you can compete against fellow enthusiasts in exciting Free Fire matches and win exciting prizes and cash rewards for your skills.",
@@ -175,7 +175,7 @@ const events = [
   },
   {
     id: 20,
-    category: "NonTech",
+    category: "ESports",
     title: "BGMI Conquest",
     img: PUBG,
     details:
@@ -189,13 +189,26 @@ const events = [
     details:
       "“Face the dark, Escape the maze, Conquer the Mystery.” Step into a world of mystery and darkness with Challenges! This non-tech event is designed to test your instincts, teamwork, and problem-solving skills.",
   },
+  {
+  id: 22,
+  category: "OpenR",
+  title: "Concert",
+  img: "Hi",
+  details:
+    "“Concert",
+},
 ];
 
 export default function EventCard() {
   const [selectedEvent, setSelectedEvent] = useState(null); // Track selected event
   const [filter, setFilter] = useState("All"); // Track current filter
-  
+  const savedEventType = localStorage.getItem("eventname");
 
+  useEffect(() => {
+    setFilter(savedEventType);
+    document.getElementById(savedEventType).focus();
+  }, []);
+  
   // Show event details
   const showCardDetails = (eventId) => {
     setSelectedEvent(eventId);
@@ -214,15 +227,16 @@ export default function EventCard() {
 
   return (
     <>
-      <Navbar />
+   
       <div className="container1">
         {/* Filter Buttons */}
         <div className="button-wrapper1">
-          <button onClick={() => setFilter("All")}>All</button>
-          <button onClick={() => setFilter("Tech")}>Tech Events</button>
-          <button onClick={() => setFilter("NonTech")}>Non-Tech Events</button>
-          <button onClick={() => setFilter("ESports")}>E-Sports</button>
-          <button onClick={() => setFilter("Workshop")}>Workshop/Hands-On</button>
+          <button id="All" onClick={() => setFilter("All")}>All</button>
+          <button id="Tech" onClick={() => setFilter("Tech")}>Tech Events</button>
+          <button id="NonTech" onClick={() => setFilter("NonTech")}>Non-Tech Events</button>
+          <button id="ESports" onClick={() => setFilter("ESports")}>E-Sports</button>
+          <button id="Workshop" onClick={() => setFilter("Workshop")}>Workshop/Hands-On</button>
+          <button id="OpenR" onClick={() => setFilter("OpenR")}>Open R</button>
         </div>
 
         {/* Event Cards */}

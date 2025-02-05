@@ -1,5 +1,10 @@
 /* General Footer Styles */
-
+h1, h2, h3, a {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
 .footer {
     margin-top: 4rem;
     color: white;
