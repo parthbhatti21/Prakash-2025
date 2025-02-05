@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import "../Components/styles/EventRandom.css"
+import { useState } from "react";
 const shuffleArray = (array) => {
   let shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -8,6 +9,14 @@ const shuffleArray = (array) => {
   }
   return shuffled;
 };
+const eventsTypes=[
+  {id:1,name:"Tech"},
+  {id:2,name:"Non-Tech"},
+  {id:3,name:"Workshop"},
+  {id:4,name:"View More..."},
+
+];
+
 
 const events = [
   { id: 1, category: "Workshop", title: "IOT Workshop", details: "Dive into the world of IoT at Prakarsh25 with an engaging hands-on workshop! Master sensors like distance sensors and bring your ideas to life with real-time applications." },
@@ -34,8 +43,8 @@ const events = [
 ];
 const viewMore = { id: 22, category: "ViewMe", title: "View All...", details: "Jovo mane" };
 export default function Event_Random() {
-  const randomEvents = shuffleArray(events).slice(0, 3);
-  randomEvents.push(viewMore);
+  const [filter, setFilter] = useState("All"); // Track current filter
+  // randomEvents.push(viewMore);
   // console.log(randomEvents)
   const navigate = useNavigate();
   return (
@@ -44,19 +53,26 @@ export default function Event_Random() {
         <h1 className="events-header">Events</h1>
       </div>
       <div className="card-container">
-        {randomEvents.map(event => (
+        {eventsTypes.map(eventsTypes => (
           <div
-            key={event.id}
-            className={`card c${event.id} ${event.category}`}
-            onClick={() => {
-              navigate('/events')
+            key={eventsTypes.id}
+            className={`card c${eventsTypes.id} ${eventsTypes.name}`}
+            onClick={async() => {
+              await navigate('/events')
+              localStorage.setItem("eventname",eventsTypes.name)
+              console.log(localStorage.getItem("eventname"));
+              
+              setFilter(eventsTypes.name)
             }}
           >
-            <h2>{event.title}</h2>
+            <h2>{eventsTypes.name}</h2>
+          
+
             {/* Floating Register Button */}
             {/* <button className="floating-register-button">Register</button> */}
 
           </div>
+          
         ))}
       </div>
 

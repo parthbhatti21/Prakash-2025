@@ -18,7 +18,13 @@ import PUBG from "../assets/EventCardSvg/PUBG.png";
 import Auction from "../assets/EventCardSvg/Auction.png";
 import Stonk from "../assets/EventCardSvg/MemeForTrade.png";
 import ShareMarket from "../assets/EventCardSvg/MemeShareMarke.png";
+const eventsTypes=[
+  {id:1,name:"Tech"},
+  {id:2,name:"Non-Tech"},
+  {id:3,name:"Workshop"},
+  {id:4,name:"View More..."},
 
+];
 // Event data
 const events = [
   {
@@ -188,6 +194,7 @@ const events = [
 export default function EventCard() {
   const [selectedEvent, setSelectedEvent] = useState(null); // Track selected event
   const [filter, setFilter] = useState("All"); // Track current filter
+  
 
   // Show event details
   const showCardDetails = (eventId) => {

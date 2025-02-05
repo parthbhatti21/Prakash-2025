@@ -74,6 +74,12 @@ body {
     transform: translateY(-2px);
 }
 
+.nav-item:focus {
+    background-color: rgba(0, 234, 255, 0.1);
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    transform: translateY(-2px);
+}
+
 
 /* Hamburger Menu (Mobile Only) */
 

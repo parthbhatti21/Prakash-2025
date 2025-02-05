@@ -41,7 +41,7 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 30px;
-    background: linear-gradient(45deg, #ff00ff, #007bff);
+    background: transparent;
     color: white;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -51,6 +51,13 @@ body {
 }
 
 .button-wrapper1 button:hover {
+    background: linear-gradient(45deg, #ff00ff, #007bff);
+    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.8);
+    transform: scale(1.05);
+}
+
+.button-wrapper1 button:focus {
+    background: linear-gradient(45deg, #ff00ff, #007bff);
     box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.8);
     transform: scale(1.05);
 }
