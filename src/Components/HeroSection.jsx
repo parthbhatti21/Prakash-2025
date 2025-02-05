@@ -40,7 +40,6 @@ export default function HeroSection() {
         riveInstanceRef.current = l;
 
         const inputs = l.stateMachineInputs("State Machine 1");
-        console.log("Available Inputs:", inputs);
 
         // Store the input control
         inputControlRef.current = inputs.find((input) => input.name === "scroll");
@@ -59,7 +58,6 @@ export default function HeroSection() {
       if (!inputControlRef.current) return;
 
       const scrollValue = mapScrollToInput(window.scrollY);
-      console.log("Scroll Value:", scrollValue);
 
       inputControlRef.current.value = scrollValue;
       requestAnimationFrame(() => riveInstanceRef.current.drawFrame());
