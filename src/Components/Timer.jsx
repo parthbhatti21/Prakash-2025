@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "../Components/styles/Timer.css"; // Import external styles
 
+
 export default function Timer() {
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
@@ -11,6 +12,7 @@ export default function Timer() {
 
     const [isVisible, setIsVisible] = useState(true); // State to control visibility
 
+    
     useEffect(() => {
         const interval = setInterval(updateCountdown, 1000);
         return () => clearInterval(interval);
@@ -44,9 +46,13 @@ export default function Timer() {
         return null;
     }
 
+    
+
     return (
+        <>
         <div className="timer-container">
             {/* Close Button */}
+
             <div className="close-btn" onClick={handleClose}>
                 &times;
             </div>
@@ -71,5 +77,6 @@ export default function Timer() {
                 </div>
             </div>
         </div>
+        </>
     );
 }
