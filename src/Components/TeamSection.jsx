@@ -881,7 +881,7 @@ const TeamSection = () => {
   ];
 
   const developerTeam = [
-    { name: "Tarang Motiyani", image: "https://via.placeholder.com/150", designation: "ISTE Website Coordinator", github: "https://github.com/Tarang52" },
+    { name: "Tarang Motiyani", image: "https://via.placeholder.com/150", designation: "ISTE Website Coordinator and Full Stack Developer", github: "https://github.com/Tarang52" },
     { name: "Arya Panchal", image: "https://via.placeholder.com/150", designation: "Joint ISTE Website Coordinator", github: "https://github.com/Arya664" },
     { name: "Nisarg Patel", image: "https://via.placeholder.com/150", designation: "Joint ISTE Website Coordinator", github: "https://github.com/nisargpatel7042lva" },
     { name: "Siddharth Panchal", image: "https://via.placeholder.com/150", designation: "Fullstack Developer", github: "https://github.com/siddharth-09" },

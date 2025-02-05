@@ -7,22 +7,27 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling */
 }
+
 
 /* 🌠 Center Content Properly */
 
 .container1 {
-    margin-top: 100px; /* Centers content */
+    margin-top: 100px;
+    /* Centers content */
     padding: 20px;
     text-align: center;
 }
+
 
 /* 🚀 Filter Buttons */
 
 .button-wrapper1 {
     display: flex;
-    flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+    flex-wrap: wrap;
+    /* Allows buttons to wrap on small screens */
     gap: 10px;
     justify-content: center;
     margin-bottom: 20px;
@@ -50,44 +55,66 @@ body {
     transform: scale(1.05);
 }
 
+
 /* 🎇 Event Cards */
+
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto-fit the grid layout */
-    gap: 20px; /* Space between cards */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Auto-fit the grid layout */
+    gap: 20px;
+    /* Space between cards */
     padding: 20px;
-    box-sizing: border-box; /* Ensures padding doesn't affect layout */
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect layout */
     margin: 0;
 }
 
+
 /* Card Styling */
+
 .card {
-    background: rgba(50, 50, 50, 0.8); /* Darker background for contrast */
-    border-radius: 10px; /* Round the corners */
+    background: rgba(50, 50, 50, 0.8);
+    /* Darker background for contrast */
+    border-radius: 10px;
+    /* Round the corners */
     padding: 15px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Light glowing effect */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    /* Light glowing effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 250px; /* Moderate height for each card */
-    box-sizing: border-box; /* Ensures padding is inside */
+    height: 250px;
+    /* Moderate height for each card */
+    box-sizing: border-box;
+    /* Ensures padding is inside */
 }
 
+
 /* Hover effect on cards */
+
 .card:hover {
-    transform: scale(1.05); /* Slight scale on hover */
+    transform: scale(1.05);
+    /* Slight scale on hover */
     box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
 }
 
+
 /* Large Card Styling */
+
 .card.large-card {
-    height: 300px; /* Adjust height for larger cards */
-    background: rgba(50, 50, 50, 0.9); /* Darker background */
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7); /* Stronger box-shadow for large cards */
+    height: 300px;
+    /* Adjust height for larger cards */
+    background: rgba(50, 50, 50, 0.9);
+    /* Darker background */
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+    /* Stronger box-shadow for large cards */
 }
 
+
 /* NEW: Gradient border effect on hover for large cards */
+
 .card.large-card::before {
     content: "";
     position: absolute;
@@ -106,7 +133,9 @@ body {
     opacity: 1;
 }
 
+
 /* Full-Screen Event Details */
+
 .cardDetails {
     position: fixed;
     top: 50%;
@@ -130,47 +159,55 @@ body {
     text-align: center;
 }
 
+
 /* 📱 Mobile Responsiveness */
+
 @media (max-width: 768px) {
     .card-container {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screen sizes */
-        gap: 15px; /* Slightly reduced gap for better fit */
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for medium screen sizes */
+        gap: 15px;
+        /* Slightly reduced gap for better fit */
         padding: 10px;
     }
-
     .card {
-        height: 180px; /* Shorter height for mobile */
+        height: 180px;
+        /* Shorter height for mobile */
         padding: 10px;
     }
-
     .card.large-card {
-        height: 220px; /* Adjust large cards for mobile */
+        height: 220px;
+        /* Adjust large cards for mobile */
     }
-
     .cardDetails {
-        padding: 20px; /* Less padding in event details */
+        padding: 20px;
+        /* Less padding in event details */
         max-width: 90vw;
         max-height: 80vh;
-        font-size: 14px; /* Smaller text size */
+        font-size: 14px;
+        /* Smaller text size */
     }
 }
 
+
 /* 📱 Extra Small Mobile Responsiveness */
+
 @media (max-width: 480px) {
     .card-container {
-        grid-template-columns: 1fr; /* Single column layout for very small screens */
-        gap: 10px; /* Small gap for tight screen space */
+        grid-template-columns: 1fr;
+        /* Single column layout for very small screens */
+        gap: 10px;
+        /* Small gap for tight screen space */
     }
-
     .card {
-        height: 150px; /* Even smaller card height */
+        height: 150px;
+        /* Even smaller card height */
         padding: 8px;
     }
-
     .card.large-card {
-        height: 200px; /* Shorten large card height */
+        height: 200px;
+        /* Shorten large card height */
     }
-
     .cardDetails {
         padding: 15px;
         max-width: 90vw;
@@ -178,7 +215,9 @@ body {
     }
 }
 
+
 /* NEW: Gradient border effect on hover for plain boxes */
+
 .card::before {
     content: "";
     position: absolute;
@@ -202,6 +241,7 @@ body {
     opacity: 1;
 }
 
+
 /* 🌟 Enlarged Full-Screen Event Details */
 
 .cardDetails {
@@ -209,23 +249,28 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(10, 10, 30, 0.95); /* Darker background for readability */
+    background: rgba(10, 10, 30, 0.95);
+    /* Darker background for readability */
     backdrop-filter: blur(12px);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     color: #ffffff;
-    max-width: 90vw; /* Covers most of the screen width */
-    max-height: 90vh; /* Covers most of the screen height */
+    max-width: 90vw;
+    /* Covers most of the screen width */
+    max-height: 90vh;
+    /* Covers most of the screen height */
     width: 90%;
     height: 90%;
-    overflow: hidden; /* Allows scrolling if content is too long */
+    overflow: hidden;
+    /* Allows scrolling if content is too long */
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
+
 
 /* 🚀 Close Button - Adjusted for Larger Modal */
 
@@ -242,6 +287,7 @@ body {
     transform: rotate(90deg) scale(1.2);
 }
 
+
 /* 🛠️ Responsive Adjustments */
 
 @media (max-width: 768px) {
@@ -254,7 +300,8 @@ body {
         text-align: center;
     }
     .card-container {
-        grid-template-columns: repeat( auto-fit, minmax(150px, 1fr)); /* Smaller cards for small screens */
+        grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
+        /* Smaller cards for small screens */
     }
     .cardDetails {
         overflow: hidden;
@@ -274,6 +321,7 @@ body {
         width: 100%;
     }
 }
+
 
 /* 🌟 Twinkling Stars Effect */
 
@@ -302,9 +350,15 @@ body::before {
     animation: stars 8s infinite linear;
 }
 
+
 /* ------------------------------------------------------- */
+
+
 /* Event card image styling */
+
+
 /* ------------------------------------------------------- */
+
 
 /* Vr card */
 
@@ -326,6 +380,7 @@ body::before {
         bottom: 0%;
     }
 }
+
 
 /* Robo Race */
 
@@ -376,6 +431,7 @@ body::before {
     }
 }
 
+
 /* Bits and Bytes */
 
 .event-4 {
@@ -414,6 +470,7 @@ body::before {
         bottom: -30%;
     }
 }
+
 
 /* Aeroplane Modelling */
 
@@ -472,6 +529,7 @@ body::before {
     }
 }
 
+
 /* TreasureHunt */
 
 .event-9 {
@@ -519,6 +577,7 @@ body::before {
         bottom: -10%;
     }
 }
+
 
 /* PopQuizz */
 
@@ -568,6 +627,7 @@ body::before {
     }
 }
 
+
 /* PopQuizz */
 
 .event-5 {
@@ -615,6 +675,7 @@ body::before {
         bottom: -10%;
     }
 }
+
 
 /* Cricket */
 
@@ -664,6 +725,7 @@ body::before {
     }
 }
 
+
 /* Infinity Quest */
 
 .event-19 {
@@ -711,6 +773,7 @@ body::before {
         bottom: -10%;
     }
 }
+
 
 /* IOT */
 
@@ -760,6 +823,7 @@ body::before {
     }
 }
 
+
 /* Maze */
 
 .event-21 {
@@ -807,6 +871,7 @@ body::before {
         bottom: -10%;
     }
 }
+
 
 /* Cadathon */
 
@@ -856,218 +921,288 @@ body::before {
     }
 }
 
+
 /* pubg */
+
 .event-20 {
-  opacity: 40%;
-  z-index: -1;
-  position: absolute;
-  left: -13%;
-  width: 120%;
-  bottom: 0%;
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
+    bottom: 0%;
 }
+
 @media (max-width: 770px) {
-  .event-20 {
-    width: 200%;
-    left: -45%;
-    aspect-ratio: 10/7;
-  }
+    .event-20 {
+        width: 200%;
+        left: -45%;
+        aspect-ratio: 10/7;
+    }
 }
+
 @media (min-width: 770px) and (max-width: 1000px) {
-  .event-20 {
-    width: 140%;
-    left: -5%;
-    aspect-ratio: 10/7;
-  }
+    .event-20 {
+        width: 140%;
+        left: -5%;
+        aspect-ratio: 10/7;
+    }
 }
+
 @media (min-width: 1000px) and (max-width: 1300px) {
-  .event-20 {
-    width: 90%;
-    left: 5%;
-    aspect-ratio: 10/7;
-    bottom: -20%;
-  }
+    .event-20 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 10/7;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 1300px) and (max-width: 1500px) {
-  .event-20 {
-    width: 80%;
-    left: 10%;
-    aspect-ratio: 10/7;
-    bottom: -20%;
-  }
+    .event-20 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 10/7;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 1500px) and (max-width: 2450px) {
-  .event-20 {
-    width: 65%;
-    left: 20%;
-    aspect-ratio: 10/7;
-    bottom: -20%;
-  }
+    .event-20 {
+        width: 65%;
+        left: 20%;
+        aspect-ratio: 10/7;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 2450px) {
-  .event-20 {
-    width: 80%;
-    left: 10%;
-    aspect-ratio: 10/7;
-    bottom: -10%;
-  }
+    .event-20 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 10/7;
+        bottom: -10%;
+    }
 }
+
+
 /* IPLAuction */
+
 .event-18 {
-  opacity: 40%;
-  z-index: -1;
-  position: absolute;
-  left: -13%;
-  width: 120%;
-  aspect-ratio: 1/1;
-  bottom: 0%;
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
+    aspect-ratio: 1/1;
+    bottom: 0%;
 }
+
 @media (min-width: 1000px) and (max-width: 1300px) {
-  .event-18 {
-    width: 90%;
-    left: 5%;
-    aspect-ratio: 1/1;
-    bottom: -20%;
-  }
+    .event-18 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 1300px) and (max-width: 1500px) {
-  .event-18 {
-    width: 80%;
-    left: 10%;
-    aspect-ratio: 1/1;
-    bottom: -20%;
-  }
+    .event-18 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 1500px) and (max-width: 2450px) {
-  .event-18 {
-    width: 65%;
-    left: 20%;
-    aspect-ratio: 1/1;
-    bottom: -20%;
-  }
+    .event-18 {
+        width: 65%;
+        left: 20%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 2450px) {
-  .event-18 {
-    width: 80%;
-    left: 10%;
-    aspect-ratio: 1/1;
-    bottom: -10%;
-  }
+    .event-18 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
 }
+
+
 /* Tech And Trade */
+
 .event-6 {
-  opacity: 40%;
-  z-index: -1;
-  position: absolute;
-  left: -13%;
-  width: 120%;
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
 }
+
 @media (max-width: 770px) {
-  .event-6 {
-    width: 80%;
-    left: 10%;
-    aspect-ratio: 1/1;
-    bottom: 30%;
-  }
+    .event-6 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: 30%;
+    }
 }
+
 @media (min-width: 770px) and (max-width: 1000px) {
-  .event-6 {
-    bottom: 5%;
-    width: 140%;
-    aspect-ratio: 10/7;
-  }
+    .event-6 {
+        bottom: 5%;
+        width: 140%;
+        aspect-ratio: 10/7;
+    }
 }
+
 @media (min-width: 1000px) and (max-width: 1300px) {
-  .event-6 {
-    width: 90%;
-    left: 5%;
-    aspect-ratio: 1/1;
-    bottom: -20%;
-  }
+    .event-6 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 1300px) and (max-width: 1500px) {
-  .event-6 {
-    width: 80%;
-    left: 10%;
-    aspect-ratio: 1/1;
-    bottom: -20%;
-  }
+    .event-6 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 1500px) and (max-width: 2450px) {
-  .event-6 {
-    width: 65%;
-    left: 20%;
-    aspect-ratio: 1/1;
-    bottom: -20%;
-  }
+    .event-6 {
+        width: 65%;
+        left: 20%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 2450px) {
-  .event-6 {
-    width: 80%;
-    left: 10%;
-    aspect-ratio: 1/1;
-    bottom: -10%;
-  }
+    .event-6 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
 }
+
+
 /* CrptoShodown*/
+
 .event-10 {
-  opacity: 40%;
-  z-index: -1;
-  position: absolute;
-  left: -13%;
-  width: 120%;
+    opacity: 40%;
+    z-index: -1;
+    position: absolute;
+    left: -13%;
+    width: 120%;
 }
+
 @media (max-width: 629px) {
-  .event-10 {
-    width: 100%;
-    left:2%;
-    aspect-ratio: 7/10;
-    bottom: 0%;
-  }
+    .event-10 {
+        width: 100%;
+        left: 2%;
+        aspect-ratio: 7/10;
+        bottom: 0%;
+    }
 }
+
 @media (min-width: 629px) and (max-width: 770px) {
-  .event-10 {
-    bottom: 5%;
-    left:10%;
-    width: 70%;
-    aspect-ratio: 7/10;
-  }
+    .event-10 {
+        bottom: 5%;
+        left: 10%;
+        width: 70%;
+        aspect-ratio: 7/10;
+    }
 }
+
 @media (min-width: 770px) and (max-width: 1000px) {
-  .event-10 {
-    bottom: 5%;
-    width: 140%;
-    aspect-ratio: 10/7;
-  }
+    .event-10 {
+        bottom: 5%;
+        width: 140%;
+        aspect-ratio: 10/7;
+    }
 }
+
 @media (min-width: 1000px) and (max-width: 1300px) {
-  .event-10 {
-    width: 90%;
-    left: 5%;
-    aspect-ratio: 1/1;
-    bottom: -20%;
-  }
+    .event-10 {
+        width: 90%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 1300px) and (max-width: 1500px) {
-  .event-10 {
-    width: 80%;
-    left: 10%;
-    aspect-ratio: 1/1;
-    bottom: -20%;
-  }
+    .event-10 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -20%;
+    }
 }
+
 @media (min-width: 1500px) and (max-width: 2450px) {
-  .event-10 {
-    width: 35%;
-    left: 30%;
-    aspect-ratio: 7/10;
-    bottom: 0%;
-  }
+    .event-10 {
+        width: 35%;
+        left: 30%;
+        aspect-ratio: 7/10;
+        bottom: 0%;
+    }
 }
+
 @media (min-width: 2450px) {
-  .event-10 {
-    width: 80%;
-    left: 10%;
-    aspect-ratio: 1/1;
-    bottom: -10%;
-  }
+    .event-10 {
+        width: 80%;
+        left: 10%;
+        aspect-ratio: 1/1;
+        bottom: -10%;
+    }
+}
+
+
+/* Floating Register Button */
+
+.floating-register-button {
+    position: fixed;
+    /* Fixed position to keep it in place */
+    bottom: 20px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Distance from the right */
+    padding: 10px 20px;
+    /* Padding for better appearance */
+    background-color: #007bff;
+    /* Button background color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* Remove border */
+    width: 200px;
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    font-size: 16px;
+    /* Font size */
+    z-index: 1000;
+    /* Ensure it stays on top of other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add a shadow for better visibility */
+}
+
+.floating-register-button:hover {
+    background-color: #0056b3;
+    /* Change color on hover */
 }
