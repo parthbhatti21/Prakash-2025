@@ -1,4 +1,4 @@
-import AstroSaheeb from "../assets/AstroSaheeb.png";
+import AstroSaheeb from "../assets/AstroSaheeb.svg";
 import "../Components/styles/AboutPage.css";
 
 const AboutUs = () => {

@@ -15,7 +15,7 @@ export default function HeroSection() {
 
     // Load AstroPov Rive animation
     const r = new Rive({
-      src: "/AstroPov.riv",
+      src: "/AstroPov2.riv",
       canvas: canvasAstroPovRef.current,
       autoplay: true,
       stateMachines: "State Machine 1",

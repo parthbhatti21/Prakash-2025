@@ -1,0 +1,16 @@
+
+
+.star{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#starComponent{
+z-index: 1;
+    width: 150%;
+    height: 150%;
+}

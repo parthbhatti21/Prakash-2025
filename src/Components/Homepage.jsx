@@ -17,7 +17,7 @@ export default function Homepage() {
         const canvas = document.getElementById("canvasSolarSystemAlignment");
         if (canvas) {
             const s = new Rive({
-                src: '/SolarSystem.riv',
+                src: '/SolarSystem2.riv',
                 canvas: canvas,
                 autoplay: true,
                 stateMachines: "State Machine 1",
@@ -30,12 +30,13 @@ export default function Homepage() {
     
     return (
         <>
-            {/* <Navbar /> */}
+            <Star />
             <HeroSection />
             <div className="homepage-container">
-                <div className="SolarSystemBackground"><canvas id="canvasSolarSystemAlignment" ref={solarref}></canvas></div>
+                <div className="SolarSystemBackground"><canvas id="canvasSolarSystemAlignment" ref={solarref}>
+                    </canvas>
+                    </div>
                 
-                <Star />
                 <Timer />
 
                 {/* Content Sections */}
