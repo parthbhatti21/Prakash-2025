@@ -30,12 +30,13 @@ export default function Homepage() {
     
     return (
         <>
-            {/* <Navbar /> */}
+            <Star />
             <HeroSection />
             <div className="homepage-container">
-                <div className="SolarSystemBackground"><canvas id="canvasSolarSystemAlignment" ref={solarref}></canvas></div>
+                <div className="SolarSystemBackground"><canvas id="canvasSolarSystemAlignment" ref={solarref}>
+                    </canvas>
+                    </div>
                 
-                <Star />
                 <Timer />
 
                 {/* Content Sections */}
