@@ -17,7 +17,7 @@ export default function Homepage() {
         const canvas = document.getElementById("canvasSolarSystemAlignment");
         if (canvas) {
             const s = new Rive({
-                src: '/SolarSystem.riv',
+                src: '/SolarSystem2.riv',
                 canvas: canvas,
                 autoplay: true,
                 stateMachines: "State Machine 1",
