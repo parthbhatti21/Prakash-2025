@@ -7,8 +7,8 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const [showNavbar, setShowNavbar] = useState(true);
+  let lastScrollY = 0;
 
   // Function to update isMobile state based on window size
   useEffect(() => {
@@ -33,12 +33,12 @@ const Navbar = () => {
         // Scroll Up
         setShowNavbar(true);
       }
-      setLastScrollY(window.scrollY);
+      lastScrollY=window.scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, []);
 
   const toggleMenu = () => {
     if (isMobile) {

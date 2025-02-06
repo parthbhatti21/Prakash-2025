@@ -14,19 +14,20 @@ import "./styles/Homepage.css"
 export default function Homepage() {
     const solarref = useRef(null);
     useEffect(() => {
-
-        const s = new Rive({
-            src :'/SolarSystem.riv',
-            canvas: document.getElementById("canvasSolarSystemAlignment"),
-      autoplay: true,
-      stateMachines: "State Machine 1",
-      onLoad: function () {
-        s.resizeDrawingSurfaceToCanvas();
-      },
-        })
-
-
+        const canvas = document.getElementById("canvasSolarSystemAlignment");
+        if (canvas) {
+            const s = new Rive({
+                src: '/SolarSystem.riv',
+                canvas: canvas,
+                autoplay: true,
+                stateMachines: "State Machine 1",
+                onLoad: function () {
+                    s.resizeDrawingSurfaceToCanvas();
+                },
+            });
+        }
     }, []);
+    
     return (
         <>
             {/* <Navbar /> */}
@@ -42,7 +43,7 @@ export default function Homepage() {
                     <Event_Random />
                 </div>
                 <div id="timeline">
-            <div class="co1">  
+            <div className="co1">  
             <div className="name">TIME LINE</div>
             </div>
                     <Timeline />

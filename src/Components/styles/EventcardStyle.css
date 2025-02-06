@@ -107,6 +107,7 @@ body {
 .card:hover {
     transform: scale(1.05);
     /* Slight scale on hover */
+    
     box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
 }
 
@@ -340,7 +341,7 @@ body {
         transform: translateY(0px);
     }
 }
-
+/* 
 body::before {
     content: "";
     position: fixed;
@@ -349,7 +350,7 @@ body::before {
     background: url("https://www.transparenttextures.com/patterns/stardust.png");
     opacity: 0.2;
     animation: stars 8s infinite linear;
-}
+} */
 
 
 /* ------------------------------------------------------- */
