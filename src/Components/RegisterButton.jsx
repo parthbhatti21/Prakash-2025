@@ -17,3 +17,5 @@ const RegisterButton = () => {
 }
 
 export default RegisterButton;
+
+//converted to png//
