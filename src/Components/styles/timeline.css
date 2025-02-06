@@ -52,7 +52,7 @@ body {
 .timeline-image img {
   width: 100%;
   height: auto;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .timeline::after {

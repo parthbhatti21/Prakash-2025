@@ -25,11 +25,11 @@
 /* Image */
 .AstroSaheeb {
   pointer-events: none;
-  z-index: 3;
-  width: 1700%;
-  height: auto;
-  grid-column: -15;
-  grid-row: 13;
+    z-index: 3;
+    width: 1300%;
+    height: 1000%;
+    grid-column: -14;
+    grid-row: 12;
 }
 
 /* Responsive Styling */
@@ -41,10 +41,10 @@
   }
   .AstroSaheeb {
     z-index: 3;
-    width: 1300%;
-    height: auto;
+    width: 1000%;
+    height: 1300%;
     grid-column: -10;
-    grid-row: 5;
+    grid-row: 8;
   }
 }
 

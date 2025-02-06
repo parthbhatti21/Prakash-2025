@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "./styles/timeline.css";
-import astra from "../assets/astro.png";
+import astra from "../assets/AstroVr.svg";
 import img1 from "../assets/IMG_1254.JPG";
 import img2 from "../assets/IMG_1256.JPG";
 import img3 from "../assets/IMG_1731.JPG";
