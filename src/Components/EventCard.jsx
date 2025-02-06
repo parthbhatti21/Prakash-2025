@@ -1,4 +1,4 @@
-import { useState,useEffect  } from "react";
+import { useState, useEffect } from "react";
 import "../Components/styles/EventcardStyle.css";
 import CrossImg from "../assets/Cross.png";
 import Vr from "../assets/EventCardSvg/Vr.png";
@@ -17,12 +17,13 @@ import PUBG from "../assets/EventCardSvg/PUBG.png";
 import Auction from "../assets/EventCardSvg/Auction.png";
 import Stonk from "../assets/EventCardSvg/MemeForTrade.png";
 import ShareMarket from "../assets/EventCardSvg/MemeShareMarke.png";
-const eventsTypes=[
-  {id:1,name:"Tech"},
-  {id:2,name:"Non-Tech"},
-  {id:3,name:"Workshop"},
-  {id:4,name:"Open R"},
-  {id:5,name:"View More..."},
+import RegisterButton from "./RegisterButton";
+const eventsTypes = [
+  { id: 1, name: "Tech" },
+  { id: 2, name: "Non-Tech" },
+  { id: 3, name: "Workshop" },
+  { id: 4, name: "Open R" },
+  { id: 5, name: "View More..." },
 
 ];
 // Event data
@@ -190,13 +191,13 @@ const events = [
       "“Face the dark, Escape the maze, Conquer the Mystery.” Step into a world of mystery and darkness with Challenges! This non-tech event is designed to test your instincts, teamwork, and problem-solving skills.",
   },
   {
-  id: 22,
-  category: "OpenR",
-  title: "Concert",
-  img: "Hi",
-  details:
-    "“Concert",
-},
+    id: 22,
+    category: "OpenR",
+    title: "Concert",
+    img: "Hi",
+    details:
+      "“Concert",
+  },
 ];
 
 export default function EventCard() {
@@ -208,7 +209,7 @@ export default function EventCard() {
     setFilter(savedEventType);
     document.getElementById(savedEventType).focus();
   }, []);
-  
+
   // Show event details
   const showCardDetails = (eventId) => {
     setSelectedEvent(eventId);
@@ -227,7 +228,7 @@ export default function EventCard() {
 
   return (
     <>
-   
+
       <div className="container1">
         {/* Filter Buttons */}
         <div className="button-wrapper1">
@@ -248,12 +249,13 @@ export default function EventCard() {
               onClick={() => showCardDetails(event.id)}
             >
               <h2>{event.title}</h2>
+            
             </div>
           ))}
         </div>
 
         {/* Floating Register Button */}
-        <button className="floating-register-button">Register</button>
+
 
         {/* Event Details Modal */}
         {selectedEvent && (
@@ -274,11 +276,12 @@ export default function EventCard() {
               <h3>
                 {events.find((event) => event.id === selectedEvent).details}
               </h3>
+              <RegisterButton className="register"/>
             </div>
           </div>
         )}
 
-        <button className="floating-register-button">Register</button>
+        
       </div>
     </>
   );
