@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/registerButton.css'
+import './styles/registerbutton.css'
 const RegisterButton = () => {
     return (
         <>
