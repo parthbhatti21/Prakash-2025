@@ -75,7 +75,7 @@ const TeamSection = () => {
       { 'name': "Shivang Parmar", 'image': "https://via.placeholder.com/150", 'designation': "Joint ISTE Graphics Coordinator", 'linkedin': "https://www.linkedin.com/in/shivang-parmar" },
       { 'name': "Riddhi Trevadiya", 'image': "https://via.placeholder.com/150", 'designation': "Joint ISTE Graphics Coordinator", 'linkedin': "https://www.linkedin.com/in/riddhi-trevadiya" },
       { 'name': "Dhruva Desai", 'image': "https://via.placeholder.com/150", 'designation': "ISTE Decoration Coordinator", 'linkedin': "https://www.linkedin.com/in/dhruva-desai-2314b4344/" },
-      { 'name': "Kairavi Parikh", 'image': "https://via.placeholder.com/150", 'designation': "Joint ISTE Decoration Coordinator", 'linkedin': "https://linkedin.com" },
+      { 'name': "Kairavi Parikh", 'image': "https://via.placeholder.com/150", 'designation': "Joint ISTE Decoration Coordinator", 'linkedin': "https://www.linkedin.com/in/kairavi-parikh-45704622b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
   ]
 
   const developerTeam = [
