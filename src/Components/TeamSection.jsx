@@ -10,7 +10,7 @@ import dhaval from '../assets/teamimages/dhaval.jpg';
 import tarang from '../assets/teamimages/tarang.jpg';
 import nisarg from '../assets/teamimages/nisarg.jpg';
 import nidhi from '../assets/teamimages/nidhi.jpg';
-import arya from '../assets/teamimages/malak.jpg';
+import arya from '../assets/teamimages/arya.jpg';
 import samipya from '../assets/teamimages/malak.jpg';
 import jenish from '../assets/teamimages/malak.jpg';
 import krutagna from '../assets/teamimages/malak.jpg';
@@ -80,7 +80,7 @@ const TeamSection = () => {
 
   const developerTeam = [
     { name: "Tarang Motiyani", image: tarang, designation: "Web Astronaut", github: "https://github.com/Tarang52" },
-    { name: "Arya Panchal", image: "https://via.placeholder.com/150", designation: "Web Astronaut", github: "https://github.com/Arya664" },
+    { name: "Arya Panchal", image: arya, designation: "Web Astronaut", github: "https://github.com/Arya664" },
     { name: "Nisarg Patel", image: nisarg, designation: "Web Astronaut", github: "https://github.com/nisargpatel7042lva" },
     { name: "Siddharth Panchal", image: sid, designation: "Web Astronaut", github: "https://github.com/siddharth-09" },
     { name: "Dhaval Patel", image: dhaval, designation: "Web Astronaut", github: "https://github.com/DhavalPhooski" },
