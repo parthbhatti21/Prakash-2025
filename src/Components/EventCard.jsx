@@ -186,8 +186,8 @@ const events = [
     details:
       "“Take the Stage, Claim the Title.” Gear up for the ultimate showdown in our Valorant Tournament, where strategy meets skill in Riot Games’ fast-paced tactical shooter.",
     contact: {
-      name: "Atul",
-      phone: "90164 61838",
+      name: "Vishv Shah",
+      phone: "+917016437251",
     },
   },
   {
