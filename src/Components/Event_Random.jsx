@@ -32,7 +32,7 @@ const events = [
   { id: 10, category: "Tech", title: "¢rypto $howdown", details: "Join CryptoShowdown 2025, the ultimate event for crypto enthusiasts, traders, and innovators. Explore bold strategies, cutting-edge ideas, and the future of digital finance. Trade dummy currencies to make real money." },
   { id: 11, category: "Tech", title: "Stellar Cosmos", details: "“Empty Epsilon” is a technical event where teams compete in a virtual space combat simulator, promoting teamwork, strategy, and quick thinking." },
   { id: 12, category: "Tech", title: "The Ultimate VR Experience", details: "Dive into a whole new dimension with The Ultimate VR Experience! Explore a custom-designed game that combines immersive virtual reality with interactive gameplay, offering participants a thrilling, cutting-edge adventure like no other!" },
-  { id: 13, category: "Tech", title: "Civil Bridge Event", details: "Not Given!!!" },
+  { id: 13, category: "Tech", title: "Civil Bridge Event", details: "Cream sticks? For bridges? Get ready for Brawl Bridge! Teams race to build the most amazing structures, then watch the chaos unfold as they face the ultimate test of strength. Creativity vs. destruction – who will reign supreme? " },
   { id: 14, category: "NonTech", title: "Box Cricket", details: "Step into the adrenaline-filled event of Box Cricket at PRAKARSH 2025! Experience the thrill of fast-paced cricket in a compact arena where strategy meets action." },
   { id: 15, category: "ESports", title: "Valorant Showdown 3.0", details: "“Take the Stage, Claim the Title.” Gear up for the ultimate showdown in our Valorant Tournament, where strategy meets skill in Riot Games’ fast-paced tactical shooter." },
   { id: 16, category: "ESports", title: "FFS [FREE FIRE Clash of Champions]", details: "“Where Gamers Rise and Champions Rule!” An Event where you can compete against fellow enthusiasts in exciting Free Fire matches and win exciting prizes and cash rewards for your skills." },
@@ -41,7 +41,7 @@ const events = [
   { id: 19, category: "NonTech", title: "Infinity Quest", details: "“A treasure hunt to the universe.” Get ready for “Infinity Quest,” an electrifying Marvel-themed treasure hunt with an engineering twist!" },
   { id: 20, category: "ESports", title: "BGMI Conquest", details: "Land. Fight. Dominate. The Battleground is Yours! The battle begins at BGMI, where warriors collide in an intense fight for survival!" },
   { id: 21, category: "NonTech", title: "Midnight Mystery", details: "“Face the dark, Escape the maze, Conquer the Mystery.” Step into a world of mystery and darkness with Challenges! This non-tech event is designed to test your instincts, teamwork, and problem-solving skills." },
-  { id: 21, category: "OpenR", title: "Concert", details: "“Concert" },
+  { id: 21, category: "OpenR", title: "OpenR", details: "“Open Innovations" },
 ];
 const viewMore = { id: 22, category: "ViewMe", title: "View All...", details: "Jovo mane" };
 

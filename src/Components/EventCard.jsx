@@ -126,7 +126,7 @@ const events = [
     id: 13,
     category: "Tech",
     title: "Civil Bridge Event",
-    details: "Not Given!!!",
+    details: "Cream sticks? For bridges? Get ready for Brawl Bridge!Teams race to build the most amazing structures, then watch the chaos unfold as they face the ultimate test of strength. Creativity vs. destruction – who will reign supreme? ",
   },
   {
     id: 14,
@@ -193,10 +193,10 @@ const events = [
   {
     id: 22,
     category: "OpenR",
-    title: "Concert",
+    title: "OpenR",
     img: "Hi",
     details:
-      "“Concert",
+      "“OpenR",
   },
 ];
 
