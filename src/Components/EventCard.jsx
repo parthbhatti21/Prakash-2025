@@ -194,6 +194,13 @@ const events = [
   },
   {
     id: 22,
+    category: "NonTech",
+    title: "Pickleball",
+    details:
+      "“💥 Get ready for fast-paced rallies, fierce competition, and an electric atmosphere as teams battle it out for pickleball supremacy! This doubles-only tournament is open to all skill levels—just pure competition and skill. Whether you're a seasoned pro or a weekend warrior, grab a partner and showcase your teamwork, strategy, and power on the court! 🏆🔥",
+  },
+  {
+    id: 22,
     category: "OpenR",
     title: "OpenR",
     img: "Hi",
