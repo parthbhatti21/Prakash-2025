@@ -37,9 +37,9 @@ import nachiket from '../assets/teamimages/nachiket.jpg';
 import dhyey from '../assets/teamimages/Dhyey.jpeg';
 import mitul from '../assets/teamimages/mitul.jpg';
 import purvesha from '../assets/teamimages/purvesha.jpg';
-import shivang from '../assets/teamimages/shivang.HEIC';
+import shivang from '../assets/teamimages/shivang.jpg';
 import riddhi from '../assets/teamimages/riddhi.jpg';
-import yashh from '../assets/teamimages/yashh.HEIC';
+import yashh from '../assets/teamimages/yashh.jpg';
 
 
 const TeamSection = () => {
