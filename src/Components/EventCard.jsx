@@ -16,6 +16,7 @@ import RocketBlueprint from "../assets/EventCardSvg/RocketBlueprint.png";
 import PUBG from "../assets/EventCardSvg/PUBG.png";
 import Auction from "../assets/EventCardSvg/Auction.png";
 import Stonk from "../assets/EventCardSvg/MemeForTrade.png";
+import techheist from "../assets/EventCardSvg/techheistbg.png";
 import ShareMarket from "../assets/EventCardSvg/MemeShareMarke.png";
 import RegisterButton from "./RegisterButton";
 const eventsTypes = [
@@ -80,6 +81,7 @@ const events = [
     id: 7,
     category: "Tech",
     title: "TECH HEIST",
+    img: techheist,
     details:
       "Break the Code: Embark on a pulse-pounding spy-themed mission where elite teams of four face off in a race against time. Crack complex codes, debug challenging programs, outsmart mind-bending logic puzzles, and decrypt hidden messages.",
   },
