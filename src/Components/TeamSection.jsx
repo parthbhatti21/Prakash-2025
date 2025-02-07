@@ -18,7 +18,7 @@ import jenish from '../assets/teamimages/malak.jpg';
 import krutagna from '../assets/teamimages/malak.jpg';
 import piyush from '../assets/teamimages/malak.jpg';
 import yash from '../assets/teamimages/yash.jpg';
-import vinit from '../assets/teamimages/malak.jpg';
+import vinit from '../assets/teamimages/viniit.jpg';
 import srujal from '../assets/teamimages/srujal.jpg';
 import manan from '../assets/teamimages/malak.jpg';
 import harshil from '../assets/teamimages/harshil.jpg';
@@ -53,7 +53,7 @@ const TeamSection = () => {
       { 'name': "Krutagna Patel", 'image': "https://via.placeholder.com/150", 'designation': "Joint ISTE Chief Coordinator", 'linkedin': "https://linkedin.com" },
       { 'name': "Piyush Sharma", 'image': "https://via.placeholder.com/150", 'designation': "ISTE Finance Coordinator", 'linkedin': "https://linkedin.com" },
       { 'name': "Yash Shah", 'image': "https://via.placeholder.com/150", 'designation': "Joint ISTE Finance Coordinator", 'linkedin': "https://www.linkedin.com/in/yash-shah-195a88283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-      { 'name': "Vinit Shah", 'image': "https://via.placeholder.com/150", 'designation': "Joint ISTE Finance Coordinator", 'linkedin': "https://www.linkedin.com/in/vinit-shah-aab33321b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+      { 'name': "Vinit Shah", image: vinit, 'designation': "Joint ISTE Finance Coordinator", 'linkedin': "https://www.linkedin.com/in/vinit-shah-aab33321b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
       { 'name': "Tarang Motiyani", 'image': tarang2, 'designation': "ISTE Website Coordinator", 'linkedin': "https://www.linkedin.com/in/tarang-motiyani-a05756255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
       { 'name': "Arya Panchal", 'image': aryaa, 'designation': "Joint ISTE Website Coordinator", 'linkedin': "https://www.linkedin.com/in/arya-panchal-ab8212268/" },
       { 'name': "Nisarg Patel", 'image': nisarg, 'designation': "Joint ISTE Website Coordinator", 'linkedin': "https://www.linkedin.com/in/nisarg-patel-7b799a277/" },
