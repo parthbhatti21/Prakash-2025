@@ -942,6 +942,16 @@ body::before {
         aspect-ratio: 1/1;
         bottom: 0%;
     }
+    .event-7 {
+        opacity: 40%;
+        z-index: -1;
+        position: absolute;
+        left: 20%;
+        width: 60%;
+        height: 70%;
+        aspect-ratio: 1/1;
+        bottom: 0%;
+    }
     
     @media (min-width: 1000px) and (max-width: 1300px) {
         .event-18 {
