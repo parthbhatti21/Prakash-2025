@@ -48,8 +48,7 @@ const events = [
     title: "IOT Workshop",
     img: IOTCircuit,
     image: img_IOTWorkshop,
-    details:
-      "Dive into the world of IoT at Prakarsh25 with an engaging hands-on workshop!",
+    details: "Dive into the world of IoT at Prakarsh25 with an engaging hands-on workshop!",
   },
   {
     id: 2,
@@ -65,8 +64,7 @@ const events = [
     title: "Robo Race",
     img: RoboRace,
     image: img_RoboRace,
-    details:
-      "Unleash your RC car’s potential on a dynamic track filled with thrilling hurdles!",
+    details: "Unleash your RC car’s potential on a dynamic track filled with thrilling hurdles!",
   },
   {
     id: 4,
@@ -74,8 +72,7 @@ const events = [
     title: "Bits and Bytes",
     img: Bits_Bytes,
     image: img_bitsbits,
-    details:
-      "Compete in three thrilling stages, including IT quizzes and programming charades!",
+    details: "Compete in three thrilling stages, including IT quizzes and programming charades!",
   },
   {
     id: 5,
@@ -128,7 +125,7 @@ const events = [
   {
     id: 11,
     category: "NonTech",
-    title: "Box Cricket League",  
+    title: "Box Cricket League",
     img: Cricket,
     image: img_BoxCricketLeague,
     details: "Experience fast-paced cricket action in a compact arena!",
@@ -159,7 +156,7 @@ const events = [
   {
     id: 15,
     category: "ESports",
-    title: "Free Fire Tech Showdown",
+    title: "Free Fire Clash of Champions",
     image: img_FreeFireClashofChampions,
     details: "Battle it out in Free Fire for exciting prizes!",
   },
@@ -188,6 +185,30 @@ const events = [
     link: "https://lu.ma/k7qw8bhs",
     image: img_OpenR,
     details: "A special Open-R workshop event!",
+  },
+  {
+    id: 19,
+    category: "Tech",
+    title: "Stellar Cosmos",
+    img: Maze,
+    image: img_MidnightMystery,
+    details: "Teams compete in a virtual space combat simulator!",
+  },
+  {
+    id: 20,
+    category: "Tech",
+    title: "The Ultimate VR Experience",
+    img: Maze,
+    image: img_MidnightMystery,
+    details: "Explore a custom designed game that combines immersive virtual reality with interactive gameplay, offering participants ",
+  },
+  {
+    id: 21,
+    category: "Tech",
+    title: "Brawl Bridge",
+    img: Maze,
+    image: img_MidnightMystery,
+    details: "Solve puzzles in a thrilling late-night mystery challenge!",
   },
 ];
 
