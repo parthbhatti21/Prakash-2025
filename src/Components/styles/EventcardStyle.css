@@ -332,7 +332,6 @@
             transform: translateY(0px);
         }
     }
-
     
     .event-12 {
         opacity: 40%;
@@ -1152,4 +1151,25 @@
     .floating-register-button:hover {
         background-color: #0056b3;
         /* Change color on hover */
+    }
+    
+    .problem-statement-link {
+        text-decoration: underline;
+        color: white;
+        /* You can adjust the color */
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .problem-statement-link:hover {
+        color: rgb(92, 89, 89);
+        /* Darker shade for hover effect */
+    }
+    
+    .event-desc {
+        font-size: 36px;
+    }
+    
+    .openr-head {
+        font-size: 24px;
     }
