@@ -40,6 +40,7 @@ import purvesha from '../assets/teamimages/purvesha.webp';
 import shivang from '../assets/teamimages/shivang.webp';
 import riddhi from '../assets/teamimages/riddhi.webp';
 import yashh from '../assets/teamimages/yashh.webp';
+import DevTeam from './DevTeam';
 
 
 const TeamSection = () => {
@@ -81,17 +82,17 @@ const TeamSection = () => {
       { 'name': "Kairavi Parikh", image: kairavi, 'designation': "Joint ISTE Decoration Coordinator", 'linkedin': "https://www.linkedin.com/in/kairavi-parikh-45704622b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
   ]
 
-  const developerTeam = [
-    { name: "Tarang Motiyani", image: tarang, designation: "Web Astronaut", github: "https://github.com/Tarang52" },
-    { name: "Arya Panchal", image: arya, designation: "Web Astronaut", github: "https://github.com/Arya664" },
-    { name: "Nisarg Patel", image: nisarg, designation: "Web Astronaut", github: "https://github.com/nisargpatel7042lva" },
-    { name: "Siddharth Panchal", image: sid, designation: "Web Astronaut", github: "https://github.com/siddharth-09" },
-    { name: "Dhaval Patel", image: dhaval, designation: "Web Astronaut", github: "https://github.com/DhavalPhooski" },
-    { name: "Nidhi Agrawal", image: nidhi, designation: "Web Astronaut", github: "https://github.com/NidhiAgrawal7574" },
-    { name: "Malak Bhadgaonkar", image: malak, designation: "Web Astronaut", github: "https://github.com/mal4k3009" },
-    { name: "Parth Bhatti", image: parth, designation: "Web Astronaut", github: "https://github.com/parthbhatti21" },
-    { name: "Yash Mehta", image: yash, designation: "Web Astronaut", github: "https://github.com/yashm13114" }
-  ];
+  // const developerTeam = [
+  //   { name: "Tarang Motiyani", image: tarang, designation: "Web Astronaut", github: "https://github.com/Tarang52" },
+  //   { name: "Arya Panchal", image: arya, designation: "Web Astronaut", github: "https://github.com/Arya664" },
+  //   { name: "Nisarg Patel", image: nisarg, designation: "Web Astronaut", github: "https://github.com/nisargpatel7042lva" },
+  //   { name: "Siddharth Panchal", image: sid, designation: "Web Astronaut", github: "https://github.com/siddharth-09" },
+  //   { name: "Dhaval Patel", image: dhaval, designation: "Web Astronaut", github: "https://github.com/DhavalPhooski" },
+  //   { name: "Nidhi Agrawal", image: nidhi, designation: "Web Astronaut", github: "https://github.com/NidhiAgrawal7574" },
+  //   { name: "Malak Bhadgaonkar", image: malak, designation: "Web Astronaut", github: "https://github.com/mal4k3009" },
+  //   { name: "Parth Bhatti", image: parth, designation: "Web Astronaut", github: "https://github.com/parthbhatti21" },
+  //   { name: "Yash Mehta", image: yash, designation: "Web Astronaut", github: "https://github.com/yashm13114" }
+  // ];
 
   const handleSocialClick = (url) => {
  // Prevent event from bubbling up
@@ -187,55 +188,7 @@ const TeamSection = () => {
 
       {/* Conditionally render developer team cards */}
       {activeTeam === 'developer' && (
-        <div className="card-container2">
-          <button className="left-arrow" onClick={goLeft}>{"<"}</button>
-          {developerTeam.map((person, index) => (
-            <div className="container2 noselect" key={index}>
-              <div className="canvas" onClick={() => handleSocialClick(person.github)}>
-                <div className="tracker tr-1" />
-                <div className="tracker tr-2" />
-                <div className="tracker tr-3" />
-                <div className="tracker tr-4" />
-                <div className="tracker tr-5" />
-                <div className="tracker tr-6" />
-                <div className="tracker tr-7" />
-                <div className="tracker tr-8" />
-                <div className="tracker tr-9" />
-                <div id="card">
-                  <div className="card-content">
-                    <div className="card-glare" />
-                    <div className="cyber-lines">
-                      <span /><span /><span /><span />
-                    </div>
-                    <div className="social-button" >
-                      <FaGithub />
-                    </div>
-                    <div className='PersonDetail'>
-                      <img src={person.image} alt={person.name} width={80} />
-                      <p id="prompt">{person.name}</p>
-                    </div>
-                    <div className="glowing-elements">
-                      <div className="glow-1" />
-                      <div className="glow-2" />
-                      <div className="glow-3" />
-                    </div>
-                    <div className="subtitle">
-                      <span>{person.designation}</span>
-                    </div>
-                    <div className="card-particles">
-                      <span /><span /><span /><span /><span /><span />
-                    </div>
-                    <div className="corner-elements">
-                      <span /><span /><span /><span />
-                    </div>
-                    <div className="scan-line" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-          {/* <button className="right-arrow" onClick={goRight}>{">"}</button> */}
-        </div>
+        <DevTeam/>
       )}
     </StyledWrapper>
   );

@@ -1,0 +1,33 @@
+.devTeam{
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(
+        90deg,
+        #ff0000,
+    );
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 0 20px 10px ; /* Red glow */
+    animation: rainbow-glow 5s ease infinite;
+}
+
+
+@media(max-width:770px){
+    #devContainer{
+        padding: 0%;
+        margin: 0;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+@media(min-width:770px){
+    #devContainer{
+        padding: 0%;
+        margin: 0;
+        height: 100%;
+        position: relative;
+        z-index: 10;
+    }
+}
