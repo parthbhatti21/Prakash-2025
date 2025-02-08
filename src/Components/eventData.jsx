@@ -16,6 +16,7 @@ import Maze from "../assets/EventCardSvg/Maze.png";
 import Pirate2 from "../assets/EventCardSvg/Pirate2.png";
 import stellar from "../assets/EventCardSvg/stellarcosmos.jpg";
 import brawl from "../assets/EventCardSvg/brawl.svg";
+import Vr from "../assets/EventCardSvg/Vr.png";
 
 import img_IOTWorkshop from "../assets/Event Logos/Workshop & Mega Event/IOT Workshop.png";
 import img_Aeromodeling from "../assets/Event Logos/Workshop & Mega Event/The Art of Aero Modelling.png";
@@ -50,7 +51,8 @@ const events = [
     title: "IOT Workshop",
     img: IOTCircuit,
     image: img_IOTWorkshop,
-    details: "Dive into the world of IoT at Prakarsh25 with an engaging hands-on workshop!",
+    details:
+      "Dive into the world of IoT at Prakarsh25 with an engaging hands-on workshop!",
   },
   {
     id: 2,
@@ -66,7 +68,8 @@ const events = [
     title: "Robo Race",
     img: RoboRace,
     image: img_RoboRace,
-    details: "Unleash your RC car’s potential on a dynamic track filled with thrilling hurdles!",
+    details:
+      "Unleash your RC car’s potential on a dynamic track filled with thrilling hurdles!",
   },
   {
     id: 4,
@@ -74,7 +77,8 @@ const events = [
     title: "Bits and Bytes",
     img: Bits_Bytes,
     image: img_bitsbits,
-    details: "Compete in three thrilling stages, including IT quizzes and programming charades!",
+    details:
+      "Compete in three thrilling stages, including IT quizzes and programming charades!",
   },
   {
     id: 5,
@@ -158,7 +162,7 @@ const events = [
   {
     id: 15,
     category: "ESports",
-    title: "Free Fire Clash of Champions",
+    title: "Free Fire Tech Showdown",
     image: img_FreeFireClashofChampions,
     details: "Battle it out in Free Fire for exciting prizes!",
   },
@@ -200,9 +204,10 @@ const events = [
     id: 20,
     category: "Tech",
     title: "The Ultimate VR Experience",
-    img: Maze,
+    img: Vr,
     image: img_VR,
-    details: "Explore a custom designed game that combines immersive virtual reality with interactive gameplay, offering participants ",
+    details:
+      "Explore a custom designed game that combines immersive virtual reality with interactive gameplay, offering participants ",
   },
   {
     id: 21,
