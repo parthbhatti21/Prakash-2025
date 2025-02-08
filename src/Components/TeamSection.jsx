@@ -24,7 +24,7 @@ import manan from '../assets/teamimages/malak.webp';
 import harshil from '../assets/teamimages/harshil.webp';
 import kashyap from '../assets/teamimages/malak.webp';
 import darshan from '../assets/teamimages/darshan.webp';
-import masoom from '../assets/teamimages/malak.webp';
+import masoom from '../assets/teamimages/masoom.jpg';
 import pruth from '../assets/teamimages/pruth.webp';
 import dhruva from '../assets/teamimages/DHRUVA.webp';
 import kairavi from '../assets/teamimages/kairavi.webp';
@@ -63,7 +63,7 @@ const TeamSection = () => {
       { 'name': "Harshilsinh Rana", image: harshil, 'designation': "Joint ISTE Social Media Marketing", 'linkedin': "https://www.linkedin.com/in/harshilsinh-rana-2b8b6b263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
       { 'name': "Kashyap Contractor", 'image': "https://via.placeholder.com/150", 'designation': "ISTE Administrative Coordinator", 'linkedin': "https://linkedin.com" },
       { 'name': "Darshan Panchal", image: darshan, 'designation': "Joint ISTE Administrative Coordinator", 'linkedin': "https://www.linkedin.com/in/darshan-panchal-335947298/" },
-      { 'name': "Masoom Patel", 'image': "https://via.placeholder.com/150", 'designation': "Joint ISTE Administrative Coordinator", 'linkedin': "https://linkedin.com" },
+      { 'name': "Masoom Patel", image: masoom, 'designation': "Joint ISTE Administrative Coordinator", 'linkedin': "https://www.linkedin.com/in/masoom-patel-21b5a0326/" },
       { 'name': "Yash Shah", image: yashh, 'designation': "ISTE Sponsorship Coordinator", 'linkedin': "https://www.linkedin.com/in/yash-shah-195a88283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
       { 'name': "Pruth Shah", image: pruth, 'designation': "Joint ISTE Sponsorship Coordinator", 'linkedin': "https://linkedin.com" },
       { 'name': "Sonu Chaudhary", image: sonu, 'designation': "ISTE Promotion Coordinator", 'linkedin': "https://in.linkedin.com/in/sonu-choudhary-646265263" },
