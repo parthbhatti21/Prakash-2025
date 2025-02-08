@@ -14,7 +14,8 @@ const eventsTypes=[
   {id:2,name:"Non-Tech",catagory:"NonTech"},
   {id:3,name:"Workshop",catagory:"Workshop"},
   {id:4,name:"Open R",catagory:"OpenR"},
-  {id:5,name:"View More...",catagory:"All"},
+  {id:5,name:"E-Sports",catagory:"ESports"},
+  {id:6,name:"View More...",catagory:"All"},
 
 ];
 
