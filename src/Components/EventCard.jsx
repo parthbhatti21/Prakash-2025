@@ -119,16 +119,9 @@ export default function EventCard() {
           <div className="animated-border-box">
             <img src={CrossImg} className="cross" alt="Close" onClick={hideCardDetails} />
             {selectedEventDetails.img && <img src={selectedEventDetails.img} className={`event-${selectedEvent}`} alt="" />}
-            <h3>{selectedEventDetails.details}</h3>
+            <h3 className="event-desc">{selectedEventDetails.details}</h3>
 
-            {/* Display the problem statement for OpenR */}
-            {isOpenR && (
-              <div>
-                <NavLink to="https://docs.google.com/spreadsheets/d/1cC0-tgQUeavTXRqKDG6hZNZS9u72UIbJQ3xUpbEChpE/edit?usp=sharing" target="_blank">
-                  <h3>Problem Statement &rarr;</h3>
-                </NavLink>
-              </div>
-            )}
+
 
             <NavLink to={isOpenR ? "https://lu.ma/k7qw8bhs" : "https://konfhub.com/prakarsh-25"} target="_blank">
               <RegisterButton className="register" />
@@ -136,14 +129,14 @@ export default function EventCard() {
 
             {/* OpenR Details Section */}
             {isOpenR && (
-              <div className="openr-info mt-4 p-4 border-t-2 border-gray-200 bg-gray-50"><br />
-                <h3 className="text-xl font-semibold text-gray-700">OpenR Project Details</h3>
-                <p className="mt-2 text-gray-600 text-sm">
+              <div className=""><br />
+                <h3 className="openr-head">OpenR Project Details</h3>
+                <p className="">
                   Open R is an open project and prototype challenge focused on Smart Village Development, encouraging innovative and feasible solutions to enhance rural living.
                 </p><br />
-                <div className="mt-4">
-                  <h4 className="text-lg font-medium text-gray-800">Event Criteria: </h4>
-                  <p className="text-gray-600 text-sm">
+                <div className="">
+                  <h4 className="openr-head">Event Criteria: </h4>
+                  <p className="">
                     - Team of 4 members (min-2; max-4)
                     <br />
                     - Participants must bring their project, no extra time for in-person activity of building/coding.
@@ -152,8 +145,8 @@ export default function EventCard() {
                     <br />
                     - POC must include the project/prototype along with a drafted document (hardcopy).
                   </p><br />
-                  <h4 className="text-lg font-medium text-gray-800 mt-4">Project Criteria:</h4>
-                  <p className="text-gray-600 text-sm">
+                  <h4 className="openr-head">Project Criteria:</h4>
+                  <p className="">
                     - Project/Prototype must be 70-80% implemented.
                     <br />
                     - The project must satisfy the theme “Rural Development” on all bases.
@@ -161,6 +154,18 @@ export default function EventCard() {
                     - A well-formatted document (hardcopy) is required, otherwise the project won't be considered.
                   </p>
                 </div>
+              </div>
+            )} <br />
+            {/* Display the problem statement for OpenR */}
+            {isOpenR && (
+              <div>
+                <NavLink
+                  to="https://docs.google.com/spreadsheets/d/1cC0-tgQUeavTXRqKDG6hZNZS9u72UIbJQ3xUpbEChpE/edit?usp=sharing"
+                  target="_blank"
+                  className="problem-statement-link"
+                >
+                  <h3 className="openr-head">Problem Statement</h3>
+                </NavLink>
               </div>
             )}
           </div>
