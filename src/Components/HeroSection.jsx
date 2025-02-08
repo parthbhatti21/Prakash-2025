@@ -14,8 +14,23 @@ export default function HeroSection() {
     let recontrol;
 
     // Load AstroPov Rive animation
+    // const r = new Rive({
+    //   src: "/AstroPov2.riv",
+    //   canvas: canvasAstroPovRef.current,
+    //   autoplay: true,
+    //   stateMachines: "State Machine 1",
+    //   onLoad: function () {
+    //     r.resizeDrawingSurfaceToCanvas();
+    //     resize = r;
+    //     const rsize = resize.stateMachineInputs("State Machine 1");
+    //     recontrol = rsize.find((input) => input.name === "resize");
+    //     recontrol.value = handleResize();
+    //     recontrolRef.current = recontrol; // Store for resizing
+    //   },
+    // });
+ //Load AstroPov Rive animation
     const r = new Rive({
-      src: "/AstroPov2.riv",
+      src: "/astropovwithsvit.riv",
       canvas: canvasAstroPovRef.current,
       autoplay: true,
       stateMachines: "State Machine 1",
@@ -28,7 +43,6 @@ export default function HeroSection() {
         recontrolRef.current = recontrol; // Store for resizing
       },
     });
-
     // Load Logo Rive animation
     const l = new Rive({
       src: "/PLogo.riv",

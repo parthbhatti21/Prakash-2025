@@ -143,14 +143,14 @@ const events = [
     category: "NonTech",
     title: "IPL Auction",
     details:
-      "“Think, Bid, Win: Step into the Excitement of IPL Auction Strategy!” Experience the thrill of cricket strategy and team-building at our IPL Auction Challenge!",
+      "Think, Bid, Win: Step into the Excitement of IPL Auction Strategy!” Experience the thrill of cricket strategy and team-building at our IPL Auction Challenge!",
   },
   {
     id: 19,
     category: "NonTech",
     title: "Infinity Quest",
     details:
-      "“A treasure hunt to the universe.” Get ready for “Infinity Quest,” an electrifying Marvel-themed treasure hunt with an engineering twist!",
+      "A treasure hunt to the universe.” Get ready for “Infinity Quest,” an electrifying Marvel-themed treasure hunt with an engineering twist!",
   },
   {
     id: 20,

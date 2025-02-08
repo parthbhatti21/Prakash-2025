@@ -41,6 +41,7 @@ export default function EventCard() {
           <div key={event.id} className={`card c${event.id} ${event.category}`} onClick={() => showCardDetails(event.id)}>
             <img alt={event.title} src={event.image} className={`img ${event.id}`} />
             <h2>{event.title}</h2>
+           
           </div>
         ))}
       </div>
@@ -52,6 +53,7 @@ export default function EventCard() {
             <img src={CrossImg} className="cross" alt="Close" onClick={hideCardDetails} />
             {selectedEventDetails.img && <img src={selectedEventDetails.img} className={`event-${selectedEvent}`} alt="" />}
             <h3 className="event-desc">{selectedEventDetails.details}</h3>
+            <p>{selectedEventDetails.discription}</p>
 
 
 
