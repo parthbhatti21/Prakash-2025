@@ -48,7 +48,8 @@ const events = [
     title: "IOT Workshop",
     img: IOTCircuit,
     image: img_IOTWorkshop,
-    details: "Dive into the world of IoT at Prakarsh25 with an engaging hands-on workshop!",
+    details:
+      "Dive into the world of IoT at Prakarsh25 with an engaging hands-on workshop!",
   },
   {
     id: 2,
@@ -64,7 +65,8 @@ const events = [
     title: "Robo Race",
     img: RoboRace,
     image: img_RoboRace,
-    details: "Unleash your RC car’s potential on a dynamic track filled with thrilling hurdles!",
+    details:
+      "Unleash your RC car’s potential on a dynamic track filled with thrilling hurdles!",
   },
   {
     id: 4,
@@ -72,7 +74,8 @@ const events = [
     title: "Bits and Bytes",
     img: Bits_Bytes,
     image: img_bitsbits,
-    details: "Compete in three thrilling stages, including IT quizzes and programming charades!",
+    details:
+      "Compete in three thrilling stages, including IT quizzes and programming charades!",
   },
   {
     id: 5,
@@ -156,7 +159,7 @@ const events = [
   {
     id: 15,
     category: "ESports",
-    title: "Free Fire Clash of Champions",
+    title: "Free Fire Tech Showdown",
     image: img_FreeFireClashofChampions,
     details: "Battle it out in Free Fire for exciting prizes!",
   },
