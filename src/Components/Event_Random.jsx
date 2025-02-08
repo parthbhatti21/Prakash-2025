@@ -73,8 +73,7 @@ export default function Event_Random() {
             <h2>{eventsTypes.name}</h2>
           
 
-            {/* Floating Register Button */}
-            {/* <button className="floating-register-button">Register</button> */}
+          
 
           </div>
           

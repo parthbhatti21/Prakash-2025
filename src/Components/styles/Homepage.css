@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 #canvasSolarSystemAlignment{
     transform: translateY(-50%) translateX(-22%);
     width:  180%;
