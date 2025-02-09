@@ -12,23 +12,6 @@ export default function HeroSection() {
   useEffect(() => {
     let resize;
     let recontrol;
-
-    // Load AstroPov Rive animation
-    // const r = new Rive({
-    //   src: "/AstroPov2.riv",
-    //   canvas: canvasAstroPovRef.current,
-    //   autoplay: true,
-    //   stateMachines: "State Machine 1",
-    //   onLoad: function () {
-    //     r.resizeDrawingSurfaceToCanvas();
-    //     resize = r;
-    //     const rsize = resize.stateMachineInputs("State Machine 1");
-    //     recontrol = rsize.find((input) => input.name === "resize");
-    //     recontrol.value = handleResize();
-    //     recontrolRef.current = recontrol; // Store for resizing
-    //   },
-    // });
- //Load AstroPov Rive animation
     const r = new Rive({
       src: "/astropovwithsvit.riv",
       canvas: canvasAstroPovRef.current,

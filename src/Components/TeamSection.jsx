@@ -3,26 +3,16 @@
 import { useState} from 'react';
 import styled from 'styled-components';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import parth from '../assets/teamimages/parth.webp';
-import malak from '../assets/teamimages/malak.webp';  
-import sid from '../assets/teamimages/siddharth.webp';
-import dhaval from '../assets/teamimages/dhaval.webp';
-import tarang from '../assets/teamimages/tarang.webp';
 import tarang2 from '../assets/teamimages/tarang2.webp';
 import nisarg from '../assets/teamimages/nisarg.webp';
-import nidhi from '../assets/teamimages/nidhi.webp';
-import arya from '../assets/teamimages/arya.webp';
 import aryaa from '../assets/teamimages/arya2.webp';
-import samipya from '../assets/teamimages/malak.webp';
 import jenish from '../assets/teamimages/jenish.webp';
 import krutagna from '../assets/teamimages/krutagna.webp';
 import piyush from '../assets/teamimages/piyush.webp';
-import yash from '../assets/teamimages/yash.webp';
 import vinit from '../assets/teamimages/viniit.webp';
 import srujal from '../assets/teamimages/srujal.webp';
 import manan from '../assets/teamimages/manan.webp';
 import harshil from '../assets/teamimages/harshil.webp';
-import kashyap from '../assets/teamimages/malak.webp';
 import darshan from '../assets/teamimages/darshan.webp';
 import masoom from '../assets/teamimages/masoom.jpg';
 import pruth from '../assets/teamimages/pruth.webp';
@@ -30,9 +20,7 @@ import dhruva from '../assets/teamimages/DHRUVA.webp';
 import kairavi from '../assets/teamimages/kairavi.webp';
 import sonu from '../assets/teamimages/sonu.webp';
 import vaishnavi from '../assets/teamimages/vaishnavi.webp';
-import dax from '../assets/teamimages/malak.webp';
 import nishita from '../assets/teamimages/nishita.webp';
-import jaineel from '../assets/teamimages/malak.webp';
 import nachiket from '../assets/teamimages/nachiket.webp';
 import dhyey from '../assets/teamimages/Dhyey.webp';
 import mitul from '../assets/teamimages/mitul.webp';
@@ -49,7 +37,7 @@ const TeamSection = () => {
 
   
   const coreTeam = [
-      { 'name': "SamipyaSinh Rajput", image: "https://via.placeholder.com/150", 'designation': "ISTE Chief Coordinator", 'linkedin': "https://www.linkedin.com/in/samipyasinh-rajput-28b742242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+      { 'name': "SamipyaSinh Rajput", image: "", 'designation': "ISTE Chief Coordinator", 'linkedin': "https://www.linkedin.com/in/samipyasinh-rajput-28b742242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
       { 'name': "Jenish Patel", image: jenish, 'designation': "Joint ISTE Chief Coordinator", 'linkedin': "https://www.linkedin.com/in/jenishxp?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
       { 'name': "Krutagna Patel", image: krutagna, 'designation': "Joint ISTE Chief Coordinator", 'linkedin': "https://www.linkedin.com/in/krutagna-patel-2a6a14260/" },
       { 'name': "Piyush Sharma", image: piyush, 'designation': "ISTE Finance Coordinator", 'linkedin': "https://linkedin.com" },
@@ -68,9 +56,9 @@ const TeamSection = () => {
       { 'name': "Pruth Shah", image: pruth, 'designation': "Joint ISTE Sponsorship Coordinator", 'linkedin': "https://linkedin.com" },
       { 'name': "Sonu Chaudhary", image: sonu, 'designation': "ISTE Promotion Coordinator", 'linkedin': "https://in.linkedin.com/in/sonu-choudhary-646265263" },
       { 'name': "Vaishnavi Parmar", image: vaishnavi, 'designation': "Joint ISTE Promotion Coordinator", 'linkedin': "https://www.linkedin.com/in/vaishnavi-parmar-3a7280344" },
-      { 'name': "Dax Patel", image: "https://via.placeholder.com/150", 'designation': "Joint ISTE Promotion Coordinator", 'linkedin': "https://linkedin.com" },
+      { 'name': "Dax Patel", image: "", 'designation': "Joint ISTE Promotion Coordinator", 'linkedin': "https://linkedin.com" },
       { 'name': "Nishita Shahani", image: nishita, 'designation': "ISTE Technical Coordinator", 'linkedin': "https://www.linkedin.com/in/nishita-shahani-53b6b2277/" },
-      { 'name': "Jaineel Dalwadi", image: "https://via.placeholder.com/150", 'designation': "Joint ISTE Technical Coordinator", 'linkedin': "https://www.linkedin.com/in/jaineel-dalwadi-7914671a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+      { 'name': "Jaineel Dalwadi", image: "", 'designation': "Joint ISTE Technical Coordinator", 'linkedin': "https://www.linkedin.com/in/jaineel-dalwadi-7914671a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
       { 'name': "Arya Panchal", image: aryaa, 'designation': "Joint ISTE Technical Coordinator", 'linkedin': "https://www.linkedin.com/in/arya-panchal-ab8212268/" },
       { 'name': "Nachiket Brahmbhatt", image: nachiket, 'designation': "ISTE Non-Technical Coordinator", 'linkedin': "https://www.linkedin.com/in/nachiket-brahmbhatt-779677227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
       { 'name': "Dhyey Patel", image: dhyey, 'designation': "Joint ISTE Non-Technical Coordinator", 'linkedin': "https://www.linkedin.com/in/dhyey3074" },
@@ -81,18 +69,6 @@ const TeamSection = () => {
       { 'name': "Dhruva Desai", image: dhruva, 'designation': "ISTE Decoration Coordinator", 'linkedin': "https://www.linkedin.com/in/dhruva-desai-2314b4344/" },
       { 'name': "Kairavi Parikh", image: kairavi, 'designation': "Joint ISTE Decoration Coordinator", 'linkedin': "https://www.linkedin.com/in/kairavi-parikh-45704622b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
   ]
-
-  // const developerTeam = [
-  //   { name: "Tarang Motiyani", image: tarang, designation: "Web Astronaut", github: "https://github.com/Tarang52" },
-  //   { name: "Arya Panchal", image: arya, designation: "Web Astronaut", github: "https://github.com/Arya664" },
-  //   { name: "Nisarg Patel", image: nisarg, designation: "Web Astronaut", github: "https://github.com/nisargpatel7042lva" },
-  //   { name: "Siddharth Panchal", image: sid, designation: "Web Astronaut", github: "https://github.com/siddharth-09" },
-  //   { name: "Dhaval Patel", image: dhaval, designation: "Web Astronaut", github: "https://github.com/DhavalPhooski" },
-  //   { name: "Nidhi Agrawal", image: nidhi, designation: "Web Astronaut", github: "https://github.com/NidhiAgrawal7574" },
-  //   { name: "Malak Bhadgaonkar", image: malak, designation: "Web Astronaut", github: "https://github.com/mal4k3009" },
-  //   { name: "Parth Bhatti", image: parth, designation: "Web Astronaut", github: "https://github.com/parthbhatti21" },
-  //   { name: "Yash Mehta", image: yash, designation: "Web Astronaut", github: "https://github.com/yashm13114" }
-  // ];
 
   const handleSocialClick = (url) => {
  // Prevent event from bubbling up

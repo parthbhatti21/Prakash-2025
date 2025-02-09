@@ -36,7 +36,6 @@ import img_VR from "../assets/Event Logos/Tech/VR.png";
 import img_BrawlBridge from "../assets/Event Logos/Tech/BrawlBridge.png";
 
 import img_BoxCricketLeague from "../assets/Event Logos/Non-Tech/BoxCricketLogo.png";
-import img_ValorantShowdown from "../assets/Event Logos/Non-Tech/Valorant Showdown.png";
 import img_FreeFireClashofChampions from "../assets/Event Logos/Non-Tech/Free Fire Clash of Champions.png";
 import img_PopcornQuizzy from "../assets/Event Logos/Non-Tech/Popcorn Quizzy.png";
 import img_IPLAuction from "../assets/Event Logos/Non-Tech/IPL Auction.png";

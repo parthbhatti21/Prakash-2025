@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./styles/footer.css";
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 import svitLogo from "../assets/svitlogo.png"; // Import the logo image
