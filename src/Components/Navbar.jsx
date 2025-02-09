@@ -52,22 +52,11 @@ const Navbar = () => {
   };
 
   const scrollToSection = useCallback((id) => {
-    if (window.location.pathname !== "/") {
-      navigate("/", { replace: true });
-      setTimeout(() => {
-        const section = document.getElementById(id);
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100); // Small delay to allow navigation to complete
-    } else {
-      const section = document.getElementById(id);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
     }
-  }, [navigate]);
-
+  }, []);
 
   const EventSection = useCallback(() => {
     if (window.location.pathname === "/") {
@@ -79,7 +68,7 @@ const Navbar = () => {
   const TimeLineSection = useCallback(() => {
     if (window.location.pathname === "/") {
       scrollToSection("timeline");
-    }
+    } 
   }, [navigate, scrollToSection]);
 
   return (
@@ -103,24 +92,22 @@ const Navbar = () => {
             className="nav-item"
             onClick={() => {
               navigate("/");
+              localStorage.setItem("eventname","All");
               window.scrollTo(0, 0);
             }}
           >
             HOME
           </li>
-          <li className="nav-item" onClick={() => navigate("/aboutus")}>
+          <li className="nav-item" onClick={() => {navigate("/aboutus"); localStorage.setItem("eventname","All");}}>
             ABOUT
           </li>
           <li className="nav-item" onClick={EventSection}>
             EVENTS
           </li>
-          <li className="nav-item" onClick={() => scrollToSection("timeline")}>
-            TIMELINE
-          </li>
-          <li className="nav-item" onClick={() => scrollToSection("team-section")}>
+          <li className="nav-item" id="timeline-section"  onClick={TimeLineSection}>TIMELINE</li>
+          <li className="nav-item" onClick={() => {scrollToSection("team-section");localStorage.setItem("eventname","All");}}>
             TEAM
           </li>
-
         </ul>
       </nav>
 
@@ -148,16 +135,16 @@ const Navbar = () => {
             >
               HOME
             </li>
-            <li className="nav-item" onClick={() => { toggleMenu(); navigate("/aboutus"); }}>
+            <li className="nav-item" onClick={() => { toggleMenu(); navigate("/aboutus"); localStorage.setItem("eventname","All"); }}>
               ABOUT
             </li>
-            <li className="nav-item" onClick={() => { EventSection(); toggleMenu(); }}>
+            <li className="nav-item" onClick={() => { EventSection(); toggleMenu(); localStorage.setItem("eventname","All");}}>
               EVENTS
             </li>
-            <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection(""); }}>
+            <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection(""); localStorage.setItem("eventname","All");}}>
               TIMELINE
             </li>
-            <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection("team-section"); }}>
+            <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection("team-section"); localStorage.setItem("eventname","All"); }}>
               TEAM
             </li>
           </ul>
