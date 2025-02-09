@@ -45,23 +45,42 @@ html{
     }
 }
 .co1{
-    justify-content: center;
-    z-index: 10;
     position: relative;
     border: 4px solid rgba(0, 255, 255, 0.5);
-    /* Cyan colored boundary with transparency */
-    display: flex;
+    display: flex
+;   bottom: 10px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
-    /* Semi-transparent black background */
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-    /* Cyan glowing border effect */
-    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), inset 0 0 30px rgba(0, 255, 255, 0.3);
+    margin: 0px 0;
+    position: relative;
+    overflow: hidden;
 
 }
+.co1::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0, 255, 255, 0.1) 10px, rgba(0, 255, 255, 0.1) 20px);
+    animation: pattern-move 20s linear infinite;
+}
+
+@keyframes pattern-move {
+  0% {
+    transform: translate(-10%, -10%);
+  }
+  100% {
+    transform: translate(10%, 10%);
+  }
+}
+
+
 .name{
     
   text-align: center;
@@ -109,3 +128,6 @@ html{
 
 /* Container for text */
 
+div#timeline {
+    margin-top: 50px;
+}
