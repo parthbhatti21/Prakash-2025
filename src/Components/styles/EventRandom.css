@@ -1,5 +1,3 @@
-/* ✨ Global Styles */
-
 h1,
 h2,
 h3,
@@ -7,12 +5,10 @@ p {
   font-family: "Orbitron", sans-serif;
   color: #fff;
 }
-/* 🌌 Button Styles - Cosmic Glow */
 
 .button-wrapper {
   display: flex;
   flex-wrap: wrap;
-  /* Allows buttons to wrap on small screens */
   gap: 10px;
   justify-content: center;
   margin-bottom: 20px;
@@ -39,20 +35,15 @@ p {
   box-shadow: 0px 0px 30px rgba(255, 0, 255, 1);
   transform: scale(1.1);
 }
-/* 🎇 Event Cards - Cosmic Styling */
 
 .card2-container2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  /* Adjust grid for responsiveness */
   gap: 25px;
   padding: 0 20px;
   margin-top: 40px;
 }
-/* 
-   Increased the min-height of each card to make them taller.
-   Also increased padding for more breathing room.
-*/
+
 
 .card2 {
   background: rgba(0, 0, 0, 0.7);
@@ -70,7 +61,7 @@ p {
   background-size: cover;
   background-position: center;
   min-height: 280px;
-  /* Ensures the card is tall enough */
+
 }
 
 .card2:hover {
@@ -78,24 +69,19 @@ p {
   box-shadow: 0px 0px 30px #00ffffcc,
     0px 0px 60px rgba(0, 255, 255, 0.6);
 }
-/* 
-   Increased bottom margin so there's more space 
-   between the title and the register button.
-*/
+
 
 .card2 h2 {
   color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
   margin: 10px auto 80px;
-  /* Leaves room for the button */
   text-shadow: 0 0 15px #ffffffcc;
   white-space: normal;
-  /* Allows line wrapping */
   word-wrap: break-word;
   text-align: center;
 }
-/* 🌌 Event Details Modal */
+
 
 .cardDetails {
   position: fixed;
@@ -119,7 +105,6 @@ p {
   margin-bottom: 10px;
   color: #ff00ff;
 }
-/* 📱 Responsive Design (Mobile-Friendly) */
 
 @media (max-width: 768px) {
   .button-wrapper {
@@ -132,7 +117,6 @@ p {
   }
   .card2-container2 {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    /* Smaller cards for small screens */
   }
   .cardDetails {
     width: 90%;
@@ -157,7 +141,6 @@ p {
     width: 100%;
   }
 }
-/* ✨ Close Button - Sci-Fi Style */
 
 .cross {
   width: 30px;
@@ -168,7 +151,6 @@ p {
 .cross:hover {
   transform: rotate(90deg) scale(1.5);
 }
-/* 🌟 Twinkling Stars Effect */
 
 @keyframes stars {
   0% {
@@ -185,36 +167,19 @@ p {
   }
 }
 
-/* body::before {
-            content: "";
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: url("https://www.transparenttextures.com/patterns/stardust.png");
-            opacity: 0.2;
-            animation: stars 8s infinite linear;
-        } */
-/* ------------------------------------------------------------- */
-/* EventBar home page */
-/* ------------------------------------------------------------- */
 
 .homeEventBar {
   position: relative;
   border: 4px solid rgba(0, 255, 255, 0.5);
-  /* Cyan colored boundary with transparency */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
   background: rgba(0, 0, 0, 0.7);
-  /* Semi-transparent black background */
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-  /* Cyan glowing border effect */
   margin: 0px 0;
 }
-/* 🌌 Header Styling - Cosmic Theme */
-
 .events-header {
   text-align: center;
   font-family: "Orbitron", sans-serif;
@@ -230,11 +195,9 @@ p {
   border-radius: 12px;
   box-shadow:  rgba(0, 255, 255, 0.6);
   flex: 1;
-  /* Takes up remaining space */
   margin-right: 0px;
-  /* Adds spacing between header and button */
 }
-/* 🌟 View More Button - Cosmic Glow */
+
 
 .view-more {
   text-align: center;
@@ -257,7 +220,7 @@ p {
   transform: scale(1.1);
   box-shadow: 0 0 25px rgba(255, 0, 255, 0.9), 0 0 50px rgba(0, 255, 255, 0.8);
 }
-/* 📱 Responsive Design (Mobile-Friendly) */
+
 
 @media (max-width: 768px) {
   .homeEventBar {
@@ -286,9 +249,6 @@ p {
     padding: 6px 12px;
   }
 }
-/* ============================================================= */
-/* NEW: Floating Register Button - Cosmic Glow */
-/* ============================================================= */
 
 .floating-register-button {
   font-family: "Orbitron", sans-serif;
@@ -306,7 +266,6 @@ p {
   box-shadow: 0 0 15px rgba(255, 0, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.6);
   position: absolute;
   bottom: 20px;
-  /* Moved down for more space */
   left: 50%;
   transform: translateX(-50%);
 }
