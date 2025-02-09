@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import "./styles/navbar.css";
 import logoImage from "../assets/logo1.png";
-import { useNavigate } from "react-router";
+import { redirect, useNavigate } from "react-router";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -68,9 +68,23 @@ const Navbar = () => {
   const TimeLineSection = useCallback(() => {
     if (window.location.pathname === "/") {
       scrollToSection("timeline");
+      localStorage.setItem("eventname","All");
+    }
+    else{
+      navigate("/");
+      // scrollToSection("timeline");
+      localStorage.setItem("eventname","All");
     } 
   }, [navigate, scrollToSection]);
-
+  const TeamSection = useCallback(() => {
+    if (window.location.pathname === "/") {
+      scrollToSection("team-section");
+    }
+    else{
+      navigate("/");
+      // scrollToSection("timeline");
+    } 
+  }, [navigate, scrollToSection]);
   return (
     <header className={`navbar ${showNavbar ? "show" : "hide"}`}>
       {/* 🔥 Made the logo clickable to navigate to home */}
@@ -105,7 +119,8 @@ const Navbar = () => {
             EVENTS
           </li>
           <li className="nav-item" id="timeline-section"  onClick={TimeLineSection}>TIMELINE</li>
-          <li className="nav-item" onClick={() => {scrollToSection("team-section");localStorage.setItem("eventname","All");}}>
+              
+              <li className="nav-item" onClick= {TeamSection}>
             TEAM
           </li>
         </ul>
@@ -141,7 +156,7 @@ const Navbar = () => {
             <li className="nav-item" onClick={() => { EventSection(); toggleMenu(); localStorage.setItem("eventname","All");}}>
               EVENTS
             </li>
-            <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection(""); localStorage.setItem("eventname","All");}}>
+            <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection("timeline"); localStorage.setItem("eventname","All");}}>
               TIMELINE
             </li>
             <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection("team-section"); localStorage.setItem("eventname","All"); }}>
