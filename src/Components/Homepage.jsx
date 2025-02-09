@@ -42,7 +42,7 @@ export default function Homepage() {
 
                 {/* Content Sections */}
                  <marquee>
-                            <h1 class="neon">SVIT X Prakarsh</h1>
+                            <h1 class="neon">SVIT X Prakarsh 2025</h1>
                         </marquee>
                     
 
