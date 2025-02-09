@@ -14,11 +14,13 @@ import PUBG from "../assets/EventCardSvg/PUBG.png";
 import Cricket from "../assets/EventCardSvg/Cricket.png";
 import Maze from "../assets/EventCardSvg/Maze.png";
 import Pirate2 from "../assets/EventCardSvg/Pirate2.png";
-import stellar from "../assets/EventCardSvg/stellarcosmos.jpg";
+import stellar from "../assets/EventCardSvg/MoonKnight.png";
 import brawl from "../assets/EventCardSvg/brawl.svg";
 import Vr from "../assets/EventCardSvg/Vr.png";
 import PickleBall from "../assets/EventCardSvg/PickleBalls.png";
 import Midnight from "../assets/EventCardSvg/MidnightMystry.png";
+import FreeFire from "../assets/EventCardSvg/FreeFire.png";
+import Valorant from "../assets/EventCardSvg/Valorant.png"
 
 import img_IOTWorkshop from "../assets/Event Logos/Workshop & Mega Event/IOT Workshop.png";
 import img_Aeromodeling from "../assets/Event Logos/Workshop & Mega Event/The Art of Aero Modelling.png";
@@ -278,6 +280,7 @@ event is all about proving you're the ultimate cricket mastermind!`,
     id: 14,
     category: "ESports",
     title: "Valorant Showdown 3.0",
+    img :Valorant,
     image: img_Valorant,
     details: `"Take the Stage, Claim the Title."`,
     discription:
@@ -290,6 +293,7 @@ your chance to prove you’re the MVP. Big plays, clutch moments, and glory awai
     id: 15,
     category: "ESports",
     title: "Free Fire Tech Showdown",
+    img: FreeFire,
     image: img_FreeFireClashofChampions,
     details: `"Where Gamers Rise and Champions Rule!"`,
     discription:

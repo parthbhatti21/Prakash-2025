@@ -16,6 +16,7 @@ export default function EventCard() {
   useEffect(() => {
     setFilter(savedEventType || "All");
     document.getElementById(savedEventType)?.focus();
+    localStorage.removeItem('eventname')
   }, [savedEventType]);
 
   const showCardDetails = (eventId) => setSelectedEvent(eventId);
