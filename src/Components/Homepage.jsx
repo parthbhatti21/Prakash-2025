@@ -1,5 +1,4 @@
 // import Navbar from "./Navbar";
-import Star from "./Star";
 import Timeline from "./Timeline";
 import Timer from "./Timer";
 import TeamSection from "./TeamSection";
@@ -42,7 +41,7 @@ export default function Homepage() {
 
                 {/* Content Sections */}
                  <marquee>
-                            <h1 class="neon">SVIT X Prakarsh 2025</h1>
+                            <h1 className="neon">SVIT X Prakarsh 2025</h1>
                         </marquee>
                     
 

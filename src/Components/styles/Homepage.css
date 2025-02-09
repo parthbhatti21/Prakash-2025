@@ -93,7 +93,7 @@ html{
         font-size: 4rem;
         width: 100%;
         font-weight: bold;
-        -webkit-text-stroke: 1px black; /* Black Border */
+        -webkit-text-stroke: 1px rgb(111, 1, 104); /* Black Border */
         font-family: 'Orbitron', sans-serif;
         text-shadow:
             0 0 5px #fff,
