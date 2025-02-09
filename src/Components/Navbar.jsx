@@ -62,7 +62,7 @@ const Navbar = () => {
     if (window.location.pathname === "/") {
       scrollToSection("events-section");
     } else {
-      navigate("/events");
+      navigate("events");
     }
   }, [navigate, scrollToSection]);
   const TimeLineSection = useCallback(() => {

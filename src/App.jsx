@@ -5,7 +5,6 @@ import AboutUs from "./Components/Aboutus"
 import Navbar from "./Components/Navbar"
 function App() {
 
-
   return (
 
     <HashRouter>
