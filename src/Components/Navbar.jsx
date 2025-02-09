@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import "./styles/navbar.css";
 import logoImage from "../assets/logo1.png";
-import { redirect, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -52,11 +52,22 @@ const Navbar = () => {
   };
 
   const scrollToSection = useCallback((id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if (window.location.pathname !== "/") {
+      navigate("/", { replace: true });
+      setTimeout(() => {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100); // Small delay to allow navigation to complete
+    } else {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     }
-  }, []);
+  }, [navigate]);
+
 
   const EventSection = useCallback(() => {
     if (window.location.pathname === "/") {
@@ -68,23 +79,9 @@ const Navbar = () => {
   const TimeLineSection = useCallback(() => {
     if (window.location.pathname === "/") {
       scrollToSection("timeline");
-      localStorage.setItem("eventname","All");
     }
-    else{
-      navigate("/");
-      // scrollToSection("timeline");
-      localStorage.setItem("eventname","All");
-    } 
   }, [navigate, scrollToSection]);
-  const TeamSection = useCallback(() => {
-    if (window.location.pathname === "/") {
-      scrollToSection("team-section");
-    }
-    else{
-      navigate("/");
-      // scrollToSection("timeline");
-    } 
-  }, [navigate, scrollToSection]);
+
   return (
     <header className={`navbar ${showNavbar ? "show" : "hide"}`}>
       {/* 🔥 Made the logo clickable to navigate to home */}
@@ -106,23 +103,24 @@ const Navbar = () => {
             className="nav-item"
             onClick={() => {
               navigate("/");
-              localStorage.setItem("eventname","All");
               window.scrollTo(0, 0);
             }}
           >
             HOME
           </li>
-          <li className="nav-item" onClick={() => {navigate("/aboutus"); localStorage.setItem("eventname","All");}}>
+          <li className="nav-item" onClick={() => navigate("/aboutus")}>
             ABOUT
           </li>
           <li className="nav-item" onClick={EventSection}>
             EVENTS
           </li>
-          <li className="nav-item" id="timeline-section"  onClick={TimeLineSection}>TIMELINE</li>
-              
-              <li className="nav-item" onClick= {TeamSection}>
+          <li className="nav-item" onClick={() => scrollToSection("timeline")}>
+            TIMELINE
+          </li>
+          <li className="nav-item" onClick={() => scrollToSection("team-section")}>
             TEAM
           </li>
+
         </ul>
       </nav>
 
@@ -150,16 +148,16 @@ const Navbar = () => {
             >
               HOME
             </li>
-            <li className="nav-item" onClick={() => { toggleMenu(); navigate("/aboutus"); localStorage.setItem("eventname","All"); }}>
+            <li className="nav-item" onClick={() => { toggleMenu(); navigate("/aboutus"); }}>
               ABOUT
             </li>
-            <li className="nav-item" onClick={() => { EventSection(); toggleMenu(); localStorage.setItem("eventname","All");}}>
+            <li className="nav-item" onClick={() => { EventSection(); toggleMenu(); }}>
               EVENTS
             </li>
-            <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection("timeline"); localStorage.setItem("eventname","All");}}>
+            <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection(""); }}>
               TIMELINE
             </li>
-            <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection("team-section"); localStorage.setItem("eventname","All"); }}>
+            <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection("team-section"); }}>
               TEAM
             </li>
           </ul>
