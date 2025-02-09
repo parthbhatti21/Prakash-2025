@@ -125,7 +125,7 @@ const events = [
   {
     id: 11,
     category: "NonTech",
-    title: "Box Cricket League",
+    title: "Box Cricket League",  
     img: Cricket,
     image: img_BoxCricketLeague,
     details: "Experience fast-paced cricket action in a compact arena!",
