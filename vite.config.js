@@ -13,8 +13,13 @@ export default defineConfig({
       verbose: true, // Show compression details in console
     }),
     ViteSitemap({
-      hostname: 'https://prakarsh2025.vercel.app', // Replace with your website's hostname
-    }),
+        hostname: 'https://prakarsh2025.vercel.app',
+        routes: [
+          '/',
+          '/events',
+          '/aboutus',
+        ],
+      }),
   ],
 
   assetsInclude: ['**/*.JPG', '**/*.HEIC'],
