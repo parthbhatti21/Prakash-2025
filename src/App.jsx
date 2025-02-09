@@ -1,14 +1,13 @@
-import { HashRouter, Route, Routes } from "react-router"
+import { BrowserRouter, Route, Routes } from "react-router"
 import Homepage from "./Components/Homepage"
 import EventCard from "./Components/EventCard"
 import AboutUs from "./Components/Aboutus"
 import Navbar from "./Components/Navbar"
 function App() {
 
-
   return (
 
-    <HashRouter>
+    <BrowserRouter>
       <Navbar />
 
       <Routes>
@@ -18,7 +17,7 @@ function App() {
         <Route path='/aboutus' element={<AboutUs />} />
       </Routes>
 
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
