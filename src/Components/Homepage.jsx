@@ -41,6 +41,11 @@ export default function Homepage() {
                 <Timer />
 
                 {/* Content Sections */}
+                 <marquee>
+                            <h1 class="neon">SVIT X Prakarsh</h1>
+                        </marquee>
+                    
+
                 <div id="events-section">
                     <Event_Random />
                 </div>
