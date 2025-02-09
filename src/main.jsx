@@ -4,11 +4,12 @@ import { Rive } from "@rive-app/canvas";
 
 const App = React.lazy(() => import("./App.jsx"));
 
-const LoadingScreen = ({ onFinish }) => {
+const LoadingScreen = () => {
   useEffect(() => {
     const canvas = document.getElementById("canvas");
     if (!canvas) return;
 
+    // Initialize Rive animation
     const r = new Rive({
       src: "Load-in.riv",
       canvas: canvas,
@@ -19,9 +20,11 @@ const LoadingScreen = ({ onFinish }) => {
       },
     });
 
-    const timer = setTimeout(onFinish, 3000); // Show loading screen for at least 4 seconds
-    return () => clearTimeout(timer);
-  }, [onFinish]);
+    // Cleanup the Rive instance when component is unmounted
+    return () => {
+      r.cleanup();
+    };
+  }, []);
 
   return (
     <div className="loading-screen">
@@ -34,26 +37,26 @@ const LoadingScreen = ({ onFinish }) => {
 
 const RootComponent = () => {
   const [loading, setLoading] = useState(true);
-  const [showRive, setShowRive] = useState(true);
 
+  // Global timer to handle loading state
   useEffect(() => {
-    if (!loading) {
-      setTimeout(() => setShowRive(false), 500); // Small delay to ensure smooth transition
-    }
-  }, [loading]);
+    const timer = setTimeout(() => {
+      setLoading(false); // End loading state after 3 seconds
+    }, 5000); // Show loading screen for 3 seconds
+
+    return () => clearTimeout(timer); // Cleanup the timer on unmount
+  }, []);
 
   return (
     <>
-      {loading && <LoadingScreen onFinish={() => setLoading(false)} />}
-      {showRive && <canvas id="canvas"></canvas>}{" "}
-      {/* Ensuring Rive stays visible */}
+      {loading && <LoadingScreen />}
       {!loading && <App />}
     </>
   );
 };
 
 createRoot(document.getElementById("root")).render(
-  <Suspense fallback={<LoadingScreen onFinish={() => {}} />}>
+  <Suspense fallback={<LoadingScreen />}>
     <RootComponent />
   </Suspense>
 );
@@ -61,11 +64,7 @@ createRoot(document.getElementById("root")).render(
 // CSS Variables
 const styles = document.createElement("style");
 styles.innerHTML = `
-  :root {
-    --loading-bg: #f4f4f4;
-    --loading-text-color: #333;
-    --canvas-size: 300px;
-  }
+ 
 
   .loading-screen {
     display: flex;
@@ -83,8 +82,8 @@ styles.innerHTML = `
   }
 
   canvas {
-    width: var(--canvas-size);
-    height: var(--canvas-size);
+    width: 300px;
+    height: 300px;
   }
 `;
 document.head.appendChild(styles);
