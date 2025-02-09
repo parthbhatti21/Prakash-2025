@@ -20,7 +20,7 @@ import piyush from '../assets/teamimages/piyush.webp';
 import yash from '../assets/teamimages/yash.webp';
 import vinit from '../assets/teamimages/viniit.webp';
 import srujal from '../assets/teamimages/srujal.webp';
-import manan from '../assets/teamimages/malak.webp';
+import manan from '../assets/teamimages/manan.webp';
 import harshil from '../assets/teamimages/harshil.webp';
 import kashyap from '../assets/teamimages/malak.webp';
 import darshan from '../assets/teamimages/darshan.webp';
@@ -58,7 +58,7 @@ const TeamSection = () => {
       { 'name': "Tarang Motiyani", image: tarang2, 'designation': "ISTE Website Coordinator", 'linkedin': "https://www.linkedin.com/in/tarang-motiyani-a05756255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
       { 'name': "Arya Panchal", image: aryaa, 'designation': "Joint ISTE Website Coordinator", 'linkedin': "https://www.linkedin.com/in/arya-panchal-ab8212268/" },
       { 'name': "Nisarg Patel", image: nisarg, 'designation': "Joint ISTE Website Coordinator", 'linkedin': "https://www.linkedin.com/in/nisarg-patel-7b799a277/" },
-      { 'name': "Manan Shah", image: "https://via.placeholder.com/150", 'designation': "ISTE Social Media Marketing", 'linkedin': "https://www.linkedin.com/in/manan-shah-bb481b24b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
+      { 'name': "Manan Shah", image: manan, 'designation': "ISTE Social Media Marketing", 'linkedin': "https://www.linkedin.com/in/manan-shah-bb481b24b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
       { 'name': "Srujal Shah", image: srujal, 'designation': "Joint ISTE Social Media Marketing", 'linkedin': "https://www.linkedin.com/in/techking007/" },
       { 'name': "Harshilsinh Rana", image: harshil, 'designation': "Joint ISTE Social Media Marketing", 'linkedin': "https://www.linkedin.com/in/harshilsinh-rana-2b8b6b263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
       { 'name': "Kashyap Contractor", image: "https://via.placeholder.com/150", 'designation': "ISTE Administrative Coordinator", 'linkedin': "https://linkedin.com" },
