@@ -59,7 +59,8 @@ p {
   margin: 0;
   letter-spacing: 3px;
   position: relative;
-  z-index: 1;
+  z-index: 1px;
+  left: 50%;
 }
 
 .card2-container2 {
