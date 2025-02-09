@@ -15,6 +15,7 @@ import srujal from '../assets/teamimages/srujal.webp';
 import manan from '../assets/teamimages/manan.webp';
 import harshil from '../assets/teamimages/harshil.webp';
 import darshan from '../assets/teamimages/darshan.webp';
+import samipya from '../assets/teamimages/samipya.webp';
 import masoom from '../assets/teamimages/masoom.jpg';
 import pruth from '../assets/teamimages/pruth.webp';
 import dhruva from '../assets/teamimages/DHRUVA.webp';
@@ -38,7 +39,7 @@ const TeamSection = () => {
 
   
   const coreTeam = [
-      { 'name': "SamipyaSinh Rajput", image: "", 'designation': "ISTE Chief Coordinator", 'linkedin': "https://www.linkedin.com/in/samipyasinh-rajput-28b742242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+      { 'name': "SamipyaSinh Rajput", image: samipya, 'designation': "ISTE Chief Coordinator", 'linkedin': "https://www.linkedin.com/in/samipyasinh-rajput-28b742242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
       { 'name': "Jenish Patel", image: jenish, 'designation': "Joint ISTE Chief Coordinator", 'linkedin': "https://www.linkedin.com/in/jenishxp?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
       { 'name': "Krutagna Patel", image: krutagna, 'designation': "Joint ISTE Chief Coordinator", 'linkedin': "https://www.linkedin.com/in/krutagna-patel-2a6a14260/" },
       { 'name': "Piyush Sharma", image: piyush, 'designation': "ISTE Finance Coordinator", 'linkedin': "https://linkedin.com" },
