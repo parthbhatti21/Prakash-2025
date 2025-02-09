@@ -3,7 +3,8 @@ html{
     scroll-behavior: smooth;
 }
 #canvasSolarSystemAlignment{
-    transform: translateY(-50%) translateX(-22%);
+    position: relative;
+    transform: translateY(0%) translateX(-22%);
     width:  180%;
 }
 .homepage-container{
@@ -30,18 +31,23 @@ html{
 }
 .SolarSystemBackground{
     z-index: -1;
+    
     position: fixed;
     width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
 }
 @media(min-width:770px){
     #canvasSolarSystemAlignment{
-        transform: translateY(-125%) translateX(7%);
-        width:  90%;
+        transform: translateY(-10%) translateX(0%);
+        width:  100%;
+        height: 100%;
     }
     .SolarSystemBackground{
         z-index: -1;
         position: fixed;
         width: 100%;
+        height: 100%;
     }
 }
 .co1{
