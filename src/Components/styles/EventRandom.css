@@ -71,8 +71,7 @@ p {
 }
 
 .card2 {
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
+  background: linear-gradient(45deg, rgb(85 19 100), rgb(0 0 0));  border-radius: 15px;
   padding: 30px 20px;
   text-align: center;
   cursor: pointer;
@@ -94,11 +93,8 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    45deg,
-    rgba(255, 0, 255, 0.1),
-    rgba(0, 123, 255, 0.1)
-  );
+  background: rgba(0, 0, 0, 0.7);
+
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -108,6 +104,13 @@ p {
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.6),
               0 0 60px rgba(255, 0, 255, 0.3);
   border-color: rgba(0, 255, 255, 0.8);
+}
+.icon2:hover{
+  position: relative;
+  z-index: 5;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+
 }
 
 .card2:hover::before {
