@@ -60,7 +60,7 @@ p {
   letter-spacing: 3px;
   position: relative;
   z-index: 1px;
-  left: 50%;
+  left: 42.5%;
 }
 
 .card2-container2 {
@@ -179,7 +179,7 @@ p {
 
 @media (max-width: 480px) {
   .events-header {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   
   .card2-container2 {
