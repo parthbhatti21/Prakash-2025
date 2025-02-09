@@ -23,7 +23,7 @@ body {
 /* 🌠 Center Content Properly */
 
 .container1 {
-  margin-top:3.5%;
+  margin-top: 3.5%;
   /* Centers content */
   padding: 20px;
   text-align: center;
@@ -284,6 +284,7 @@ body {
   top: 30px;
   right: 30px;
   width: 60px;
+  height: 60px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
@@ -752,7 +753,6 @@ body {
     aspect-ratio: 10/7;
     bottom: -20%;
   }
-  
 }
 
 @media (min-width: 1300px) and (max-width: 1500px) {
@@ -782,7 +782,7 @@ body {
   }
 }
 /* FreefIRE*/
-.event-15{
+.event-15 {
   opacity: 40%;
   z-index: -1;
   position: absolute;
@@ -800,11 +800,10 @@ body {
     aspect-ratio: 10/7;
     top: -10%;
   }
-  
 }
 
 /* Valorant */
-.event-14{
+.event-14 {
   opacity: 40%;
   z-index: -1;
   position: absolute;
@@ -823,7 +822,7 @@ body {
   }
 }
 
-@media(min-width: 1000px){
+@media (min-width: 1000px) {
   .event-14 {
     width: 90%;
     left: 5%;
@@ -918,7 +917,6 @@ body {
   }
 }
 
-
 /* Cadathon */
 
 .event-8 {
@@ -977,7 +975,6 @@ body {
   aspect-ratio: 1/1;
   bottom: 20%;
 }
-
 
 @media (min-width: 770px) and (max-width: 1000px) {
   .event-20 {
