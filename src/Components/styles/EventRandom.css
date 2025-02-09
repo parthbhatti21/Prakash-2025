@@ -11,7 +11,7 @@ p {
   border: 4px solid rgba(0, 255, 255, 0.5);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
@@ -60,7 +60,7 @@ p {
   letter-spacing: 3px;
   position: relative;
   z-index: 1px;
-  left: 50%;
+  /* left: 50%; */
 }
 
 .card2-container2 {
