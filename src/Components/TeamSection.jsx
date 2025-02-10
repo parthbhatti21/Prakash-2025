@@ -34,7 +34,7 @@ import DevTeam from './DevTeam';
 
 
 const TeamSection = () => {
-  const [activeTeam, setActiveTeam] = useState('developer');
+  const [activeTeam, setActiveTeam] = useState('core');
   const [currentSlide, setCurrentSlide] = useState(0);
 
   
@@ -97,18 +97,18 @@ const TeamSection = () => {
   return (
     <StyledWrapper>
       <div className="button-group">
+        <button
+          className={`team-button ${activeTeam === 'core' ? 'active' : ''}`}
+          onClick={() => setActiveTeam('core')} // Set active team to 'core'
+        >
+          Core Team
+        </button>
        
         <button
           className={`team-button ${activeTeam === 'developer' ? 'active' : ''}`}
           onClick={() => setActiveTeam('developer')} // Set active team to 'developer'
         >
           Developer Team
-        </button>
-        <button
-          className={`team-button ${activeTeam === 'core' ? 'active' : ''}`}
-          onClick={() => setActiveTeam('core')} // Set active team to 'core'
-        >
-          Core Team
         </button>
       </div>
 
