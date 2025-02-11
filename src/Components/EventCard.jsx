@@ -64,7 +64,7 @@ export default function EventCard() {
 
 
 
-            <NavLink to={isOpenR ? "https://lu.ma/k7qw8bhs" : "https://konfhub.com/prakarsh-25"} target="_blank">
+            <NavLink to={isOpenR ? "https://lu.ma/k7qw8bhs" : "https://konfhub.com/svit"} target="_blank">
               <RegisterButton className="register" />
             </NavLink>
 
