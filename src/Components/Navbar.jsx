@@ -125,7 +125,7 @@ const Navbar = () => {
             TEAM
           </li>
           
-            <NavLink to={"https://konfhub.com/prakarsh-25" } className="nav-item"><li>REGISTER NOW</li></NavLink>
+            <NavLink to={"https://konfhub.com/svit" } className="nav-item"><li>REGISTER NOW</li></NavLink>
     
 
         </ul>
@@ -167,7 +167,7 @@ const Navbar = () => {
             <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection("team-section");localStorage.setItem("eventname","All"); }}>
               TEAM
             </li>
-            <NavLink to={"https://konfhub.com/prakarsh-25" } className="nav-item"><li>REGISTER NOW</li></NavLink>
+            <NavLink to={"https://konfhub.com/svit" } className="nav-item"><li>REGISTER NOW</li></NavLink>
           </ul>
         </div>
       )}
