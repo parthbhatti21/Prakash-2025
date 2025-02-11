@@ -12,14 +12,7 @@ export default defineConfig({
             threshold: 1024, // Min file size to compress (in bytes)
             verbose: true, // Show compression details in console
           }),
-          ViteSitemap({
-            hostname:'www.prakarsh.org',
-            routes:[
-                '/',
-                '/events',
-                '/aboutus'
-            ],
-          }),
+          
           
      ],
 
