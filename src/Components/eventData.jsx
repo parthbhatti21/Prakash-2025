@@ -39,7 +39,8 @@ import img_BoxCricketLeague from "../assets/Event Logos/Non-Tech/BoxCricketLogo.
 import img_FreeFireClashofChampions from "../assets/Event Logos/Non-Tech/Free Fire Clash of Champions.png";
 import img_PopcornQuizzy from "../assets/Event Logos/Non-Tech/Popcorn Quizzy.png";
 import img_IPLAuction from "../assets/Event Logos/Non-Tech/IPL Auction.png";
-import img_InfiniteQuest from "../assets/Event Logos/Non-Tech/Infinite Quest.png";
+// import img_InfiniteQuest from "../assets/Event Logos/Non-Tech/Infinite Quest.png";
+import img_InfiniteQuest from "../assets/Event Logos/Non-Tech/Infinite Quest1.png";
 import img_BGMIConquest from "../assets/Event Logos/Non-Tech/BgmiLogo.png";
 import img_MidnightMystery from "../assets/Event Logos/Non-Tech/Mindnight Mystery.png";
 import img_PickleballPalooz from "../assets/Event Logos/Non-Tech/Pickleball Palooz.png";
