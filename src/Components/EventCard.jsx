@@ -105,7 +105,7 @@ export default function EventCard() {
                   target="_blank"
                   className="problem-statement-link"
                 >
-                  <h3 className="openr-head">Problem Statement</h3>
+                  <h3 className="openr-head clickMe">Click Me :Problem Statement</h3>
                 </NavLink>
               </div>
             )}

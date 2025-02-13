@@ -34,3 +34,44 @@
     z-index: 10;
   }
 }
+
+
+/* Nitya Panth */
+.NityaPanth-container{
+
+  height: 10vh;
+  width: 100%;
+}
+
+.glowing-text {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff,
+    0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
+  animation: glow 1.5s infinite alternate;
+ }
+ @media(max-width:770px){
+  
+.glowing-text {
+  font-size: 1rem;
+  color: #fff;
+ 
+ }
+ .NityaPanth-container{
+
+  height: 5vh;
+  width: 100%;
+}
+ }
+ 
+ @keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff,
+      0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #5dade2, 0 0 30px #5dade2,
+      0 0 40px #5dade2, 0 0 50px #5dade2, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+  }
+ }

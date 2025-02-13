@@ -189,7 +189,7 @@ decrypt hidden messages.
     `Gear up for CADATHON 2025! Begin
 with an expert lecture to gain insights
 and sharpen your skills in AutoCAD
-(2D) and Fusion 360 (3D). Then, dive
+(2D). Then, dive
 into an exciting competition where
 your creativity and innovation will take
 center stage. Don’t miss this ultimate
@@ -303,7 +303,7 @@ Connect with other gaming enthusiasts and forge new friendships. Tournament open
   {
     id: 16,
     category: "ESports",
-    title: "BGMI Conquest",
+    title: "BGMI Showdown",
     img: PUBG,
     image: img_BGMIConquest,
     details: `"Land. Fight. Dominate. The Battleground is Yours!"`,
@@ -322,8 +322,8 @@ your opponents—only the best will claim victory!`,
 ,
     discription:
     `Step into a world of mystery and darkness thrill with Challenges! This non-tech event is designed to test
-your instincts, teamwork, and problem-solving skills. The first round, Escape Room Challenge, will
-challenge your intelligence and presence of mind. Those who make it through will enter the Dark Room
+your instincts, teamwork, and problem-solving skills. The first round, Dark Room Challenge, will
+challenge your intelligence and presence of mind. Those who make it through will enter the Escape Room
 & Laser Maze in the final round, where speed, instincts, and agility will determine the ultimate winner.
 Do you have what it takes to escape the darkness?`,
   },
@@ -392,7 +392,7 @@ will reign supreme?  `,
   {
     id: 22,
     category: "NonTech",
-    title: "Infinite Quest",
+    title: "Infinity Quest",
     img: Pirate2,
     image: img_InfiniteQuest,
     details: `“A treasure hunt to the universe.”`,

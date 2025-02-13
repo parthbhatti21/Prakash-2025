@@ -28,6 +28,9 @@ export default function DevTeam(){
       </canvas>
       
     </div>
+    <div className="NityaPanth-container">
+    <h1 className="glowing-text">Appreciate the support from Nitya And Panth! </h1>
+    </div>
         </>
     )
 }
