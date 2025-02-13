@@ -335,7 +335,7 @@ Do you have what it takes to escape the darkness?`,
     formlink: "",
     link: "https://lu.ma/k7qw8bhs",
     image: img_OpenR,
-    details: "A special Open-R workshop event!",
+    details: "A Special Open- R Innovation Challenges Event",
   },
   {
     id: 19,
