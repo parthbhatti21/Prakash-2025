@@ -40,10 +40,13 @@ export default function Homepage() {
                 <Timer />
 
                 {/* Content Sections */}
-                 <marquee>
-                            <h1 className="neon">SVIT X Prakarsh 2025</h1>
-                        </marquee>
-                    
+                <marquee>
+                    <h1 className="neon">Flash Sale: All Tech Events at just RS 49/**</h1>
+                </marquee>
+                <marquee>
+                    <h1 className="neon">Prakarsh-A National Level Tech Fest</h1>
+                </marquee>
+
 
                 <div id="events-section">
                     <Event_Random />
@@ -58,11 +61,11 @@ export default function Homepage() {
                     <TeamSection />
                 </div>
                 <div>
-                <div className="co1">
+                    <div className="co1">
                         <div className="name">Sponsors</div>
 
                     </div>
-                <Sponsor />
+                    <Sponsor />
                 </div>
             </div>
             <Footer />
