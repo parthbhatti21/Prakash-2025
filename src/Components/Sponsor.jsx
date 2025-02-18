@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/sponsor.css";
 import pmc from "../assets/sponsors/Pmc.png";
-import IMS from "../assets/sponsors/ims.png";
+import IMS from "../assets/sponsors/Ims.png";
 import RadhikaJewellers from "../assets/sponsors/RadhikaBen.png";
 import SparkToday from "../assets/sponsors/SparkBhai.png";
 import GamerzRig from "../assets/sponsors/GamerzRig.svg";
