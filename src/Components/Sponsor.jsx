@@ -12,6 +12,7 @@ import Venturi from "../assets/sponsors/Venturi.png";
 import ngo from "../assets/sponsors/ngo.png";
 import FootBall from "../assets/sponsors/FootBall.jpeg";
 import PBall from "../assets/sponsors/PickleBall.jpeg";
+import Kitab from "../assets/sponsors/Kitab.png";
 
 const Sponsor = () => {
   // Define sponsor links
@@ -188,6 +189,18 @@ const Sponsor = () => {
               src={ngo}
               alt="NGO"
               onClick={() => handleSponsorClick(sponsorLinks.ngo)}
+              style={{ cursor: "pointer" }}
+            />
+          </div>
+        </div>
+        <div className="sponsor-box10">
+          <div className="sponsor-content">
+            <h3>Literature Partner</h3>
+            <img
+              className="Literature-Partner"
+              src={Kitab}
+              alt="Kitab"
+              // onClick={() => handleSponsorClick(sponsorLinks.radhikaJewellers)}
               style={{ cursor: "pointer" }}
             />
           </div>
