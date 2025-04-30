@@ -58,12 +58,13 @@ export default function EventCard() {
           <div className="animated-border-box">
             <img src={CrossImg} className="cross" alt="Close" onClick={hideCardDetails} />
             {selectedEventDetails.img && <img src={selectedEventDetails.img} className={`event-${selectedEvent}`} alt="" />}
-            <h3 className="event-desc">{selectedEventDetails.details}</h3>
-            <p>{selectedEventDetails.discription}</p>
+            <h3 className={`event-desc eventH3-${selectedEvent}`}>{selectedEventDetails.details}</h3>
+
+            <p className={`eventPara-${selectedEvent}`}>{selectedEventDetails.discription}</p>
 
 
 
-            <NavLink to={isOpenR ? "https://lu.ma/k7qw8bhs" : "https://konfhub.com/prakarsh-25"} target="_blank">
+            <NavLink to={isOpenR ? "https://lu.ma/k7qw8bhs" : "https://konfhub.com/svit"} target="_blank">
               <RegisterButton className="register" />
             </NavLink>
 
@@ -71,12 +72,12 @@ export default function EventCard() {
             {isOpenR && (
               <div className=""><br />
                 <h3 className="openr-head">OpenR Project Details</h3>
-                <p className="">
+                <p className="openPari">
                   Open R is an open project and prototype challenge focused on Smart Village Development, encouraging innovative and feasible solutions to enhance rural living.
                 </p><br />
                 <div className="">
                   <h4 className="openr-head">Event Criteria: </h4>
-                  <p className="">
+                  <p className="openPari">
                     - Team of 4 members (min-2; max-4)
                     <br />
                     - Participants must bring their project, no extra time for in-person activity of building/coding.
@@ -86,7 +87,7 @@ export default function EventCard() {
                     - POC must include the project/prototype along with a drafted document (hardcopy).
                   </p><br />
                   <h4 className="openr-head">Project Criteria:</h4>
-                  <p className="">
+                  <p className="openPari">
                     - Project/Prototype must be 70-80% implemented.
                     <br />
                     - The project must satisfy the theme "Rural Development" on all bases.
@@ -104,7 +105,7 @@ export default function EventCard() {
                   target="_blank"
                   className="problem-statement-link"
                 >
-                  <h3 className="openr-head">Problem Statement</h3>
+                  <h3 className="openr-head clickMe">Click Me :Problem Statement</h3>
                 </NavLink>
               </div>
             )}

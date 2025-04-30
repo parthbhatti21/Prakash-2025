@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import "./styles/navbar.css";
 import logoImage from "../assets/logo1.png";
 import { useNavigate } from "react-router";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -123,6 +124,9 @@ const Navbar = () => {
           <li className="nav-item" onClick={() => {scrollToSection("team-section");localStorage.setItem("eventname","All");}}>
             TEAM
           </li>
+          
+            <NavLink to={"https://konfhub.com/svit" } className="nav-item"><li>REGISTER NOW</li></NavLink>
+    
 
         </ul>
       </nav>
@@ -163,6 +167,7 @@ const Navbar = () => {
             <li className="nav-item" onClick={() => { toggleMenu(); scrollToSection("team-section");localStorage.setItem("eventname","All"); }}>
               TEAM
             </li>
+            <NavLink to={"https://konfhub.com/svit" } className="nav-item"><li>REGISTER NOW</li></NavLink>
           </ul>
         </div>
       )}
