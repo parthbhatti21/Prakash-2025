@@ -24,6 +24,7 @@ h3 {
   font-size: 1.2rem;
   /* Adjust the font size */
   color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
   margin-bottom: 10px;
   /* Space between title and image */
   text-align: center;
@@ -354,7 +355,7 @@ h3 {
  
   transform: translateY(35%);
 }
-Literature-Partner
+/* Removed stray token: Literature-Partner */
 /* Sponsor Images */
 
 .sponsor-box img {
@@ -401,6 +402,7 @@ img{
         font-size: .7rem;
         /* Adjust the font size */
         color: #ffffff;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
         margin-bottom: 10px;
         /* Space between title and image */
         text-align: center;
